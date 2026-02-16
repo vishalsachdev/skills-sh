@@ -10,7 +10,8 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 
 ## Current Focus
 
-- [ ] Validate daily workflow success rate (push to GitHub, confirm GH Actions runs)
+- [ ] Push to GitHub, verify Actions workflow + Pages deploy
+- [ ] Validate daily workflow success rate
 
 ## Roadmap
 
@@ -18,6 +19,12 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 - [ ] Push to GitHub and verify Actions workflow
 - [ ] Harden parsing and add schema checks
 - [ ] Document data dictionary/codebook
+
+### Phase 1.5: Dashboard (Done)
+- [x] Scout dashboard (index.html) — sortable table, health scores, filters
+- [x] Publisher insights (publisher.html) — 4 Chart.js charts, correlations, leaderboard
+- [x] Evaluator compare (compare.html) — multi-select, radar chart, risk flags
+- [x] GitHub Pages deploy workflow
 
 ### Phase 2: Baseline Analytics (Weeks 2-3)
 - [ ] Build time-series notebook/dashboard
@@ -43,4 +50,5 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 
 ### 2026-02-15
 - Completed: Initial snapshot script, baseline capture (600 skills, 87K installs), GH Actions workflow, research plan
-- Next: Push to GitHub and validate daily workflow
+- Completed: Static dashboard site (3 pages: Scout, Publisher, Compare) with Chart.js, health scores, risk flags, GitHub Pages deploy
+- Next: Push to GitHub, verify Actions workflow + Pages deploy

@@ -7,6 +7,8 @@ on:
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
 
 jobs:
   snapshot:
@@ -38,11 +40,34 @@ jobs:
         run: |
           if git diff --quiet -- snapshots/; then
             echo "No snapshot changes to commit."
-            exit 0
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add snapshots/
+            git commit -m "chore: update skills snapshot"
+            git push
           fi
 
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add snapshots/
-          git commit -m "chore: update skills snapshot"
-          git push
+      - name: Copy latest snapshot for dashboard
+        run: |
+          mkdir -p site/data
+          LATEST=$(ls -t snapshots/*.json | head -1)
+          cp "$LATEST" site/data/latest.json
+          echo "Copied $LATEST to site/data/latest.json"
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    needs: snapshot
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

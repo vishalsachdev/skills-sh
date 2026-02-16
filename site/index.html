@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>skills.sh — Scout Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <a class="topnav-brand" href="index.html">skills.sh<span>/dash</span></a>
+    <div class="topnav-links">
+      <a href="index.html" class="active">Scout</a>
+      <a href="publisher.html">Publisher</a>
+      <a href="compare.html">Compare</a>
+    </div>
+    <div class="topnav-meta" id="data-date"></div>
+  </nav>
+
+  <div class="container">
+    <div class="hero-stats" id="hero-stats">
+      <div class="stat-card"><div class="stat-value" id="stat-skills">—</div><div class="stat-label">Skills</div></div>
+      <div class="stat-card"><div class="stat-value" id="stat-installs">—</div><div class="stat-label">Total Installs</div></div>
+      <div class="stat-card"><div class="stat-value" id="stat-publishers">—</div><div class="stat-label">Publishers</div></div>
+      <div class="stat-card"><div class="stat-value" id="stat-active">—</div><div class="stat-label">Active (7d)</div></div>
+    </div>
+
+    <div class="toolbar">
+      <input type="search" id="search" placeholder="Search skills, owners...">
+      <select id="filter-lang">
+        <option value="">All Languages</option>
+      </select>
+      <select id="filter-freshness">
+        <option value="">All Freshness</option>
+        <option value="Active">Active (&lt;7d)</option>
+        <option value="Recent">Recent (&lt;30d)</option>
+        <option value="Stale">Stale (&gt;30d)</option>
+      </select>
+      <label>
+        <input type="checkbox" id="filter-min-installs"> Min 10 installs
+      </label>
+      <div class="result-count" id="result-count"></div>
+    </div>
+
+    <div class="table-wrap">
+      <table id="skills-table">
+        <thead>
+          <tr>
+            <th class="sortable" data-col="name">Name</th>
+            <th class="sortable" data-col="source">Owner / Repo</th>
+            <th class="sortable num" data-col="installs">Installs</th>
+            <th class="sortable num" data-col="stars">Stars</th>
+            <th class="sortable" data-col="language">Language</th>
+            <th class="sortable num" data-col="health">Health</th>
+            <th class="sortable" data-col="freshness">Freshness</th>
+          </tr>
+        </thead>
+        <tbody id="skills-body"></tbody>
+      </table>
+    </div>
+
+    <div class="loading" id="loading">Loading snapshot data…</div>
+  </div>
+
+  <footer class="site-footer">
+    Data from <a href="https://skills.sh/trending">skills.sh/trending</a> · Updated daily via GitHub Actions
+  </footer>
+
+  <script type="module" src="js/scout.js"></script>
+</body>
+</html>
