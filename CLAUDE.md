@@ -12,6 +12,7 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 
 - [ ] Push to GitHub, verify Actions workflow + Pages deploy
 - [ ] Validate daily workflow success rate
+- [ ] Revisit semantic analysis of top skills after 2026-02-22 (need ~1 week of daily snapshots first)
 
 ## Roadmap
 
@@ -45,6 +46,7 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 - Integrate hot/all-time views if they provide different signals
 - Add README quality scoring (length, badges, examples)
 - Track skill deletions/removals over time
+- Semantic analysis of top skills — categorize by intent (dev tooling, workflow, AI wrappers, etc.) and surface patterns; wait for sufficient daily snapshots before choosing approach
 
 ## Session Log
 
