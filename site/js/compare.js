@@ -4,7 +4,7 @@ let allSkills = [];
 let selected = []; // skill objects
 let radarChart = null;
 
-const COLORS = ['#e4a31b', '#5b9ef5', '#3dcc6e', '#a07de8'];
+const COLORS = ['#b45309', '#1d4ed8', '#15803d', '#7c3aed'];
 
 function fmt(n) {
   return n == null ? '—' : n.toLocaleString();
@@ -130,15 +130,15 @@ function renderRadar() {
         r: {
           beginAtZero: true,
           max: 100,
-          ticks: { color: '#555568', backdropColor: 'transparent', stepSize: 25 },
-          grid: { color: '#222230' },
-          angleLines: { color: '#222230' },
-          pointLabels: { color: '#8888a0', font: { size: 12 } },
+          ticks: { color: '#a8a29e', backdropColor: 'transparent', stepSize: 25 },
+          grid: { color: '#e2ded6' },
+          angleLines: { color: '#e2ded6' },
+          pointLabels: { color: '#57534e', font: { size: 12 } },
         }
       },
       plugins: {
         legend: {
-          labels: { color: '#8888a0', padding: 16 }
+          labels: { color: '#57534e', padding: 16 }
         }
       }
     }

@@ -1,33 +1,34 @@
 /* ── skills-sh dashboard ── */
-/* Dark terminal-inspired theme with warm accent */
+/* Warm light theme — sand/paper palette */
 
 :root {
-  --bg-root: #08080c;
-  --bg-surface: #111118;
-  --bg-card: #16161f;
-  --bg-hover: #1e1e2a;
-  --bg-input: #0e0e14;
+  --bg-root: #f6f4f0;
+  --bg-surface: #ffffff;
+  --bg-card: #ffffff;
+  --bg-hover: #f0ece4;
+  --bg-input: #f6f4f0;
 
-  --text-primary: #d8d8e0;
-  --text-secondary: #8888a0;
-  --text-muted: #555568;
+  --text-primary: #1c1917;
+  --text-secondary: #57534e;
+  --text-muted: #a8a29e;
 
-  --accent: #e4a31b;
-  --accent-dim: #b8841a;
-  --blue: #5b9ef5;
-  --green: #3dcc6e;
-  --yellow: #e4a31b;
-  --red: #e05555;
-  --purple: #a07de8;
+  --accent: #b45309;
+  --accent-dim: #92400e;
+  --blue: #1d4ed8;
+  --green: #15803d;
+  --yellow: #a16207;
+  --red: #dc2626;
+  --purple: #7c3aed;
 
-  --border: #222230;
-  --border-subtle: #1a1a26;
+  --border: #e2ded6;
+  --border-subtle: #ece8e1;
 
   --radius: 6px;
   --font-mono: 'SF Mono', 'Cascadia Code', 'JetBrains Mono', 'Fira Code', monospace;
   --font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', system-ui, sans-serif;
 
-  --shadow: 0 2px 8px rgba(0,0,0,.4);
+  --shadow: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+  --shadow-md: 0 4px 12px rgba(0,0,0,.06);
 }
 
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -65,6 +66,7 @@ body {
   position: sticky;
   top: 0;
   z-index: 100;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03);
 }
 
 .topnav-brand {
@@ -96,14 +98,14 @@ body {
   transition: background .15s, color .15s;
 }
 
-.topnav-links a:hover,
-.topnav-links a.active {
+.topnav-links a:hover {
   background: var(--bg-hover);
   color: var(--text-primary);
 }
 
 .topnav-links a.active {
-  color: var(--accent);
+  background: var(--accent);
+  color: #fff;
 }
 
 .topnav-meta {
@@ -127,6 +129,7 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 20px;
+  box-shadow: var(--shadow);
 }
 
 .stat-card .stat-value {
@@ -157,6 +160,7 @@ body {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .toolbar input[type="text"],
@@ -175,7 +179,8 @@ body {
 
 .toolbar input:focus,
 .toolbar select:focus {
-  border-color: var(--accent-dim);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(180,83,9,.1);
 }
 
 .toolbar input[type="search"] {
@@ -209,6 +214,7 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   background: var(--bg-card);
+  box-shadow: var(--shadow);
 }
 
 table {
@@ -220,7 +226,7 @@ table {
 thead th {
   position: sticky;
   top: 0;
-  background: var(--bg-surface);
+  background: var(--bg-root);
   border-bottom: 2px solid var(--border);
   padding: 10px 14px;
   text-align: left;
@@ -286,27 +292,27 @@ td a:hover {
 }
 
 .badge-active {
-  background: rgba(61,204,110,.15);
+  background: #dcfce7;
   color: var(--green);
 }
 
 .badge-recent {
-  background: rgba(228,163,27,.12);
+  background: #fef3c7;
   color: var(--yellow);
 }
 
 .badge-stale {
-  background: rgba(224,85,85,.12);
+  background: #fee2e2;
   color: var(--red);
 }
 
 .risk-warn {
-  background: rgba(228,163,27,.12);
+  background: #fef3c7;
   color: var(--yellow);
 }
 
 .risk-danger {
-  background: rgba(224,85,85,.12);
+  background: #fee2e2;
   color: var(--red);
 }
 
@@ -353,6 +359,7 @@ td a:hover {
   border: 1px solid var(--border);
   border-radius: var(--radius);
   padding: 20px;
+  box-shadow: var(--shadow);
 }
 
 .chart-card h3 {
@@ -380,6 +387,7 @@ td a:hover {
   background: var(--bg-card);
   border: 1px solid var(--border);
   border-radius: var(--radius);
+  box-shadow: var(--shadow);
 }
 
 .compare-picker input {
@@ -394,7 +402,8 @@ td a:hover {
 }
 
 .compare-picker input:focus {
-  border-color: var(--accent-dim);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px rgba(180,83,9,.1);
 }
 
 .compare-picker .suggestions {
@@ -408,7 +417,7 @@ td a:hover {
   max-height: 240px;
   overflow-y: auto;
   z-index: 50;
-  box-shadow: var(--shadow);
+  box-shadow: var(--shadow-md);
 }
 
 .compare-picker .suggestions div {
@@ -447,7 +456,7 @@ td a:hover {
   align-items: center;
   gap: 6px;
   padding: 4px 10px;
-  background: rgba(91,158,245,.12);
+  background: #dbeafe;
   color: var(--blue);
   border-radius: var(--radius);
   font-size: 0.85rem;
@@ -528,6 +537,101 @@ td a:hover {
   text-align: center;
   padding: 48px 20px;
   color: var(--text-muted);
+}
+
+/* ── About page ── */
+
+.about-content {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 32px 0 48px;
+}
+
+.about-content h1 {
+  font-family: var(--font-mono);
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.about-content .lead {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin-bottom: 32px;
+}
+
+.about-content h2 {
+  font-family: var(--font-mono);
+  font-size: 1.05rem;
+  font-weight: 700;
+  margin: 32px 0 12px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--border);
+}
+
+.about-content h3 {
+  font-size: 0.95rem;
+  font-weight: 600;
+  margin: 20px 0 8px;
+  color: var(--accent-dim);
+}
+
+.about-content p {
+  margin-bottom: 12px;
+  line-height: 1.65;
+  color: var(--text-primary);
+}
+
+.about-content blockquote {
+  border-left: 3px solid var(--accent);
+  padding: 8px 16px;
+  margin: 12px 0 16px;
+  background: var(--bg-hover);
+  border-radius: 0 var(--radius) var(--radius) 0;
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.about-content ul {
+  margin: 8px 0 16px 20px;
+  color: var(--text-primary);
+}
+
+.about-content li {
+  margin-bottom: 4px;
+  line-height: 1.6;
+}
+
+.about-content a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.about-content a:hover {
+  text-decoration: underline;
+}
+
+.about-content code {
+  font-family: var(--font-mono);
+  font-size: 0.88em;
+  background: var(--bg-input);
+  padding: 1px 5px;
+  border-radius: 3px;
+  border: 1px solid var(--border);
+}
+
+.about-content .page-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px 20px;
+  margin-bottom: 12px;
+  box-shadow: var(--shadow);
+}
+
+.about-content .page-card strong {
+  color: var(--accent-dim);
 }
 
 /* ── Footer ── */

@@ -1,20 +1,20 @@
 import { loadLatestSnapshot, enrichSkills, getPublisherStats, daysSince } from './data.js';
 
 const CHART_COLORS = {
-  accent: '#e4a31b',
-  blue: '#5b9ef5',
-  green: '#3dcc6e',
-  red: '#e05555',
-  purple: '#a07de8',
-  teal: '#2dd4bf',
-  pink: '#f472b6',
-  orange: '#fb923c',
-  gray: '#555568',
+  accent: '#b45309',
+  blue: '#1d4ed8',
+  green: '#15803d',
+  red: '#dc2626',
+  purple: '#7c3aed',
+  teal: '#0d9488',
+  pink: '#db2777',
+  orange: '#ea580c',
+  gray: '#a8a29e',
 };
 
 const CHART_DEFAULTS = {
-  color: '#8888a0',
-  borderColor: '#222230',
+  color: '#57534e',
+  borderColor: '#e2ded6',
   backgroundColor: 'transparent',
 };
 
@@ -138,7 +138,7 @@ function buildLanguageChart(skills) {
       datasets: [{
         data: top.map(e => e[1]),
         backgroundColor: palette.slice(0, top.length).map(c => c + 'cc'),
-        borderColor: '#111118',
+        borderColor: '#ffffff',
         borderWidth: 2,
       }]
     },
