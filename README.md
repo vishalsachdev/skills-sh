@@ -70,3 +70,7 @@ cd site && python3 -m http.server 8765
 - **Dashboard:** Vanilla HTML/CSS/JS (no build step)
 - **Charts:** [Chart.js](https://www.chartjs.org/) via CDN
 - **Hosting:** GitHub Pages deployed via GitHub Actions
+
+## Contributing
+
+Found a bug, have a feature idea, or want to improve the dashboard? [Open an issue](https://github.com/vishalsachdev/skills-sh/issues) — all feedback welcome.
