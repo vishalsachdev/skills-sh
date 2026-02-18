@@ -4,6 +4,25 @@
  */
 
 let _cache = null;
+let _tsCache = null;
+
+export async function loadTimeseries() {
+  if (_tsCache) return _tsCache;
+
+  const paths = ['data/timeseries.json', '../site/data/timeseries.json'];
+
+  for (const path of paths) {
+    try {
+      const resp = await fetch(path);
+      if (resp.ok) {
+        _tsCache = await resp.json();
+        return _tsCache;
+      }
+    } catch {}
+  }
+
+  throw new Error('Could not load timeseries data from any known path.');
+}
 
 export async function loadLatestSnapshot() {
   if (_cache) return _cache;

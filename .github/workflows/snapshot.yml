@@ -55,6 +55,9 @@ jobs:
           cp "$LATEST" site/data/latest.json
           echo "Copied $LATEST to site/data/latest.json"
 
+      - name: Generate timeseries data
+        run: python generate_timeseries.py
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:

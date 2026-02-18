@@ -634,6 +634,58 @@ td a:hover {
   color: var(--accent-dim);
 }
 
+/* ── Trends page ── */
+
+.early-data-notice {
+  background: #fef3c7;
+  color: var(--yellow);
+  border: 1px solid #fde68a;
+  border-radius: var(--radius);
+  padding: 12px 20px;
+  font-size: 0.88rem;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.period-toggle {
+  display: flex;
+  gap: 2px;
+  background: var(--bg-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 2px;
+}
+
+.period-btn {
+  background: transparent;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--text-secondary);
+  cursor: pointer;
+  transition: background .15s, color .15s;
+  font-family: var(--font-sans);
+}
+
+.period-btn:hover {
+  color: var(--text-primary);
+}
+
+.period-btn.active {
+  background: var(--accent);
+  color: #fff;
+}
+
+.sparkline {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  letter-spacing: 1px;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
 /* ── Footer ── */
 
 .site-footer {
