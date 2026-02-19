@@ -10,26 +10,28 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 
 ## Current Focus
 
-- [ ] Push to GitHub, verify Actions workflow + Pages deploy
-- [ ] Validate daily workflow success rate
+- [ ] Validate daily workflow success rate (timeseries generation + Pages deploy)
 - [ ] Revisit semantic analysis of top skills after 2026-02-22 (need ~1 week of daily snapshots first)
-
-## Roadmap
-
-### Phase 1: Data Reliability (Week 1)
-- [ ] Push to GitHub and verify Actions workflow
 - [ ] Harden parsing and add schema checks
 - [ ] Document data dictionary/codebook
 
-### Phase 1.5: Dashboard (Done)
+## Roadmap
+
+### Phase 1: Data Reliability (Week 1) — In Progress
+- [x] Push to GitHub and verify Actions workflow
+- [ ] Harden parsing and add schema checks
+- [ ] Document data dictionary/codebook
+
+### Phase 1.5: Dashboard — Done
 - [x] Scout dashboard (index.html) — sortable table, health scores, filters
 - [x] Publisher insights (publisher.html) — 4 Chart.js charts, correlations, leaderboard
 - [x] Evaluator compare (compare.html) — multi-select, radar chart, risk flags
 - [x] GitHub Pages deploy workflow
 
-### Phase 2: Baseline Analytics (Weeks 2-3)
-- [ ] Build time-series notebook/dashboard
-- [ ] Produce creation/adoption/longevity baseline charts
+### Phase 2: Baseline Analytics (Weeks 2-3) — In Progress
+- [x] Build time-series dashboard (trends.html) — install growth chart, top movers table with period toggle, skill trend lookup with sparklines
+- [x] Pre-aggregation pipeline (generate_timeseries.py) — runs in CI, produces compact timeseries.json
+- [ ] Produce creation/adoption/longevity baseline charts (needs 7+ snapshots)
 
 ### Phase 3: Diffusion Modeling (Weeks 4-5)
 - [ ] Engineer trait features
@@ -49,6 +51,12 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 - Semantic analysis of top skills — categorize by intent (dev tooling, workflow, AI wrappers, etc.) and surface patterns; wait for sufficient daily snapshots before choosing approach
 
 ## Session Log
+
+### 2026-02-19
+- Completed: Trends dashboard page (trends.html + trends.js + generate_timeseries.py) — install growth chart, top movers with period toggle, skill trend lookup with sparklines
+- Completed: CI pipeline update — workflow generates timeseries.json at deploy time
+- Completed: Nav bar updated across all 5 pages
+- Note: skills.sh/trending always returns 600 skills — removed flat Total Skills chart
 
 ### 2026-02-15
 - Completed: Initial snapshot script, baseline capture (600 skills, 87K installs), GH Actions workflow, research plan
