@@ -36,13 +36,16 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python snapshot.py
 
-      - name: Commit snapshot
+      - name: Generate daily trend report
+        run: python generate_daily_report.py
+
+      - name: Commit snapshot and daily report
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add snapshots/
+          git add snapshots/ analysis/daily/
           if git diff --staged --quiet; then
-            echo "No snapshot changes to commit."
+            echo "No changes to commit."
           else
             git commit -m "chore: update skills snapshot"
             git push
@@ -57,19 +60,6 @@ jobs:
 
       - name: Generate timeseries data
         run: python generate_timeseries.py
-
-      - name: Generate daily trend report
-        run: python generate_daily_report.py
-
-      - name: Commit daily report
-        run: |
-          git add analysis/daily/
-          if git diff --staged --quiet; then
-            echo "No daily report changes to commit."
-          else
-            git commit -m "chore: add daily trend report for $(date +%Y-%m-%d)"
-            git push
-          fi
 
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3

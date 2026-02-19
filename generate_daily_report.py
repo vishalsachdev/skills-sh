@@ -85,6 +85,18 @@ def compute_day_over_day(prev_map, curr_map):
             "curr_installs": curr["installs"],
             **curr,
         })
+    # Include skills that dropped out of the snapshot
+    for key, prev in prev_map.items():
+        if key not in curr_map:
+            changes.append({
+                "key": key,
+                "is_new": False,
+                "delta": -prev["installs"],
+                "prev_installs": prev["installs"],
+                "curr_installs": 0,
+                **prev,
+                "installs": 0,
+            })
     return changes
 
 
