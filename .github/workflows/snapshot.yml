@@ -58,6 +58,19 @@ jobs:
       - name: Generate timeseries data
         run: python generate_timeseries.py
 
+      - name: Generate daily trend report
+        run: python generate_daily_report.py
+
+      - name: Commit daily report
+        run: |
+          git add analysis/daily/
+          if git diff --staged --quiet; then
+            echo "No daily report changes to commit."
+          else
+            git commit -m "chore: add daily trend report for $(date +%Y-%m-%d)"
+            git push
+          fi
+
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
