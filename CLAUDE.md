@@ -52,6 +52,13 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 
 ## Session Log
 
+### 2026-02-20
+- Reviewed PR #1 (trend analysis scripts + daily report generator)
+- Fixed: `compute_day_over_day` now tracks skills that drop out of snapshots (Codex P1)
+- Fixed: Workflow race condition — consolidated two commit+push steps into one before Pages upload
+- Merged PR #1; pulled — now have 6 snapshots (Feb 15-20)
+- Next: Semantic analysis eligible after 2/22, validate workflow, Phase 1 remaining items
+
 ### 2026-02-19
 - Completed: Trends dashboard page (trends.html + trends.js + generate_timeseries.py) — install growth chart, top movers with period toggle, skill trend lookup with sparklines
 - Completed: CI pipeline update — workflow generates timeseries.json at deploy time
