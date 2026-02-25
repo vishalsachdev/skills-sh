@@ -115,6 +115,52 @@ body {
   font-family: var(--font-mono);
 }
 
+/* ── Page Header ── */
+
+.page-header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 28px;
+  margin-bottom: 4px;
+}
+
+.page-header h1 {
+  font-family: var(--font-mono);
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text-primary);
+}
+
+.page-subtitle {
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  margin-top: 2px;
+}
+
+.page-subtitle a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.page-subtitle a:hover {
+  text-decoration: underline;
+}
+
+.snapshot-date {
+  font-family: var(--font-mono);
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--accent);
+  white-space: nowrap;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 6px 14px;
+  box-shadow: var(--shadow);
+}
+
 /* ── Hero Stats ── */
 
 .hero-stats {

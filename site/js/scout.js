@@ -114,20 +114,21 @@ async function init() {
 
     // Hero stats — show organic numbers by default
     updateHeroStats(allSkills.filter(s => !s._isCluster));
-    document.getElementById('data-date').textContent = `snapshot: ${snapshot.date}`;
+    document.getElementById('data-date').textContent = snapshot.date;
+    document.getElementById('data-date-hero').textContent = snapshot.date;
 
     // Cluster notice banner
     if (cs.clusterCount > 0) {
       const totalInstalls = cs.clusterInstalls + cs.organicInstalls;
       const pct = totalInstalls > 0 ? Math.round(cs.clusterInstalls / totalInstalls * 100) : 0;
-      const sorted = Object.entries(cs.repos).sort((a, b) => b[1].installs - a[1].installs);
-      const top3 = sorted.slice(0, 3)
-        .map(([src, r]) => `<strong>${esc(src)}</strong> (${r.count} skills, ${fmt(r.installs)} installs)`);
-      const rest = sorted.length > 3 ? ` and ${sorted.length - 3} more` : '';
+      const nRepos = Object.keys(cs.repos).length;
       document.getElementById('cluster-notice').innerHTML =
-        `<strong>${cs.clusterCount} skills</strong> from ${sorted.length} repo clusters hidden — ` +
-        `${fmt(cs.clusterInstalls)} installs (${pct}% of total). Top: ` +
-        top3.join(', ') + rest + '.';
+        `<strong>Repo clusters hidden.</strong> ` +
+        `Some repos publish many skills from a single codebase (5+ skills per repo), which inflates install counts. ` +
+        `Today, ${nRepos} such repos account for <strong>${fmt(cs.clusterCount)} skills</strong> and ` +
+        `<strong>${fmt(cs.clusterInstalls)} installs (${pct}%)</strong> of the total. ` +
+        `The stats above and table below show only organic skills. ` +
+        `Uncheck "Hide repo clusters" in the toolbar to see everything.`;
       document.getElementById('cluster-notice').style.display = 'block';
     }
 
