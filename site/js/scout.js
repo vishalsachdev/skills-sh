@@ -120,13 +120,14 @@ async function init() {
     if (cs.clusterCount > 0) {
       const totalInstalls = cs.clusterInstalls + cs.organicInstalls;
       const pct = totalInstalls > 0 ? Math.round(cs.clusterInstalls / totalInstalls * 100) : 0;
-      const repos = Object.entries(cs.repos)
-        .sort((a, b) => b[1].count - a[1].count)
+      const sorted = Object.entries(cs.repos).sort((a, b) => b[1].installs - a[1].installs);
+      const top3 = sorted.slice(0, 3)
         .map(([src, r]) => `<strong>${esc(src)}</strong> (${r.count} skills, ${fmt(r.installs)} installs)`);
+      const rest = sorted.length > 3 ? ` and ${sorted.length - 3} more` : '';
       document.getElementById('cluster-notice').innerHTML =
-        `<strong>${cs.clusterCount} skills</strong> from ${Object.keys(cs.repos).length} repo cluster(s) hidden — ` +
-        `${fmt(cs.clusterInstalls)} installs (${pct}% of total). ` +
-        repos.join(', ') + '.';
+        `<strong>${cs.clusterCount} skills</strong> from ${sorted.length} repo clusters hidden — ` +
+        `${fmt(cs.clusterInstalls)} installs (${pct}% of total). Top: ` +
+        top3.join(', ') + rest + '.';
       document.getElementById('cluster-notice').style.display = 'block';
     }
 
