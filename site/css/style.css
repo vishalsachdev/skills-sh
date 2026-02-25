@@ -316,6 +316,32 @@ td a:hover {
   color: var(--red);
 }
 
+/* ── Cluster badges & notices ── */
+
+.badge-cluster {
+  background: #ede9fe;
+  color: var(--purple);
+}
+
+.cluster-row {
+  opacity: 0.55;
+}
+
+.cluster-notice {
+  background: #ede9fe;
+  color: var(--purple);
+  border: 1px solid #c4b5fd;
+  border-radius: var(--radius);
+  padding: 12px 20px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  margin-bottom: 16px;
+}
+
+.cluster-notice strong {
+  font-weight: 700;
+}
+
 /* ── Health Score ── */
 
 .health-score {

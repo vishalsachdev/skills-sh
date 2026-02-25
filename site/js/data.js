@@ -152,17 +152,70 @@ export function computeGlobalStats(skills) {
 }
 
 /**
+ * Minimum number of skills from a single repo to flag as a cluster.
+ */
+export const CLUSTER_THRESHOLD = 5;
+
+/**
+ * Detect repo clusters — repos publishing many skills with similar install counts.
+ * Returns a Set of `source` strings (owner/repo) that are clusters.
+ */
+export function detectRepoClusters(skills) {
+  const bySource = {};
+  for (const s of skills) {
+    if (!bySource[s.source]) bySource[s.source] = [];
+    bySource[s.source].push(s);
+  }
+
+  const clusters = new Set();
+  for (const [source, group] of Object.entries(bySource)) {
+    if (group.length >= CLUSTER_THRESHOLD) {
+      clusters.add(source);
+    }
+  }
+  return clusters;
+}
+
+/**
+ * Get summary stats about clusters in the current snapshot.
+ */
+export function getClusterStats(skills) {
+  const clusters = detectRepoClusters(skills);
+  const clusterSkills = skills.filter(s => clusters.has(s.source));
+  const organicSkills = skills.filter(s => !clusters.has(s.source));
+
+  // Group cluster skills by source for detail
+  const clusterRepos = {};
+  for (const s of clusterSkills) {
+    if (!clusterRepos[s.source]) clusterRepos[s.source] = { count: 0, installs: 0 };
+    clusterRepos[s.source].count++;
+    clusterRepos[s.source].installs += s.installs || 0;
+  }
+
+  return {
+    clusterSources: clusters,
+    clusterCount: clusterSkills.length,
+    clusterInstalls: clusterSkills.reduce((sum, s) => sum + (s.installs || 0), 0),
+    organicCount: organicSkills.length,
+    organicInstalls: organicSkills.reduce((sum, s) => sum + (s.installs || 0), 0),
+    repos: clusterRepos,
+  };
+}
+
+/**
  * Enrich skills array with computed fields. Mutates in place.
  */
 export function enrichSkills(snapshot) {
   const skills = snapshot.skills;
   const stats = computeGlobalStats(skills);
+  const clusters = detectRepoClusters(skills);
   for (const s of skills) {
     s._healthScore = computeHealthScore(s, stats);
     s._freshness = getFreshnessBadge(s);
     s._riskFlags = getRiskFlags(s);
     s._pushDays = daysSince((s.github || {}).pushed_at);
     s._ageDays = daysSince((s.github || {}).created_at);
+    s._isCluster = clusters.has(s.source);
   }
   return skills;
 }

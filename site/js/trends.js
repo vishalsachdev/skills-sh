@@ -1,4 +1,4 @@
-import { loadTimeseries } from './data.js';
+import { loadTimeseries, CLUSTER_THRESHOLD } from './data.js';
 
 const CHART_COLORS = {
   accent: '#b45309',
@@ -71,6 +71,7 @@ function computeChange(installs, period) {
 }
 
 let _data = null;
+let _organicData = null;
 let _skillChart = null;
 
 function renderHeroStats(data) {
@@ -78,13 +79,14 @@ function renderHeroStats(data) {
 
   const first = data.dates[0];
   const last = data.dates[data.dates.length - 1];
-  // Show compact date range
   const fmtDate = d => d.slice(5); // MM-DD
   document.getElementById('stat-date-range').textContent = `${fmtDate(first)} to ${fmtDate(last)}`;
 
-  const firstInstalls = data.aggregate.total_installs[0];
-  const lastInstalls = data.aggregate.total_installs[data.aggregate.total_installs.length - 1];
-  const growth = lastInstalls - firstInstalls;
+  // Show organic growth (excluding clusters)
+  const { organic } = _organicData;
+  const firstOrganic = organic[0];
+  const lastOrganic = organic[organic.length - 1];
+  const growth = lastOrganic - firstOrganic;
   const prefix = growth >= 0 ? '+' : '';
   document.getElementById('stat-install-growth').textContent = `${prefix}${fmt(growth)}`;
 
@@ -98,32 +100,89 @@ function renderEarlyNotice(data) {
   }
 }
 
+/**
+ * Compute organic (non-cluster) install totals per date from per-skill data.
+ */
+function computeOrganicSeries(data) {
+  const skills = data.skills;
+  const numDates = data.dates.length;
+
+  // Group skills by source (owner/repo) — key format is "owner/repo/name"
+  const bySource = {};
+  for (const [key, skill] of Object.entries(skills)) {
+    const source = `${skill.owner}/${skill.repo}`;
+    if (!bySource[source]) bySource[source] = [];
+    bySource[source].push(skill);
+  }
+
+  // Identify cluster sources (5+ skills from same repo in ANY single snapshot)
+  const clusterSources = new Set();
+  for (const [source, group] of Object.entries(bySource)) {
+    // Check each date: how many skills from this source are present (non-null)?
+    for (let d = 0; d < numDates; d++) {
+      const present = group.filter(s => s.installs[d] != null).length;
+      if (present >= CLUSTER_THRESHOLD) {
+        clusterSources.add(source);
+        break;
+      }
+    }
+  }
+
+  // Sum organic installs per date
+  const organic = new Array(numDates).fill(0);
+  for (const [key, skill] of Object.entries(skills)) {
+    const source = `${skill.owner}/${skill.repo}`;
+    if (clusterSources.has(source)) continue;
+    for (let d = 0; d < numDates; d++) {
+      if (skill.installs[d] != null) organic[d] += skill.installs[d];
+    }
+  }
+
+  return { organic, clusterSources };
+}
+
 function buildEcosystemCharts(data) {
   const labels = data.dates.map(d => d.slice(5)); // MM-DD
+  const { organic, clusterSources } = _organicData;
+
+  const datasets = [
+    {
+      label: 'Total Installs',
+      data: data.aggregate.total_installs,
+      borderColor: CHART_COLORS.gray,
+      backgroundColor: 'transparent',
+      borderDash: [5, 3],
+      tension: 0.3,
+      pointRadius: 3,
+      pointHoverRadius: 5,
+      borderWidth: 1.5,
+    },
+    {
+      label: 'Organic Installs',
+      data: organic,
+      borderColor: CHART_COLORS.accent,
+      backgroundColor: CHART_COLORS.accent + '22',
+      fill: true,
+      tension: 0.3,
+      pointRadius: 4,
+      pointHoverRadius: 6,
+      borderWidth: 2,
+    },
+  ];
 
   new Chart(document.getElementById('chart-installs'), {
     type: 'line',
-    data: {
-      labels,
-      datasets: [{
-        label: 'Total Installs',
-        data: data.aggregate.total_installs,
-        borderColor: CHART_COLORS.accent,
-        backgroundColor: CHART_COLORS.accent + '22',
-        fill: true,
-        tension: 0.3,
-        pointRadius: 4,
-        pointHoverRadius: 6,
-        borderWidth: 2,
-      }]
-    },
+    data: { labels, datasets },
     options: {
       responsive: true,
       plugins: {
-        legend: { display: false },
+        legend: {
+          display: clusterSources.size > 0,
+          labels: { color: CHART_DEFAULTS.color, font: { size: 11 } }
+        },
         tooltip: {
           callbacks: {
-            label: ctx => `${fmt(ctx.raw)} installs`,
+            label: ctx => `${ctx.dataset.label}: ${fmt(ctx.raw)}`,
           }
         }
       },
@@ -143,9 +202,12 @@ function buildEcosystemCharts(data) {
 }
 
 function buildMoversTable(data, period) {
+  const { clusterSources } = _organicData;
+
   const entries = Object.entries(data.skills).map(([key, skill]) => {
     const change = computeChange(skill.installs, period);
-    return { key, ...skill, ...change };
+    const source = `${skill.owner}/${skill.repo}`;
+    return { key, ...skill, ...change, _isCluster: clusterSources.has(source) };
   });
 
   // Sort by absolute change descending, show top 20 gainers then top 10 losers
@@ -158,9 +220,10 @@ function buildMoversTable(data, period) {
     const changeClass = m.abs > 0 ? 'corr-positive' : m.abs < 0 ? 'corr-negative' : 'corr-neutral';
     const prefix = m.abs > 0 ? '+' : '';
     const spark = sparkline(m.installs);
-    return `<tr>
+    const clusterFlag = m._isCluster ? ' <span class="badge badge-cluster">cluster</span>' : '';
+    return `<tr${m._isCluster ? ' class="cluster-row"' : ''}>
       <td class="num">${i + 1}</td>
-      <td><a href="https://github.com/${esc(m.owner)}/${esc(m.repo)}" target="_blank" rel="noopener">${esc(m.owner)}/${esc(m.name)}</a></td>
+      <td><a href="https://github.com/${esc(m.owner)}/${esc(m.repo)}" target="_blank" rel="noopener">${esc(m.owner)}/${esc(m.name)}</a>${clusterFlag}</td>
       <td class="num">${fmt(m.latest)}</td>
       <td class="num ${changeClass}">${prefix}${fmt(m.abs)}</td>
       <td class="num ${changeClass}">${prefix}${m.pct.toFixed(1)}%</td>
@@ -287,6 +350,7 @@ function showSkillDetail(data, key) {
 async function init() {
   try {
     _data = await loadTimeseries();
+    _organicData = computeOrganicSeries(_data);
 
     const lastDate = _data.dates[_data.dates.length - 1];
     document.getElementById('data-date').textContent = `latest: ${lastDate}`;

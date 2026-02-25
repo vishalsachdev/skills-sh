@@ -1,4 +1,4 @@
-import { loadLatestSnapshot, enrichSkills, getPublisherStats, daysSince } from './data.js';
+import { loadLatestSnapshot, enrichSkills, getPublisherStats, daysSince, detectRepoClusters, CLUSTER_THRESHOLD } from './data.js';
 
 const CHART_COLORS = {
   accent: '#b45309',
@@ -291,18 +291,34 @@ function buildCorrelations(skills) {
 }
 
 function buildPublisherLeaderboard(skills) {
+  const clusters = detectRepoClusters(skills);
+
+  // Count cluster skills per owner
+  const ownerClusterCount = {};
+  for (const s of skills) {
+    if (clusters.has(s.source)) {
+      ownerClusterCount[s.owner] = (ownerClusterCount[s.owner] || 0) + 1;
+    }
+  }
+
   const pubs = getPublisherStats(skills)
     .sort((a, b) => b.totalInstalls - a.totalInstalls)
     .slice(0, 30);
 
   const tbody = document.getElementById('pub-body');
-  tbody.innerHTML = pubs.map((p, i) => `<tr>
+  tbody.innerHTML = pubs.map((p, i) => {
+    const clusterN = ownerClusterCount[p.owner] || 0;
+    const flag = clusterN > 0
+      ? ` <span class="badge badge-cluster" title="${clusterN} skills from repo clusters (${CLUSTER_THRESHOLD}+ skills per repo)">${clusterN} cluster</span>`
+      : '';
+    return `<tr${clusterN > 0 ? ' class="cluster-row"' : ''}>
     <td class="num">${i + 1}</td>
-    <td><a href="https://github.com/${esc(p.owner)}" target="_blank" rel="noopener">${esc(p.owner)}</a></td>
+    <td><a href="https://github.com/${esc(p.owner)}" target="_blank" rel="noopener">${esc(p.owner)}</a>${flag}</td>
     <td class="num">${p.skillCount}</td>
     <td class="num">${fmt(p.totalInstalls)}</td>
     <td class="num">${fmt(p.totalStars)}</td>
-  </tr>`).join('');
+  </tr>`;
+  }).join('');
 }
 
 async function init() {

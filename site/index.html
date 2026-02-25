@@ -27,6 +27,8 @@
       <div class="stat-card"><div class="stat-value" id="stat-active">—</div><div class="stat-label">Active (7d)</div></div>
     </div>
 
+    <div class="cluster-notice" id="cluster-notice" style="display:none"></div>
+
     <div class="toolbar">
       <input type="search" id="search" placeholder="Search skills, owners...">
       <select id="filter-lang">
@@ -40,6 +42,9 @@
       </select>
       <label>
         <input type="checkbox" id="filter-min-installs"> Min 10 installs
+      </label>
+      <label>
+        <input type="checkbox" id="filter-clusters" checked> Hide repo clusters
       </label>
       <div class="result-count" id="result-count"></div>
     </div>

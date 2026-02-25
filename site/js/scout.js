@@ -1,4 +1,4 @@
-import { loadLatestSnapshot, enrichSkills, getUniqueLanguages, getPublisherStats } from './data.js';
+import { loadLatestSnapshot, enrichSkills, getUniqueLanguages, getPublisherStats, getClusterStats } from './data.js';
 
 let allSkills = [];
 let sortCol = 'installs';
@@ -6,6 +6,16 @@ let sortDir = 'desc';
 
 function fmt(n) {
   return n == null ? '—' : n.toLocaleString();
+}
+
+function updateHeroStats(skills) {
+  const pubs = new Set(skills.map(s => s.owner));
+  const act = skills.filter(s => s._freshness.label === 'Active').length;
+  const inst = skills.reduce((sum, s) => sum + (s.installs || 0), 0);
+  document.getElementById('stat-skills').textContent = fmt(skills.length);
+  document.getElementById('stat-installs').textContent = fmt(inst);
+  document.getElementById('stat-publishers').textContent = fmt(pubs.size);
+  document.getElementById('stat-active').textContent = fmt(act);
 }
 
 function renderTable(skills) {
@@ -40,7 +50,10 @@ function getFiltered() {
   const fresh = document.getElementById('filter-freshness').value;
   const minInstalls = document.getElementById('filter-min-installs').checked;
 
+  const hideClusters = document.getElementById('filter-clusters').checked;
+
   let filtered = allSkills.filter(s => {
+    if (hideClusters && s._isCluster) return false;
     if (q) {
       const hay = `${s.name} ${s.owner} ${s.source} ${(s.github||{}).description||''}`.toLowerCase();
       if (!hay.includes(q)) return false;
@@ -96,16 +109,26 @@ async function init() {
     const snapshot = await loadLatestSnapshot();
     allSkills = enrichSkills(snapshot);
 
-    // Hero stats
-    const publishers = new Set(allSkills.map(s => s.owner));
-    const active = allSkills.filter(s => s._freshness.label === 'Active').length;
-    const totalInstalls = allSkills.reduce((sum, s) => sum + (s.installs || 0), 0);
+    // Cluster detection
+    const cs = getClusterStats(allSkills);
 
-    document.getElementById('stat-skills').textContent = fmt(allSkills.length);
-    document.getElementById('stat-installs').textContent = fmt(totalInstalls);
-    document.getElementById('stat-publishers').textContent = fmt(publishers.size);
-    document.getElementById('stat-active').textContent = fmt(active);
+    // Hero stats — show organic numbers by default
+    updateHeroStats(allSkills.filter(s => !s._isCluster));
     document.getElementById('data-date').textContent = `snapshot: ${snapshot.date}`;
+
+    // Cluster notice banner
+    if (cs.clusterCount > 0) {
+      const totalInstalls = cs.clusterInstalls + cs.organicInstalls;
+      const pct = totalInstalls > 0 ? Math.round(cs.clusterInstalls / totalInstalls * 100) : 0;
+      const repos = Object.entries(cs.repos)
+        .sort((a, b) => b[1].count - a[1].count)
+        .map(([src, r]) => `<strong>${esc(src)}</strong> (${r.count} skills, ${fmt(r.installs)} installs)`);
+      document.getElementById('cluster-notice').innerHTML =
+        `<strong>${cs.clusterCount} skills</strong> from ${Object.keys(cs.repos).length} repo cluster(s) hidden — ` +
+        `${fmt(cs.clusterInstalls)} installs (${pct}% of total). ` +
+        repos.join(', ') + '.';
+      document.getElementById('cluster-notice').style.display = 'block';
+    }
 
     // Language filter
     const langSelect = document.getElementById('filter-lang');
@@ -128,6 +151,12 @@ async function init() {
     document.getElementById('filter-lang').addEventListener('change', () => renderTable(getFiltered()));
     document.getElementById('filter-freshness').addEventListener('change', () => renderTable(getFiltered()));
     document.getElementById('filter-min-installs').addEventListener('change', () => renderTable(getFiltered()));
+    document.getElementById('filter-clusters').addEventListener('change', () => {
+      const hide = document.getElementById('filter-clusters').checked;
+      updateHeroStats(hide ? allSkills.filter(s => !s._isCluster) : allSkills);
+      document.getElementById('cluster-notice').style.display = hide && cs.clusterCount > 0 ? 'block' : 'none';
+      renderTable(getFiltered());
+    });
 
     document.querySelectorAll('#skills-table thead th.sortable').forEach(th => {
       th.addEventListener('click', () => updateSort(th.dataset.col));
