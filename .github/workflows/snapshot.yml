@@ -3,7 +3,10 @@ name: Daily Skills Snapshot
 on:
   workflow_dispatch:
   schedule:
+    # Run 3x/day so missed cron triggers don't cause gaps
     - cron: '15 7 * * *'
+    - cron: '15 13 * * *'
+    - cron: '15 19 * * *'
 
 permissions:
   contents: write
@@ -31,12 +34,26 @@ jobs:
           fi
           gh --version
 
+      - name: Check if today's snapshot exists
+        id: check
+        run: |
+          TODAY=$(date -u +%Y-%m-%d)
+          if [ -f "snapshots/${TODAY}.json" ]; then
+            echo "skip=true" >> $GITHUB_OUTPUT
+            echo "Snapshot for $TODAY already exists, skipping."
+          else
+            echo "skip=false" >> $GITHUB_OUTPUT
+            echo "No snapshot for $TODAY, will generate."
+          fi
+
       - name: Generate snapshot
+        if: steps.check.outputs.skip != 'true'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: python snapshot.py
 
       - name: Generate daily trend report
+        if: steps.check.outputs.skip != 'true'
         run: python generate_daily_report.py
 
       - name: Commit snapshot and daily report

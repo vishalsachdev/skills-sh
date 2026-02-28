@@ -6,8 +6,11 @@ Output: snapshots/YYYY-MM-DD.json
 """
 
 import json
+import os
 import re
 import subprocess
+import urllib.request
+import urllib.error
 from datetime import datetime
 from pathlib import Path
 
@@ -72,7 +75,8 @@ def parse_skills_from_html(html: str) -> list[dict]:
 
 
 def get_github_metadata(owner: str, repo: str) -> dict:
-    """Fetch GitHub repo metadata via gh CLI."""
+    """Fetch GitHub repo metadata via gh CLI, falling back to REST API."""
+    # Try gh CLI first
     try:
         result = subprocess.run(
             [
@@ -96,8 +100,33 @@ def get_github_metadata(owner: str, repo: str) -> dict:
         )
         if result.returncode == 0:
             return json.loads(result.stdout)
-    except (subprocess.TimeoutExpired, json.JSONDecodeError):
+    except (subprocess.TimeoutExpired, json.JSONDecodeError, FileNotFoundError):
         pass
+
+    # Fallback: use GitHub REST API directly
+    try:
+        url = f"https://api.github.com/repos/{owner}/{repo}"
+        req = urllib.request.Request(url, headers={"Accept": "application/vnd.github+json"})
+        token = os.environ.get("GH_TOKEN") or os.environ.get("GITHUB_TOKEN")
+        if token:
+            req.add_header("Authorization", f"Bearer {token}")
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            data = json.loads(resp.read().decode())
+        return {
+            "stars": data.get("stargazers_count"),
+            "forks": data.get("forks_count"),
+            "open_issues": data.get("open_issues_count"),
+            "created_at": data.get("created_at"),
+            "updated_at": data.get("updated_at"),
+            "pushed_at": data.get("pushed_at"),
+            "language": data.get("language"),
+            "license": (data.get("license") or {}).get("spdx_id"),
+            "description": data.get("description"),
+            "topics": data.get("topics"),
+        }
+    except (urllib.error.URLError, json.JSONDecodeError, OSError):
+        pass
+
     return {}
 
 
