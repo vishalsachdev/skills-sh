@@ -5,6 +5,7 @@
 
 let _cache = null;
 let _tsCache = null;
+let _catCache = null;
 
 export async function loadTimeseries() {
   if (_tsCache) return _tsCache;
@@ -22,6 +23,21 @@ export async function loadTimeseries() {
   }
 
   throw new Error('Could not load timeseries data from any known path.');
+}
+
+export async function loadCategories() {
+  if (_catCache) return _catCache;
+  const paths = ['data/categories.json', '../analysis/categories.json'];
+  for (const path of paths) {
+    try {
+      const resp = await fetch(path);
+      if (resp.ok) {
+        _catCache = await resp.json();
+        return _catCache;
+      }
+    } catch {}
+  }
+  throw new Error('Could not load categories data from any known path.');
 }
 
 export async function loadLatestSnapshot() {

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>skills.sh — Categories</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <nav class="topnav">
+    <a class="topnav-brand" href="index.html">skills.sh<span>/dash</span></a>
+    <div class="topnav-links">
+      <a href="index.html">Scout</a>
+      <a href="publisher.html">Publisher</a>
+      <a href="compare.html">Compare</a>
+      <a href="trends.html">Trends</a>
+      <a href="categories.html" class="active">Categories</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="topnav-meta" id="data-date"></div>
+  </nav>
+
+  <div class="container">
+    <div class="hero-stats" id="hero-stats">
+      <div class="stat-card"><div class="stat-value" id="stat-categories">—</div><div class="stat-label">Categories</div></div>
+      <div class="stat-card"><div class="stat-value" id="stat-largest">—</div><div class="stat-label">Largest Category</div></div>
+      <div class="stat-card"><div class="stat-value" id="stat-classified">—</div><div class="stat-label">Skills Classified</div></div>
+    </div>
+
+    <h2 class="section-title">Installs by Category</h2>
+
+    <div class="chart-card" style="margin-bottom: 32px">
+      <h3>Total Installs per Category</h3>
+      <canvas id="chart-category-dist"></canvas>
+    </div>
+
+    <h2 class="section-title">All Categories <span>— click to expand</span></h2>
+
+    <div class="table-wrap">
+      <table id="cat-table">
+        <thead>
+          <tr>
+            <th>Category</th>
+            <th class="num">Skills</th>
+            <th class="num">Total Installs</th>
+            <th>Top Skills</th>
+          </tr>
+        </thead>
+        <tbody id="cat-body"></tbody>
+      </table>
+    </div>
+
+    <div class="loading" id="loading">Loading categories data…</div>
+  </div>
+
+  <footer class="site-footer">
+    Data from <a href="https://skills.sh/trending">skills.sh/trending</a> · Updated daily via GitHub Actions
+  </footer>
+
+  <script type="module" src="js/categories.js"></script>
+  <!-- Cloudflare Web Analytics -->
+  <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "f6e8d77284b0466eb2ca753f03d64ec0"}'></script>
+</body>
+</html>
