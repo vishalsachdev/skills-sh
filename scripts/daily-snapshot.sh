@@ -31,12 +31,18 @@ python3 snapshot.py
 python3 generate_daily_report.py
 python3 generate_timeseries.py
 
+# Classify skills into categories (uses Gemini API, cached)
+if [ -f ".env" ]; then
+    source .env
+    python3 classify_skills.py
+fi
+
 # Prepare site data
 mkdir -p site/data
 cp "snapshots/${TODAY}.json" site/data/latest.json
 
 # Commit to main
-git add snapshots/ analysis/daily/
+git add snapshots/ analysis/
 if ! git diff --staged --quiet; then
     git commit -m "chore: update skills snapshot"
     git push
@@ -46,6 +52,7 @@ fi
 git checkout gh-pages
 cp site/data/latest.json data/latest.json
 cp site/data/timeseries.json data/timeseries.json
+cp analysis/categories.json data/categories.json 2>/dev/null || true
 git add data/
 if ! git diff --staged --quiet; then
     git commit -m "Update data: ${TODAY}"
