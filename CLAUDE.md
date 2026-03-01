@@ -18,7 +18,7 @@ Disable: `launchctl unload ~/Library/LaunchAgents/com.vishal.skills-snapshot.pli
 
 ## Current Focus
 
-- [ ] Revisit semantic analysis of top skills (14 snapshots collected, sufficient data now)
+- [x] Revisit semantic analysis of top skills (14 snapshots collected, sufficient data now)
 - [ ] Harden parsing and add schema checks
 - [ ] Document data dictionary/codebook
 - [ ] Re-enable GitHub Actions when budget allows
@@ -56,9 +56,19 @@ Disable: `launchctl unload ~/Library/LaunchAgents/com.vishal.skills-snapshot.pli
 - Integrate hot/all-time views if they provide different signals
 - Add README quality scoring (length, badges, examples)
 - Track skill deletions/removals over time
-- Semantic analysis of top skills — categorize by intent (dev tooling, workflow, AI wrappers, etc.) and surface patterns; wait for sufficient daily snapshots before choosing approach
+- ~~Semantic analysis of top skills~~ — Done (classify_skills.py + categories.html)
 
 ## Session Log
+
+### 2026-03-01 (session 3)
+- Completed: Semantic analysis — `classify_skills.py` classifies 600 skills into 12 categories via Gemini 2.5 Flash with caching
+- Completed: New Categories dashboard page (`categories.html` + `categories.js`) — horizontal bar chart + category table
+- Completed: Updated `data.js` with `loadCategories()`, nav updated on all 6 pages
+- Completed: Integrated classification into `daily-snapshot.sh` pipeline
+- Completed: Deployed to gh-pages — live at vishalsachdev.github.io/skills-sh/categories.html
+- Note: Top categories — AI & ML (144), Developer Workflow (131), Documentation & Writing (72), Frontend & UI (53)
+- Note: Design doc at `docs/plans/2026-03-01-semantic-analysis-design.md`
+- Next: Harden parsing + schema checks, data dictionary, Phase 2 baseline charts, Phase 3 trait features
 
 ### 2026-03-01 (session 2)
 - Completed: Added Cloudflare Web Analytics to all 5 dashboard pages (single beacon token for vishalsachdev.github.io)
