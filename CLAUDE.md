@@ -10,17 +10,11 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 
 ## Manual Deploy (while Actions is disabled)
 
-Run at the start of each session:
-```bash
-python3 snapshot.py                          # capture today's snapshot
-python3 generate_timeseries.py               # regenerate timeseries
-python3 generate_daily_report.py             # generate daily report
-mkdir -p site/data && cp snapshots/$(date +%Y-%m-%d).json site/data/latest.json
-git add snapshots/ analysis/daily/ && git commit -m "chore: update skills snapshot" && git push
-# Deploy to Pages:
-git checkout gh-pages && cp /Users/vishal/code/skills-sh/site/data/latest.json data/latest.json && cp /Users/vishal/code/skills-sh/site/data/timeseries.json data/timeseries.json && git add data/ && git commit -m "Update data: $(date +%Y-%m-%d)" && git push origin gh-pages && git checkout main
-```
+Automated via launchd (`com.vishal.skills-snapshot`) — runs daily at 8am local.
+Script: `scripts/daily-snapshot.sh`. Logs: `/tmp/skills-snapshot.log`.
 Pages serves from `gh-pages` branch (legacy mode, `.nojekyll`). Feb 27 is permanently missing.
+Manual run: `launchctl start com.vishal.skills-snapshot` or `bash scripts/daily-snapshot.sh`
+Disable: `launchctl unload ~/Library/LaunchAgents/com.vishal.skills-snapshot.plist`
 
 ## Current Focus
 
@@ -65,6 +59,13 @@ Pages serves from `gh-pages` branch (legacy mode, `.nojekyll`). Feb 27 is perman
 - Semantic analysis of top skills — categorize by intent (dev tooling, workflow, AI wrappers, etc.) and surface patterns; wait for sufficient daily snapshots before choosing approach
 
 ## Session Log
+
+### 2026-03-01
+- Completed: Caught up on snapshots — 14 of 15 days captured (Feb 15–Mar 1, only Feb 27 missing due to Actions budget)
+- Completed: Switched Pages deploy from Actions to `gh-pages` branch (legacy + `.nojekyll`) — site live with Mar 1 data
+- Completed: Set up launchd job (`com.vishal.skills-snapshot`) for daily local automation at 8am
+- Note: Install growth 87K → 535K (6x in 2 weeks), 1,635 unique skills across snapshots
+- Next: Re-enable Actions when budget allows, semantic analysis of top skills, Phase 2 baseline charts
 
 ### 2026-02-20
 - Reviewed PR #1 (trend analysis scripts + daily report generator)
