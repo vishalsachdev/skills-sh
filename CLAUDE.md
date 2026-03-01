@@ -60,6 +60,13 @@ Disable: `launchctl unload ~/Library/LaunchAgents/com.vishal.skills-snapshot.pli
 
 ## Session Log
 
+### 2026-03-01 (session 2)
+- Completed: Added Cloudflare Web Analytics to all 5 dashboard pages (single beacon token for vishalsachdev.github.io)
+- Completed: Deployed to gh-pages
+- Completed: Updated global CLAUDE.md with GitHub Pages analytics reminder + token for cross-repo reuse
+- Note: GitHub repo traffic (last 14 days): 19 views, 6 unique visitors — mostly from LinkedIn referrals
+- Next: Semantic analysis of top skills, harden parsing, Phase 2 baseline charts
+
 ### 2026-03-01
 - Completed: Caught up on snapshots — 14 of 15 days captured (Feb 15–Mar 1, only Feb 27 missing due to Actions budget)
 - Completed: Switched Pages deploy from Actions to `gh-pages` branch (legacy + `.nojekyll`) — site live with Mar 1 data
