@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>skills.sh — Compare Skills</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+  <nav class="topnav">
+    <a class="topnav-brand" href="index.html">skills.sh<span>/dash</span></a>
+    <div class="topnav-links">
+      <a href="index.html">Scout</a>
+      <a href="publisher.html">Publisher</a>
+      <a href="compare.html" class="active">Compare</a>
+      <a href="trends.html">Trends</a>
+      <a href="about.html">About</a>
+    </div>
+    <div class="topnav-meta" id="data-date"></div>
+  </nav>
+
+  <div class="container">
+    <h2 class="section-title">Compare Skills <span>— select 2-4 skills</span></h2>
+
+    <div class="compare-picker">
+      <div class="search-wrapper">
+        <input type="search" id="skill-search" placeholder="Search to add a skill..." autocomplete="off">
+        <div class="suggestions" id="suggestions" style="display:none"></div>
+      </div>
+      <div class="selected-skills" id="selected-skills"></div>
+    </div>
+
+    <div class="empty-state" id="empty-state">Search and select 2-4 skills above to compare them side-by-side.</div>
+
+    <div id="compare-content" style="display:none">
+      <div class="radar-wrap">
+        <canvas id="radar-chart"></canvas>
+      </div>
+
+      <div class="table-wrap" style="margin-bottom: 32px">
+        <table>
+          <thead id="compare-head"></thead>
+          <tbody id="compare-body"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="loading" id="loading">Loading snapshot data…</div>
+  </div>
+
+  <footer class="site-footer">
+    Data from <a href="https://skills.sh/trending">skills.sh/trending</a> · Updated daily via GitHub Actions
+  </footer>
+
+  <script type="module" src="js/compare.js"></script>
+</body>
+</html>

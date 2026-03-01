@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>skills.sh — About This Dashboard</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="topnav">
+    <a class="topnav-brand" href="index.html">skills.sh<span>/dash</span></a>
+    <div class="topnav-links">
+      <a href="index.html">Scout</a>
+      <a href="publisher.html">Publisher</a>
+      <a href="compare.html">Compare</a>
+      <a href="trends.html">Trends</a>
+      <a href="about.html" class="active">About</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    <div class="about-content">
+      <h1>Why this dashboard exists</h1>
+      <p class="lead">
+        The <a href="https://skills.sh">skills.sh</a> ecosystem is growing fast &mdash; hundreds of
+        community-built skills for Claude Code, Cursor, and other AI coding agents. But there's no easy
+        way to tell which skills are worth installing. This dashboard turns raw ecosystem data into
+        actionable signals for three different audiences.
+      </p>
+
+      <h2>What you're looking at</h2>
+      <p>
+        Every day, a GitHub Actions workflow scrapes the
+        <a href="https://skills.sh/trending">skills.sh trending page</a>, captures install counts for
+        every listed skill, and enriches each one with GitHub metadata &mdash; stars, forks, issues,
+        language, license, topics, and push dates. That daily snapshot is the single data source behind
+        every chart, table, and score on this site.
+      </p>
+      <p>
+        The data is publicly available in the
+        <a href="https://github.com/vishalsachdev/skills-sh/tree/main/snapshots">snapshots/</a>
+        directory as timestamped JSON files. Nothing is hidden or curated &mdash; what the scraper
+        finds is what you see.
+      </p>
+
+      <h2>Three pages, three audiences</h2>
+
+      <div class="page-card">
+        <h3>Scout Dashboard</h3>
+        <blockquote>
+          "As a solo developer building side projects with Claude Code, I want to quickly find
+          high-quality, well-maintained skills so I can avoid wasting time on abandoned or
+          low-quality ones."
+        </blockquote>
+        <p>
+          <strong><a href="index.html">The Scout page</a></strong> is a sortable, filterable leaderboard
+          of every skill in the ecosystem. Each skill gets a <strong>Health Score</strong> (0&ndash;100)
+          and a <strong>Freshness badge</strong> so you can spot well-maintained skills at a glance.
+          Filter by language, minimum installs, or freshness level. Search by name, owner, or description.
+        </p>
+      </div>
+
+      <div class="page-card">
+        <h3>Publisher Insights</h3>
+        <blockquote>
+          "As a skill author, I want to understand what traits drive adoption so I can optimize my
+          skill's metadata, documentation, and repo health to grow installs."
+        </blockquote>
+        <p>
+          <strong><a href="publisher.html">The Publisher page</a></strong> shows the shape of the ecosystem
+          through four charts: install distribution (the power-law curve), language breakdown, stars vs.
+          installs (they don't correlate the way you'd expect), and repo age vs. installs. A trait
+          correlation table uses Spearman rank correlation to answer "what actually predicts high installs?"
+          A publisher leaderboard shows who's leading in total installs and skill count.
+        </p>
+      </div>
+
+      <div class="page-card">
+        <h3>Evaluator Compare</h3>
+        <blockquote>
+          "As a team lead evaluating skills for my engineering team, I want to compare skills side-by-side
+          on maintenance, popularity, and risk signals so I can make informed adoption decisions."
+        </blockquote>
+        <p>
+          <strong><a href="compare.html">The Compare page</a></strong> lets you search and select 2&ndash;4
+          skills, then see them side-by-side in a radar chart and detailed comparison table. Risk flags
+          surface concerns like missing licenses, stale repos, and high issue ratios so you can make
+          informed decisions before adding a skill to your team's workflow.
+        </p>
+      </div>
+
+      <h2>How the Health Score works</h2>
+      <p>
+        The Health Score is a weighted composite of three signal groups:
+      </p>
+      <ul>
+        <li><strong>Recency (40%)</strong> &mdash; How recently was the repo pushed to?
+          Active (&lt;7d) scores 100, Recent (&lt;30d) scores 70, aging repos score less.</li>
+        <li><strong>Community (30%)</strong> &mdash; Log-normalized stars and forks relative to the
+          ecosystem max, plus a license bonus. Having a license signals intentional open-source practice.</li>
+        <li><strong>Documentation (30%)</strong> &mdash; Whether the repo has a meaningful description
+          (&gt;20 chars), topic tags, and relative install traction. These proxy for discoverability
+          and author investment.</li>
+      </ul>
+      <p>
+        The score is designed to be directionally useful, not definitive. A score of 80 doesn't mean a
+        skill is "good" &mdash; it means it has strong signals across the dimensions we can measure from
+        public metadata alone. Always read the actual skill code before installing.
+      </p>
+
+      <h2>Research context</h2>
+      <p>
+        This dashboard is part of a broader longitudinal study of the skills.sh ecosystem, tracking
+        four research questions:
+      </p>
+      <ul>
+        <li><strong>Creation:</strong> What kinds of skills are published, by whom, and at what rate?</li>
+        <li><strong>Adoption:</strong> Which skills are installed over time, and how quickly do they grow?</li>
+        <li><strong>Diffusion:</strong> Which skill/repo traits are associated with faster adoption?</li>
+        <li><strong>Longevity:</strong> Which skills sustain usage versus spike and decay?</li>
+      </ul>
+      <p>
+        Daily snapshots enable time-series analysis that a single scrape cannot. As the dataset grows,
+        we'll add trend charts and diffusion models to the dashboard.
+      </p>
+
+      <h2>Data freshness</h2>
+      <p>
+        Snapshots are collected daily at 07:15 UTC via GitHub Actions. The dashboard always loads the
+        most recent snapshot. The date shown in the top-right corner of each page tells you exactly
+        which snapshot you're viewing.
+      </p>
+
+      <h2>Source code</h2>
+      <p>
+        Everything is open source:
+        <a href="https://github.com/vishalsachdev/skills-sh">github.com/vishalsachdev/skills-sh</a>.
+        The scraper is a single Python script, the dashboard is vanilla HTML/CSS/JS with Chart.js,
+        and there is no build step. PRs welcome.
+      </p>
+    </div>
+  </div>
+
+  <footer class="site-footer">
+    Data from <a href="https://skills.sh/trending">skills.sh/trending</a> &middot; Updated daily via GitHub Actions
+  </footer>
+</body>
+</html>
