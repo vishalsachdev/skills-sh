@@ -26,7 +26,7 @@
         The <a href="https://skills.sh">skills.sh</a> ecosystem is growing fast &mdash; hundreds of
         community-built skills for Claude Code, Cursor, and other AI coding agents. But there's no easy
         way to tell which skills are worth installing. This dashboard turns raw ecosystem data into
-        actionable signals for three different audiences.
+        actionable signals across six dashboard pages.
       </p>
 
       <h2>What you're looking at</h2>
@@ -44,7 +44,7 @@
         finds is what you see.
       </p>
 
-      <h2>Three pages, three audiences</h2>
+      <h2>Six pages, multiple audiences</h2>
 
       <div class="page-card">
         <h3>Scout Dashboard</h3>
@@ -90,6 +90,35 @@
         </p>
       </div>
 
+      <div class="page-card">
+        <h3>Trends</h3>
+        <blockquote>
+          "I want to see which skills are gaining momentum and which are fading, so I can
+          spot emerging tools early."
+        </blockquote>
+        <p>
+          <strong><a href="trends.html">The Trends page</a></strong> tracks ecosystem growth over time
+          using daily snapshots. An install growth chart shows total ecosystem installs, a top movers
+          table highlights skills with the biggest install changes (toggle between total period and last
+          day), and a skill trend lookup lets you search any skill to see its install history with sparklines.
+        </p>
+      </div>
+
+      <div class="page-card">
+        <h3>Categories</h3>
+        <blockquote>
+          "I want to understand what kinds of skills exist &mdash; how many are AI tools vs. frontend
+          helpers vs. DevOps automation &mdash; so I can find skills by intent, not just popularity."
+        </blockquote>
+        <p>
+          <strong><a href="categories.html">The Categories page</a></strong> classifies all 600+ skills
+          into 12 semantic categories (AI &amp; ML, Developer Workflow, Frontend &amp; UI, Cloud &amp;
+          Infrastructure, and more) using Gemini Flash. A horizontal bar chart shows installs per category,
+          and an expandable table lists the top skills within each category. Classifications are cached and
+          re-run automatically when new skills appear.
+        </p>
+      </div>
+
       <h2>How the Health Score works</h2>
       <p>
         The Health Score is a weighted composite of three signal groups:
@@ -121,15 +150,16 @@
         <li><strong>Longevity:</strong> Which skills sustain usage versus spike and decay?</li>
       </ul>
       <p>
-        Daily snapshots enable time-series analysis that a single scrape cannot. As the dataset grows,
-        we'll add trend charts and diffusion models to the dashboard.
+        Daily snapshots enable time-series analysis that a single scrape cannot. The Trends page already
+        tracks install growth and top movers, and the Categories page provides semantic classification.
+        Next up: diffusion modeling to identify which traits predict faster adoption.
       </p>
 
       <h2>Data freshness</h2>
       <p>
-        Snapshots are collected daily at 07:15 UTC via GitHub Actions. The dashboard always loads the
-        most recent snapshot. The date shown in the top-right corner of each page tells you exactly
-        which snapshot you're viewing.
+        Snapshots are collected daily. Each snapshot captures install counts and GitHub metadata
+        for all trending skills. The dashboard always loads the most recent snapshot. The date
+        shown in the top-right corner of each page tells you exactly which snapshot you're viewing.
       </p>
 
       <h2>Source code</h2>
