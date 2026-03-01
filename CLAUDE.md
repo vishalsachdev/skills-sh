@@ -8,12 +8,26 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 3. Diffusion: Which skill/repo traits are associated with faster adoption?
 4. Longevity: Which skills sustain usage versus spike and decay?
 
+## Manual Deploy (while Actions is disabled)
+
+Run at the start of each session:
+```bash
+python3 snapshot.py                          # capture today's snapshot
+python3 generate_timeseries.py               # regenerate timeseries
+python3 generate_daily_report.py             # generate daily report
+mkdir -p site/data && cp snapshots/$(date +%Y-%m-%d).json site/data/latest.json
+git add snapshots/ analysis/daily/ && git commit -m "chore: update skills snapshot" && git push
+# Deploy to Pages:
+git checkout gh-pages && cp /Users/vishal/code/skills-sh/site/data/latest.json data/latest.json && cp /Users/vishal/code/skills-sh/site/data/timeseries.json data/timeseries.json && git add data/ && git commit -m "Update data: $(date +%Y-%m-%d)" && git push origin gh-pages && git checkout main
+```
+Pages serves from `gh-pages` branch (legacy mode, `.nojekyll`). Feb 27 is permanently missing.
+
 ## Current Focus
 
-- [ ] Validate daily workflow success rate (timeseries generation + Pages deploy)
-- [ ] Revisit semantic analysis of top skills after 2026-02-22 (need ~1 week of daily snapshots first)
+- [ ] Revisit semantic analysis of top skills (14 snapshots collected, sufficient data now)
 - [ ] Harden parsing and add schema checks
 - [ ] Document data dictionary/codebook
+- [ ] Re-enable GitHub Actions when budget allows
 
 ## Roadmap
 
