@@ -68,6 +68,7 @@ Disable: `launchctl unload ~/Library/LaunchAgents/com.vishal.skills-snapshot.pli
 - Completed: Deployed to gh-pages — live at vishalsachdev.github.io/skills-sh/categories.html
 - Note: Top categories — AI & ML (144), Developer Workflow (131), Documentation & Writing (72), Frontend & UI (53)
 - Note: Design doc at `docs/plans/2026-03-01-semantic-analysis-design.md`
+- Completed: Updated README (6 pages, pipeline, tech stack) and about.html (Trends + Categories sections)
 - Next: Harden parsing + schema checks, data dictionary, Phase 2 baseline charts, Phase 3 trait features
 
 ### 2026-03-01 (session 2)
