@@ -1,5 +1,5 @@
 {
-  "date": "2026-04-07",
+  "date": "2026-04-08",
   "model": "gemini-2.5-flash",
   "taxonomy_version": 1,
   "taxonomy": [
@@ -19,1228 +19,1234 @@
   "total_classified": 600,
   "categories": [
     {
+      "name": "soultrace",
+      "source": "soultrace-ai/soultrace-skill",
+      "category": "AI & ML",
+      "installs": 26132
+    },
+    {
       "name": "find-skills",
       "source": "vercel-labs/skills",
       "category": "Developer Workflow",
-      "installs": 16979
+      "installs": 18360
     },
     {
       "name": "microsoft-foundry",
       "source": "microsoft/azure-skills",
       "category": "Cloud & Infrastructure",
-      "installs": 6072
+      "installs": 6669
     },
     {
       "name": "azure-deploy",
       "source": "microsoft/azure-skills",
       "category": "DevOps & CI/CD",
-      "installs": 5867
+      "installs": 6403
     },
     {
       "name": "azure-ai",
       "source": "microsoft/azure-skills",
       "category": "AI & ML",
-      "installs": 5864
-    },
-    {
-      "name": "azure-hosted-copilot-sdk",
-      "source": "microsoft/azure-skills",
-      "category": "AI & ML",
-      "installs": 5863
+      "installs": 6403
     },
     {
       "name": "azure-prepare",
       "source": "microsoft/azure-skills",
       "category": "Developer Workflow",
-      "installs": 5861
-    },
-    {
-      "name": "azure-compliance",
-      "source": "microsoft/azure-skills",
-      "category": "Security & Auth",
-      "installs": 5859
-    },
-    {
-      "name": "azure-compute",
-      "source": "microsoft/azure-skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 5859
-    },
-    {
-      "name": "azure-diagnostics",
-      "source": "microsoft/azure-skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 5859
-    },
-    {
-      "name": "azure-resource-lookup",
-      "source": "microsoft/azure-skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 5859
-    },
-    {
-      "name": "azure-validate",
-      "source": "microsoft/azure-skills",
-      "category": "DevOps & CI/CD",
-      "installs": 5858
-    },
-    {
-      "name": "entra-app-registration",
-      "source": "microsoft/azure-skills",
-      "category": "Security & Auth",
-      "installs": 5857
-    },
-    {
-      "name": "azure-messaging",
-      "source": "microsoft/azure-skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 5857
+      "installs": 6399
     },
     {
       "name": "azure-rbac",
       "source": "microsoft/azure-skills",
       "category": "Security & Auth",
-      "installs": 5857
+      "installs": 6398
+    },
+    {
+      "name": "azure-hosted-copilot-sdk",
+      "source": "microsoft/azure-skills",
+      "category": "AI & ML",
+      "installs": 6397
     },
     {
       "name": "azure-storage",
       "source": "microsoft/azure-skills",
       "category": "Cloud & Infrastructure",
-      "installs": 5856
+      "installs": 6397
+    },
+    {
+      "name": "entra-app-registration",
+      "source": "microsoft/azure-skills",
+      "category": "Security & Auth",
+      "installs": 6397
+    },
+    {
+      "name": "azure-resource-lookup",
+      "source": "microsoft/azure-skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 6396
+    },
+    {
+      "name": "azure-validate",
+      "source": "microsoft/azure-skills",
+      "category": "DevOps & CI/CD",
+      "installs": 6395
+    },
+    {
+      "name": "azure-diagnostics",
+      "source": "microsoft/azure-skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 6395
     },
     {
       "name": "appinsights-instrumentation",
       "source": "microsoft/azure-skills",
       "category": "DevOps & CI/CD",
-      "installs": 5856
-    },
-    {
-      "name": "azure-aigateway",
-      "source": "microsoft/azure-skills",
-      "category": "AI & ML",
-      "installs": 5855
-    },
-    {
-      "name": "azure-kusto",
-      "source": "microsoft/azure-skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 5854
+      "installs": 6395
     },
     {
       "name": "azure-resource-visualizer",
       "source": "microsoft/azure-skills",
       "category": "Cloud & Infrastructure",
-      "installs": 5853
+      "installs": 6394
+    },
+    {
+      "name": "azure-compute",
+      "source": "microsoft/azure-skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 6394
+    },
+    {
+      "name": "azure-compliance",
+      "source": "microsoft/azure-skills",
+      "category": "Security & Auth",
+      "installs": 6393
+    },
+    {
+      "name": "azure-aigateway",
+      "source": "microsoft/azure-skills",
+      "category": "AI & ML",
+      "installs": 6393
+    },
+    {
+      "name": "azure-kusto",
+      "source": "microsoft/azure-skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 6393
+    },
+    {
+      "name": "azure-messaging",
+      "source": "microsoft/azure-skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 6392
     },
     {
       "name": "azure-cloud-migrate",
       "source": "microsoft/azure-skills",
       "category": "Cloud & Infrastructure",
-      "installs": 5849
+      "installs": 6383
     },
     {
       "name": "azure-quotas",
       "source": "microsoft/azure-skills",
       "category": "Cloud & Infrastructure",
-      "installs": 5843
+      "installs": 6377
     },
     {
       "name": "azure-upgrade",
       "source": "microsoft/azure-skills",
       "category": "Cloud & Infrastructure",
-      "installs": 5838
+      "installs": 6369
     },
     {
       "name": "azure-enterprise-infra-planner",
       "source": "microsoft/azure-skills",
       "category": "Cloud & Infrastructure",
-      "installs": 5800
+      "installs": 6315
     },
     {
       "name": "azure-kubernetes",
       "source": "microsoft/azure-skills",
       "category": "Cloud & Infrastructure",
-      "installs": 5775
+      "installs": 6295
     },
     {
       "name": "azure-cost",
       "source": "microsoft/azure-skills",
       "category": "Cloud & Infrastructure",
-      "installs": 5575
+      "installs": 6115
     },
     {
       "name": "frontend-design",
       "source": "anthropics/skills",
       "category": "Frontend & UI",
-      "installs": 5060
+      "installs": 4936
     },
     {
       "name": "vercel-react-best-practices",
       "source": "vercel-labs/agent-skills",
       "category": "Developer Workflow",
-      "installs": 3818
-    },
-    {
-      "name": "soultrace",
-      "source": "soultrace-ai/soultrace-skill",
-      "category": "AI & ML",
-      "installs": 3376
-    },
-    {
-      "name": "agent-browser",
-      "source": "vercel-labs/agent-browser",
-      "category": "Browser & Automation",
-      "installs": 3318
-    },
-    {
-      "name": "remotion-best-practices",
-      "source": "remotion-dev/skills",
-      "category": "Developer Workflow",
-      "installs": 3298
-    },
-    {
-      "name": "lark-base",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3175
-    },
-    {
-      "name": "lark-im",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3162
-    },
-    {
-      "name": "lark-calendar",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3160
-    },
-    {
-      "name": "lark-doc",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3160
-    },
-    {
-      "name": "lark-shared",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3150
-    },
-    {
-      "name": "lark-task",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3147
-    },
-    {
-      "name": "lark-drive",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3147
-    },
-    {
-      "name": "lark-wiki",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3147
-    },
-    {
-      "name": "lark-mail",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3141
-    },
-    {
-      "name": "lark-minutes",
-      "source": "larksuite/cli",
-      "category": "AI & ML",
-      "installs": 3139
-    },
-    {
-      "name": "lark-vc",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3136
-    },
-    {
-      "name": "lark-whiteboard",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3132
-    },
-    {
-      "name": "lark-sheets",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3127
-    },
-    {
-      "name": "lark-contact",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3126
-    },
-    {
-      "name": "lark-openapi-explorer",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3125
-    },
-    {
-      "name": "lark-workflow-meeting-summary",
-      "source": "larksuite/cli",
-      "category": "AI & ML",
-      "installs": 3125
-    },
-    {
-      "name": "lark-skill-maker",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3124
-    },
-    {
-      "name": "lark-event",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3123
-    },
-    {
-      "name": "lark-workflow-standup-report",
-      "source": "larksuite/cli",
-      "category": "AI & ML",
-      "installs": 3122
-    },
-    {
-      "name": "lark-approval",
-      "source": "larksuite/cli",
-      "category": "Platform SDK",
-      "installs": 3110
-    },
-    {
-      "name": "web-design-guidelines",
-      "source": "vercel-labs/agent-skills",
-      "category": "Developer Workflow",
-      "installs": 2711
-    },
-    {
-      "name": "supabase-postgres-best-practices",
-      "source": "supabase/agent-skills",
-      "category": "Platform SDK",
-      "installs": 2632
-    },
-    {
-      "name": "azure-cost-optimization",
-      "source": "microsoft/azure-skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 2381
-    },
-    {
-      "name": "skill-creator",
-      "source": "anthropics/skills",
-      "category": "Developer Workflow",
-      "installs": 2150
-    },
-    {
-      "name": "shadcn",
-      "source": "shadcn/ui",
-      "category": "Frontend & UI",
-      "installs": 2136
+      "installs": 3707
     },
     {
       "name": "frontend-design",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 2076
+      "installs": 3487
     },
     {
       "name": "polish",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 2048
-    },
-    {
-      "name": "github-actions-docs",
-      "source": "xixu-me/skills",
-      "category": "Documentation & Writing",
-      "installs": 2035
-    },
-    {
-      "name": "use-my-browser",
-      "source": "xixu-me/skills",
-      "category": "Browser & Automation",
-      "installs": 2022
-    },
-    {
-      "name": "caveman",
-      "source": "juliusbrussee/caveman",
-      "category": "AI & ML",
-      "installs": 2018
-    },
-    {
-      "name": "openclaw-secure-linux-cloud",
-      "source": "xixu-me/skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 2017
-    },
-    {
-      "name": "readme-i18n",
-      "source": "xixu-me/skills",
-      "category": "Documentation & Writing",
-      "installs": 2010
-    },
-    {
-      "name": "secure-linux-web-hosting",
-      "source": "xixu-me/skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 2008
-    },
-    {
-      "name": "opensource-guide-coach",
-      "source": "xixu-me/skills",
-      "category": "Documentation & Writing",
-      "installs": 2004
-    },
-    {
-      "name": "xget",
-      "source": "xixu-me/skills",
-      "category": "Developer Workflow",
-      "installs": 2004
-    },
-    {
-      "name": "skills-cli",
-      "source": "xixu-me/skills",
-      "category": "Developer Workflow",
-      "installs": 2003
-    },
-    {
-      "name": "xdrop",
-      "source": "xixu-me/skills",
-      "category": "Developer Workflow",
-      "installs": 2003
-    },
-    {
-      "name": "tzst",
-      "source": "xixu-me/skills",
-      "category": "Developer Workflow",
-      "installs": 2003
-    },
-    {
-      "name": "running-claude-code-via-litellm-copilot",
-      "source": "xixu-me/skills",
-      "category": "AI & ML",
-      "installs": 2003
+      "installs": 3435
     },
     {
       "name": "critique",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1994
-    },
-    {
-      "name": "env-and-assets-bootstrap",
-      "source": "lllllllama/ai-paper-reproduction-skill",
-      "category": "AI & ML",
-      "installs": 1981
-    },
-    {
-      "name": "minimal-run-and-audit",
-      "source": "lllllllama/ai-paper-reproduction-skill",
-      "category": "AI & ML",
-      "installs": 1981
-    },
-    {
-      "name": "paper-context-resolver",
-      "source": "lllllllama/ai-paper-reproduction-skill",
-      "category": "AI & ML",
-      "installs": 1981
-    },
-    {
-      "name": "repo-intake-and-plan",
-      "source": "lllllllama/ai-paper-reproduction-skill",
-      "category": "AI & ML",
-      "installs": 1981
-    },
-    {
-      "name": "clarify",
-      "source": "pbakaus/impeccable",
-      "category": "Frontend & UI",
-      "installs": 1960
-    },
-    {
-      "name": "teach-impeccable",
-      "source": "pbakaus/impeccable",
-      "category": "AI & ML",
-      "installs": 1960
-    },
-    {
-      "name": "normalize",
-      "source": "pbakaus/impeccable",
-      "category": "Frontend & UI",
-      "installs": 1950
-    },
-    {
-      "name": "optimize",
-      "source": "pbakaus/impeccable",
-      "category": "Frontend & UI",
-      "installs": 1949
-    },
-    {
-      "name": "colorize",
-      "source": "pbakaus/impeccable",
-      "category": "Frontend & UI",
-      "installs": 1947
+      "installs": 3355
     },
     {
       "name": "audit",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1929
+      "installs": 3333
     },
     {
-      "name": "adapt",
+      "name": "clarify",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1928
-    },
-    {
-      "name": "delight",
-      "source": "pbakaus/impeccable",
-      "category": "Frontend & UI",
-      "installs": 1928
-    },
-    {
-      "name": "animate",
-      "source": "pbakaus/impeccable",
-      "category": "Frontend & UI",
-      "installs": 1926
+      "installs": 3322
     },
     {
       "name": "arrange",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1922
+      "installs": 3321
     },
     {
-      "name": "distill",
+      "name": "animate",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1921
+      "installs": 3321
     },
     {
-      "name": "onboard",
+      "name": "teach-impeccable",
       "source": "pbakaus/impeccable",
-      "category": "Frontend & UI",
-      "installs": 1919
-    },
-    {
-      "name": "extract",
-      "source": "pbakaus/impeccable",
-      "category": "Frontend & UI",
-      "installs": 1914
-    },
-    {
-      "name": "simple",
-      "source": "roin-orca/skills",
       "category": "AI & ML",
-      "installs": 1913
+      "installs": 3316
+    },
+    {
+      "name": "adapt",
+      "source": "pbakaus/impeccable",
+      "category": "Frontend & UI",
+      "installs": 3308
+    },
+    {
+      "name": "remotion-best-practices",
+      "source": "remotion-dev/skills",
+      "category": "Developer Workflow",
+      "installs": 3304
+    },
+    {
+      "name": "optimize",
+      "source": "pbakaus/impeccable",
+      "category": "Frontend & UI",
+      "installs": 3294
+    },
+    {
+      "name": "normalize",
+      "source": "pbakaus/impeccable",
+      "category": "Frontend & UI",
+      "installs": 3280
+    },
+    {
+      "name": "colorize",
+      "source": "pbakaus/impeccable",
+      "category": "Frontend & UI",
+      "installs": 3280
     },
     {
       "name": "bolder",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1906
+      "installs": 3271
     },
     {
-      "name": "harden",
+      "name": "delight",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1906
+      "installs": 3269
     },
     {
-      "name": "quieter",
+      "name": "onboard",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1896
+      "installs": 3252
+    },
+    {
+      "name": "distill",
+      "source": "pbakaus/impeccable",
+      "category": "Frontend & UI",
+      "installs": 3246
     },
     {
       "name": "typeset",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1878
+      "installs": 3237
+    },
+    {
+      "name": "harden",
+      "source": "pbakaus/impeccable",
+      "category": "Frontend & UI",
+      "installs": 3234
+    },
+    {
+      "name": "extract",
+      "source": "pbakaus/impeccable",
+      "category": "Frontend & UI",
+      "installs": 3232
+    },
+    {
+      "name": "quieter",
+      "source": "pbakaus/impeccable",
+      "category": "Frontend & UI",
+      "installs": 3207
     },
     {
       "name": "overdrive",
       "source": "pbakaus/impeccable",
       "category": "Frontend & UI",
-      "installs": 1829
+      "installs": 3144
     },
     {
-      "name": "vercel-composition-patterns",
+      "name": "agent-browser",
+      "source": "vercel-labs/agent-browser",
+      "category": "Browser & Automation",
+      "installs": 2921
+    },
+    {
+      "name": "web-design-guidelines",
       "source": "vercel-labs/agent-skills",
+      "category": "Developer Workflow",
+      "installs": 2885
+    },
+    {
+      "name": "lark-base",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2869
+    },
+    {
+      "name": "lark-doc",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2863
+    },
+    {
+      "name": "lark-task",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2860
+    },
+    {
+      "name": "lark-im",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2845
+    },
+    {
+      "name": "lark-shared",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2840
+    },
+    {
+      "name": "lark-vc",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2838
+    },
+    {
+      "name": "lark-calendar",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2837
+    },
+    {
+      "name": "lark-drive",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2836
+    },
+    {
+      "name": "lark-wiki",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2835
+    },
+    {
+      "name": "lark-mail",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2834
+    },
+    {
+      "name": "lark-minutes",
+      "source": "larksuite/cli",
       "category": "AI & ML",
-      "installs": 1807
+      "installs": 2828
     },
     {
-      "name": "value",
-      "source": "hugmouse/skills",
-      "category": "Developer Workflow",
-      "installs": 1766
+      "name": "lark-sheets",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2825
     },
     {
-      "name": "ui-ux-pro-max",
-      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "category": "Frontend & UI",
-      "installs": 1685
+      "name": "lark-whiteboard",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2824
     },
     {
-      "name": "brainstorming",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 1640
+      "name": "lark-workflow-meeting-summary",
+      "source": "larksuite/cli",
+      "category": "AI & ML",
+      "installs": 2822
+    },
+    {
+      "name": "lark-openapi-explorer",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2819
+    },
+    {
+      "name": "lark-contact",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2818
+    },
+    {
+      "name": "lark-workflow-standup-report",
+      "source": "larksuite/cli",
+      "category": "AI & ML",
+      "installs": 2818
+    },
+    {
+      "name": "lark-skill-maker",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2817
+    },
+    {
+      "name": "lark-event",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2815
+    },
+    {
+      "name": "lark-approval",
+      "source": "larksuite/cli",
+      "category": "Platform SDK",
+      "installs": 2800
+    },
+    {
+      "name": "supabase-postgres-best-practices",
+      "source": "supabase/agent-skills",
+      "category": "Platform SDK",
+      "installs": 2471
     },
     {
       "name": "extract-design-system",
       "source": "arvindrk/extract-design-system",
       "category": "Frontend & UI",
-      "installs": 1604
+      "installs": 2452
+    },
+    {
+      "name": "shadcn",
+      "source": "shadcn/ui",
+      "category": "Frontend & UI",
+      "installs": 2412
+    },
+    {
+      "name": "caveman",
+      "source": "juliusbrussee/caveman",
+      "category": "AI & ML",
+      "installs": 2374
+    },
+    {
+      "name": "azure-cost-optimization",
+      "source": "microsoft/azure-skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 2279
+    },
+    {
+      "name": "skill-creator",
+      "source": "anthropics/skills",
+      "category": "Developer Workflow",
+      "installs": 2204
+    },
+    {
+      "name": "value",
+      "source": "hugmouse/skills",
+      "category": "Developer Workflow",
+      "installs": 1918
+    },
+    {
+      "name": "simple",
+      "source": "roin-orca/skills",
+      "category": "AI & ML",
+      "installs": 1907
+    },
+    {
+      "name": "ui-ux-pro-max",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "Frontend & UI",
+      "installs": 1856
+    },
+    {
+      "name": "vercel-composition-patterns",
+      "source": "vercel-labs/agent-skills",
+      "category": "AI & ML",
+      "installs": 1827
+    },
+    {
+      "name": "brainstorming",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 1792
+    },
+    {
+      "name": "github-actions-docs",
+      "source": "xixu-me/skills",
+      "category": "Documentation & Writing",
+      "installs": 1777
+    },
+    {
+      "name": "openclaw-secure-linux-cloud",
+      "source": "xixu-me/skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 1749
+    },
+    {
+      "name": "use-my-browser",
+      "source": "xixu-me/skills",
+      "category": "Browser & Automation",
+      "installs": 1745
+    },
+    {
+      "name": "secure-linux-web-hosting",
+      "source": "xixu-me/skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 1742
+    },
+    {
+      "name": "running-claude-code-via-litellm-copilot",
+      "source": "xixu-me/skills",
+      "category": "AI & ML",
+      "installs": 1742
+    },
+    {
+      "name": "readme-i18n",
+      "source": "xixu-me/skills",
+      "category": "Documentation & Writing",
+      "installs": 1741
+    },
+    {
+      "name": "skills-cli",
+      "source": "xixu-me/skills",
+      "category": "Developer Workflow",
+      "installs": 1740
+    },
+    {
+      "name": "xget",
+      "source": "xixu-me/skills",
+      "category": "Developer Workflow",
+      "installs": 1738
+    },
+    {
+      "name": "opensource-guide-coach",
+      "source": "xixu-me/skills",
+      "category": "Documentation & Writing",
+      "installs": 1737
+    },
+    {
+      "name": "xdrop",
+      "source": "xixu-me/skills",
+      "category": "Developer Workflow",
+      "installs": 1737
+    },
+    {
+      "name": "tzst",
+      "source": "xixu-me/skills",
+      "category": "Developer Workflow",
+      "installs": 1736
+    },
+    {
+      "name": "env-and-assets-bootstrap",
+      "source": "lllllllama/ai-paper-reproduction-skill",
+      "category": "AI & ML",
+      "installs": 1721
+    },
+    {
+      "name": "minimal-run-and-audit",
+      "source": "lllllllama/ai-paper-reproduction-skill",
+      "category": "AI & ML",
+      "installs": 1721
+    },
+    {
+      "name": "paper-context-resolver",
+      "source": "lllllllama/ai-paper-reproduction-skill",
+      "category": "AI & ML",
+      "installs": 1721
+    },
+    {
+      "name": "repo-intake-and-plan",
+      "source": "lllllllama/ai-paper-reproduction-skill",
+      "category": "AI & ML",
+      "installs": 1721
     },
     {
       "name": "supabase",
       "source": "supabase/agent-skills",
       "category": "Backend & API",
-      "installs": 1507
+      "installs": 1646
     },
     {
       "name": "using-superpowers",
       "source": "obra/superpowers",
       "category": "AI & ML",
-      "installs": 1416
-    },
-    {
-      "name": "sleek-design-mobile-apps",
-      "source": "sleekdotdesign/agent-skills",
-      "category": "Mobile",
-      "installs": 1291
-    },
-    {
-      "name": "firebase-basics",
-      "source": "firebase/agent-skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 1178
-    },
-    {
-      "name": "pdf",
-      "source": "anthropics/skills",
-      "category": "AI & ML",
-      "installs": 1173
-    },
-    {
-      "name": "firebase-auth-basics",
-      "source": "firebase/agent-skills",
-      "category": "Security & Auth",
-      "installs": 1171
-    },
-    {
-      "name": "firebase-firestore-standard",
-      "source": "firebase/agent-skills",
-      "category": "Platform SDK",
-      "installs": 1156
-    },
-    {
-      "name": "firebase-data-connect",
-      "source": "firebase/agent-skills",
-      "category": "Platform SDK",
-      "installs": 1148
-    },
-    {
-      "name": "firebase-ai-logic",
-      "source": "firebase/agent-skills",
-      "category": "AI & ML",
-      "installs": 1148
-    },
-    {
-      "name": "firebase-hosting-basics",
-      "source": "firebase/agent-skills",
-      "category": "Platform SDK",
-      "installs": 1146
-    },
-    {
-      "name": "firebase-app-hosting-basics",
-      "source": "firebase/agent-skills",
-      "category": "Platform SDK",
-      "installs": 1144
-    },
-    {
-      "name": "firebase-firestore-enterprise-native-mode",
-      "source": "firebase/agent-skills",
-      "category": "Platform SDK",
-      "installs": 1137
-    },
-    {
-      "name": "developing-genkit-dart",
-      "source": "firebase/agent-skills",
-      "category": "AI & ML",
-      "installs": 1134
-    },
-    {
-      "name": "developing-genkit-js",
-      "source": "firebase/agent-skills",
-      "category": "AI & ML",
-      "installs": 1132
-    },
-    {
-      "name": "pptx",
-      "source": "anthropics/skills",
-      "category": "AI & ML",
-      "installs": 1109
-    },
-    {
-      "name": "next-best-practices",
-      "source": "vercel-labs/next-skills",
-      "category": "Developer Workflow",
-      "installs": 1084
-    },
-    {
-      "name": "systematic-debugging",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 1069
-    },
-    {
-      "name": "seo-audit",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Developer Workflow",
-      "installs": 1066
-    },
-    {
-      "name": "writing-plans",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 1063
-    },
-    {
-      "name": "docx",
-      "source": "anthropics/skills",
-      "category": "AI & ML",
-      "installs": 1036
-    },
-    {
-      "name": "copywriting",
-      "source": "coreyhaines31/marketingskills",
-      "category": "AI & ML",
-      "installs": 1006
-    },
-    {
-      "name": "caveman-compress",
-      "source": "juliusbrussee/caveman",
-      "category": "AI & ML",
-      "installs": 1001
-    },
-    {
-      "name": "requesting-code-review",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 987
-    },
-    {
-      "name": "vercel-react-native-skills",
-      "source": "vercel-labs/agent-skills",
-      "category": "Mobile",
-      "installs": 967
-    },
-    {
-      "name": "test-driven-development",
-      "source": "obra/superpowers",
-      "category": "Testing & QA",
-      "installs": 957
-    },
-    {
-      "name": "accessibility",
-      "source": "addyosmani/web-quality-skills",
-      "category": "Frontend & UI",
-      "installs": 948
-    },
-    {
-      "name": "seo",
-      "source": "addyosmani/web-quality-skills",
-      "category": "Frontend & UI",
-      "installs": 914
-    },
-    {
-      "name": "executing-plans",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 906
-    },
-    {
-      "name": "typescript-advanced-types",
-      "source": "wshobson/agents",
-      "category": "Developer Workflow",
-      "installs": 888
-    },
-    {
-      "name": "grill-me",
-      "source": "mattpocock/skills",
-      "category": "Developer Workflow",
-      "installs": 876
-    },
-    {
-      "name": "subagent-driven-development",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 861
-    },
-    {
-      "name": "xlsx",
-      "source": "anthropics/skills",
-      "category": "AI & ML",
-      "installs": 853
-    },
-    {
-      "name": "receiving-code-review",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 848
-    },
-    {
-      "name": "verification-before-completion",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 846
-    },
-    {
-      "name": "writing-skills",
-      "source": "obra/superpowers",
-      "category": "Documentation & Writing",
-      "installs": 832
-    },
-    {
-      "name": "dispatching-parallel-agents",
-      "source": "obra/superpowers",
-      "category": "AI & ML",
-      "installs": 824
-    },
-    {
-      "name": "using-git-worktrees",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 808
-    },
-    {
-      "name": "nodejs-backend-patterns",
-      "source": "wshobson/agents",
-      "category": "Backend & API",
-      "installs": 807
-    },
-    {
-      "name": "deploy-to-vercel",
-      "source": "vercel-labs/agent-skills",
-      "category": "DevOps & CI/CD",
-      "installs": 790
-    },
-    {
-      "name": "marketing-psychology",
-      "source": "coreyhaines31/marketingskills",
-      "category": "AI & ML",
-      "installs": 789
-    },
-    {
-      "name": "finishing-a-development-branch",
-      "source": "obra/superpowers",
-      "category": "Developer Workflow",
-      "installs": 785
-    },
-    {
-      "name": "vercel-react-view-transitions",
-      "source": "vercel-labs/agent-skills",
-      "category": "Frontend & UI",
-      "installs": 779
-    },
-    {
-      "name": "design-taste-frontend",
-      "source": "leonxlnx/taste-skill",
-      "category": "Frontend & UI",
-      "installs": 756
-    },
-    {
-      "name": "huashu-nuwa",
-      "source": "alchaincyf/nuwa-skill",
-      "category": "AI & ML",
-      "installs": 742
-    },
-    {
-      "name": "ai-seo",
-      "source": "coreyhaines31/marketingskills",
-      "category": "AI & ML",
-      "installs": 720
-    },
-    {
-      "name": "developing-genkit-js",
-      "source": "genkit-ai/skills",
-      "category": "AI & ML",
-      "installs": 710
-    },
-    {
-      "name": "marketing-ideas",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 708
-    },
-    {
-      "name": "content-strategy",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 707
-    },
-    {
-      "name": "high-end-visual-design",
-      "source": "leonxlnx/taste-skill",
-      "category": "Frontend & UI",
-      "installs": 707
-    },
-    {
-      "name": "programmatic-seo",
-      "source": "coreyhaines31/marketingskills",
-      "category": "AI & ML",
-      "installs": 704
-    },
-    {
-      "name": "webapp-testing",
-      "source": "anthropics/skills",
-      "category": "Testing & QA",
-      "installs": 704
-    },
-    {
-      "name": "social-content",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 702
-    },
-    {
-      "name": "redesign-existing-projects",
-      "source": "leonxlnx/taste-skill",
-      "category": "Frontend & UI",
-      "installs": 692
-    },
-    {
-      "name": "pricing-strategy",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 689
-    },
-    {
-      "name": "convex-quickstart",
-      "source": "get-convex/agent-skills",
-      "category": "Documentation & Writing",
-      "installs": 688
-    },
-    {
-      "name": "convex-create-component",
-      "source": "get-convex/agent-skills",
-      "category": "Platform SDK",
-      "installs": 687
-    },
-    {
-      "name": "product-marketing-context",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 685
-    },
-    {
-      "name": "convex-performance-audit",
-      "source": "get-convex/agent-skills",
-      "category": "Platform SDK",
-      "installs": 684
-    },
-    {
-      "name": "convex-migration-helper",
-      "source": "get-convex/agent-skills",
-      "category": "Platform SDK",
-      "installs": 684
-    },
-    {
-      "name": "copy-editing",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 681
-    },
-    {
-      "name": "convex-setup-auth",
-      "source": "get-convex/agent-skills",
-      "category": "Platform SDK",
-      "installs": 681
-    },
-    {
-      "name": "analytics-tracking",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Developer Workflow",
-      "installs": 681
-    },
-    {
-      "name": "page-cro",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 677
-    },
-    {
-      "name": "minimalist-ui",
-      "source": "leonxlnx/taste-skill",
-      "category": "Frontend & UI",
-      "installs": 672
-    },
-    {
-      "name": "full-output-enforcement",
-      "source": "leonxlnx/taste-skill",
-      "category": "Frontend & UI",
-      "installs": 664
-    },
-    {
-      "name": "stitch-design-taste",
-      "source": "leonxlnx/taste-skill",
-      "category": "Frontend & UI",
-      "installs": 661
-    },
-    {
-      "name": "react:components",
-      "source": "google-labs-code/stitch-skills",
-      "category": "Frontend & UI",
-      "installs": 646
-    },
-    {
-      "name": "ad-creative",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 644
-    },
-    {
-      "name": "industrial-brutalist-ui",
-      "source": "leonxlnx/taste-skill",
-      "category": "Frontend & UI",
-      "installs": 643
-    },
-    {
-      "name": "canvas-design",
-      "source": "anthropics/skills",
-      "category": "Frontend & UI",
-      "installs": 642
-    },
-    {
-      "name": "ab-test-setup",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Developer Workflow",
-      "installs": 641
-    },
-    {
-      "name": "paid-ads",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 639
-    },
-    {
-      "name": "launch-strategy",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 639
-    },
-    {
-      "name": "playwright-best-practices",
-      "source": "currents-dev/playwright-best-practices-skill",
-      "category": "AI & ML",
-      "installs": 638
-    },
-    {
-      "name": "email-sequence",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 636
-    },
-    {
-      "name": "cold-email",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 632
-    },
-    {
-      "name": "site-architecture",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Frontend & UI",
-      "installs": 631
-    },
-    {
-      "name": "customer-research",
-      "source": "coreyhaines31/marketingskills",
-      "category": "AI & ML",
-      "installs": 629
-    },
-    {
-      "name": "schema-markup",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 626
-    },
-    {
-      "name": "sales-enablement",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 624
-    },
-    {
-      "name": "enhance-prompt",
-      "source": "google-labs-code/stitch-skills",
-      "category": "AI & ML",
-      "installs": 623
-    },
-    {
-      "name": "referral-program",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 622
-    },
-    {
-      "name": "competitor-alternatives",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 621
-    },
-    {
-      "name": "nodejs-best-practices",
-      "source": "sickn33/antigravity-awesome-skills",
-      "category": "Developer Workflow",
-      "installs": 621
-    },
-    {
-      "name": "free-tool-strategy",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 618
-    },
-    {
-      "name": "signup-flow-cro",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Frontend & UI",
-      "installs": 617
-    },
-    {
-      "name": "form-cro",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Frontend & UI",
-      "installs": 617
-    },
-    {
-      "name": "frontend-design",
-      "source": "anthropics/claude-code",
-      "category": "Frontend & UI",
-      "installs": 615
-    },
-    {
-      "name": "onboarding-cro",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 614
-    },
-    {
-      "name": "revops",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 613
-    },
-    {
-      "name": "churn-prevention",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Documentation & Writing",
-      "installs": 612
-    },
-    {
-      "name": "popup-cro",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Frontend & UI",
-      "installs": 610
-    },
-    {
-      "name": "lead-magnets",
-      "source": "coreyhaines31/marketingskills",
-      "category": "AI & ML",
-      "installs": 609
-    },
-    {
-      "name": "paywall-upgrade-cro",
-      "source": "coreyhaines31/marketingskills",
-      "category": "Frontend & UI",
-      "installs": 608
-    },
-    {
-      "name": "stitch-loop",
-      "source": "google-labs-code/stitch-skills",
-      "category": "Developer Workflow",
-      "installs": 596
-    },
-    {
-      "name": "design-md",
-      "source": "google-labs-code/stitch-skills",
-      "category": "Documentation & Writing",
-      "installs": 589
-    },
-    {
-      "name": "stitch-design",
-      "source": "google-labs-code/stitch-skills",
-      "category": "Developer Workflow",
-      "installs": 583
-    },
-    {
-      "name": "obsidian-markdown",
-      "source": "kepano/obsidian-skills",
-      "category": "Documentation & Writing",
-      "installs": 580
+      "installs": 1534
     },
     {
       "name": "emil-design-eng",
       "source": "emilkowalski/skill",
       "category": "Frontend & UI",
-      "installs": 579
+      "installs": 1458
     },
     {
-      "name": "obsidian-cli",
-      "source": "kepano/obsidian-skills",
+      "name": "design-taste-frontend",
+      "source": "leonxlnx/taste-skill",
+      "category": "Frontend & UI",
+      "installs": 1423
+    },
+    {
+      "name": "high-end-visual-design",
+      "source": "leonxlnx/taste-skill",
+      "category": "Frontend & UI",
+      "installs": 1311
+    },
+    {
+      "name": "sleek-design-mobile-apps",
+      "source": "sleekdotdesign/agent-skills",
+      "category": "Mobile",
+      "installs": 1304
+    },
+    {
+      "name": "redesign-existing-projects",
+      "source": "leonxlnx/taste-skill",
+      "category": "Frontend & UI",
+      "installs": 1264
+    },
+    {
+      "name": "develop-userscripts",
+      "source": "xixu-me/skills",
+      "category": "Uncategorized",
+      "installs": 1242
+    },
+    {
+      "name": "minimalist-ui",
+      "source": "leonxlnx/taste-skill",
+      "category": "Frontend & UI",
+      "installs": 1235
+    },
+    {
+      "name": "seo-audit",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Developer Workflow",
+      "installs": 1224
+    },
+    {
+      "name": "full-output-enforcement",
+      "source": "leonxlnx/taste-skill",
+      "category": "Frontend & UI",
+      "installs": 1221
+    },
+    {
+      "name": "systematic-debugging",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 1194
+    },
+    {
+      "name": "stitch-design-taste",
+      "source": "leonxlnx/taste-skill",
+      "category": "Frontend & UI",
+      "installs": 1182
+    },
+    {
+      "name": "industrial-brutalist-ui",
+      "source": "leonxlnx/taste-skill",
+      "category": "Frontend & UI",
+      "installs": 1180
+    },
+    {
+      "name": "writing-plans",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 1172
+    },
+    {
+      "name": "pdf",
+      "source": "anthropics/skills",
+      "category": "AI & ML",
+      "installs": 1163
+    },
+    {
+      "name": "pptx",
+      "source": "anthropics/skills",
+      "category": "AI & ML",
+      "installs": 1148
+    },
+    {
+      "name": "requesting-code-review",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 1142
+    },
+    {
+      "name": "caveman-compress",
+      "source": "juliusbrussee/caveman",
+      "category": "AI & ML",
+      "installs": 1137
+    },
+    {
+      "name": "copywriting",
+      "source": "coreyhaines31/marketingskills",
+      "category": "AI & ML",
+      "installs": 1127
+    },
+    {
+      "name": "next-best-practices",
+      "source": "vercel-labs/next-skills",
+      "category": "Developer Workflow",
+      "installs": 1090
+    },
+    {
+      "name": "firebase-basics",
+      "source": "firebase/agent-skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 1084
+    },
+    {
+      "name": "firebase-auth-basics",
+      "source": "firebase/agent-skills",
+      "category": "Security & Auth",
+      "installs": 1073
+    },
+    {
+      "name": "firebase-firestore-standard",
+      "source": "firebase/agent-skills",
+      "category": "Platform SDK",
+      "installs": 1065
+    },
+    {
+      "name": "firebase-hosting-basics",
+      "source": "firebase/agent-skills",
+      "category": "Platform SDK",
+      "installs": 1055
+    },
+    {
+      "name": "firebase-app-hosting-basics",
+      "source": "firebase/agent-skills",
+      "category": "Platform SDK",
+      "installs": 1053
+    },
+    {
+      "name": "firebase-data-connect",
+      "source": "firebase/agent-skills",
+      "category": "Platform SDK",
+      "installs": 1051
+    },
+    {
+      "name": "developing-genkit-js",
+      "source": "firebase/agent-skills",
+      "category": "AI & ML",
+      "installs": 1051
+    },
+    {
+      "name": "firebase-firestore-enterprise-native-mode",
+      "source": "firebase/agent-skills",
+      "category": "Platform SDK",
+      "installs": 1050
+    },
+    {
+      "name": "vercel-react-native-skills",
+      "source": "vercel-labs/agent-skills",
+      "category": "Mobile",
+      "installs": 1050
+    },
+    {
+      "name": "firebase-ai-logic",
+      "source": "firebase/agent-skills",
+      "category": "AI & ML",
+      "installs": 1050
+    },
+    {
+      "name": "developing-genkit-dart",
+      "source": "firebase/agent-skills",
+      "category": "AI & ML",
+      "installs": 1042
+    },
+    {
+      "name": "test-driven-development",
+      "source": "obra/superpowers",
+      "category": "Testing & QA",
+      "installs": 1039
+    },
+    {
+      "name": "pexo-agent",
+      "source": "pexoai/pexo-skills",
+      "category": "AI & ML",
+      "installs": 1031
+    },
+    {
+      "name": "executing-plans",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 1006
+    },
+    {
+      "name": "docx",
+      "source": "anthropics/skills",
+      "category": "AI & ML",
+      "installs": 984
+    },
+    {
+      "name": "subagent-driven-development",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 972
+    },
+    {
+      "name": "verification-before-completion",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 968
+    },
+    {
+      "name": "receiving-code-review",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 967
+    },
+    {
+      "name": "developing-genkit-go",
+      "source": "firebase/agent-skills",
+      "category": "Uncategorized",
+      "installs": 955
+    },
+    {
+      "name": "writing-skills",
+      "source": "obra/superpowers",
       "category": "Documentation & Writing",
-      "installs": 569
+      "installs": 944
+    },
+    {
+      "name": "marketing-psychology",
+      "source": "coreyhaines31/marketingskills",
+      "category": "AI & ML",
+      "installs": 935
+    },
+    {
+      "name": "dispatching-parallel-agents",
+      "source": "obra/superpowers",
+      "category": "AI & ML",
+      "installs": 907
+    },
+    {
+      "name": "xlsx",
+      "source": "anthropics/skills",
+      "category": "AI & ML",
+      "installs": 906
+    },
+    {
+      "name": "using-git-worktrees",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 897
+    },
+    {
+      "name": "vercel-react-view-transitions",
+      "source": "vercel-labs/agent-skills",
+      "category": "Frontend & UI",
+      "installs": 884
+    },
+    {
+      "name": "finishing-a-development-branch",
+      "source": "obra/superpowers",
+      "category": "Developer Workflow",
+      "installs": 878
+    },
+    {
+      "name": "social-content",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 852
+    },
+    {
+      "name": "content-strategy",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 829
+    },
+    {
+      "name": "grill-me",
+      "source": "mattpocock/skills",
+      "category": "Developer Workflow",
+      "installs": 824
+    },
+    {
+      "name": "deploy-to-vercel",
+      "source": "vercel-labs/agent-skills",
+      "category": "DevOps & CI/CD",
+      "installs": 821
+    },
+    {
+      "name": "marketing-ideas",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 819
+    },
+    {
+      "name": "programmatic-seo",
+      "source": "coreyhaines31/marketingskills",
+      "category": "AI & ML",
+      "installs": 819
+    },
+    {
+      "name": "ai-seo",
+      "source": "coreyhaines31/marketingskills",
+      "category": "AI & ML",
+      "installs": 818
+    },
+    {
+      "name": "product-marketing-context",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 803
+    },
+    {
+      "name": "copy-editing",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 792
+    },
+    {
+      "name": "analytics-tracking",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Developer Workflow",
+      "installs": 772
+    },
+    {
+      "name": "pricing-strategy",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 770
+    },
+    {
+      "name": "page-cro",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 765
+    },
+    {
+      "name": "developing-genkit-js",
+      "source": "genkit-ai/skills",
+      "category": "AI & ML",
+      "installs": 760
+    },
+    {
+      "name": "launch-strategy",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 757
+    },
+    {
+      "name": "cold-email",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 744
+    },
+    {
+      "name": "email-sequence",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 742
+    },
+    {
+      "name": "huashu-nuwa",
+      "source": "alchaincyf/nuwa-skill",
+      "category": "AI & ML",
+      "installs": 739
+    },
+    {
+      "name": "paid-ads",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 736
+    },
+    {
+      "name": "ad-creative",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 734
+    },
+    {
+      "name": "ab-test-setup",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Developer Workflow",
+      "installs": 733
+    },
+    {
+      "name": "site-architecture",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Frontend & UI",
+      "installs": 733
+    },
+    {
+      "name": "sales-enablement",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 731
+    },
+    {
+      "name": "schema-markup",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 731
+    },
+    {
+      "name": "convex-quickstart",
+      "source": "get-convex/agent-skills",
+      "category": "Documentation & Writing",
+      "installs": 729
+    },
+    {
+      "name": "competitor-alternatives",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 728
+    },
+    {
+      "name": "convex-setup-auth",
+      "source": "get-convex/agent-skills",
+      "category": "Platform SDK",
+      "installs": 727
+    },
+    {
+      "name": "convex-performance-audit",
+      "source": "get-convex/agent-skills",
+      "category": "Platform SDK",
+      "installs": 726
+    },
+    {
+      "name": "convex-migration-helper",
+      "source": "get-convex/agent-skills",
+      "category": "Platform SDK",
+      "installs": 726
+    },
+    {
+      "name": "convex-create-component",
+      "source": "get-convex/agent-skills",
+      "category": "Platform SDK",
+      "installs": 725
+    },
+    {
+      "name": "customer-research",
+      "source": "coreyhaines31/marketingskills",
+      "category": "AI & ML",
+      "installs": 724
+    },
+    {
+      "name": "onboarding-cro",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 722
+    },
+    {
+      "name": "lead-magnets",
+      "source": "coreyhaines31/marketingskills",
+      "category": "AI & ML",
+      "installs": 717
+    },
+    {
+      "name": "form-cro",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Frontend & UI",
+      "installs": 717
+    },
+    {
+      "name": "revops",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 715
+    },
+    {
+      "name": "referral-program",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 715
+    },
+    {
+      "name": "free-tool-strategy",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 714
+    },
+    {
+      "name": "churn-prevention",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Documentation & Writing",
+      "installs": 714
+    },
+    {
+      "name": "webapp-testing",
+      "source": "anthropics/skills",
+      "category": "Testing & QA",
+      "installs": 712
+    },
+    {
+      "name": "typescript-advanced-types",
+      "source": "wshobson/agents",
+      "category": "Developer Workflow",
+      "installs": 710
+    },
+    {
+      "name": "signup-flow-cro",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Frontend & UI",
+      "installs": 710
+    },
+    {
+      "name": "popup-cro",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Frontend & UI",
+      "installs": 706
+    },
+    {
+      "name": "paywall-upgrade-cro",
+      "source": "coreyhaines31/marketingskills",
+      "category": "Frontend & UI",
+      "installs": 705
+    },
+    {
+      "name": "accessibility",
+      "source": "addyosmani/web-quality-skills",
+      "category": "Frontend & UI",
+      "installs": 650
+    },
+    {
+      "name": "frontend-design",
+      "source": "anthropics/claude-code",
+      "category": "Frontend & UI",
+      "installs": 638
     },
     {
       "name": "vercel-cli-with-tokens",
       "source": "vercel-labs/agent-skills",
       "category": "Platform SDK",
-      "installs": 561
+      "installs": 638
     },
     {
-      "name": "mcp-builder",
-      "source": "anthropics/skills",
-      "category": "AI & ML",
-      "installs": 556
+      "name": "seo",
+      "source": "addyosmani/web-quality-skills",
+      "category": "Frontend & UI",
+      "installs": 638
+    },
+    {
+      "name": "nodejs-backend-patterns",
+      "source": "wshobson/agents",
+      "category": "Backend & API",
+      "installs": 636
     },
     {
       "name": "sentry-cli",
       "source": "sentry/dev",
       "category": "Developer Workflow",
-      "installs": 530
+      "installs": 602
+    },
+    {
+      "name": "playwright-best-practices",
+      "source": "currents-dev/playwright-best-practices-skill",
+      "category": "AI & ML",
+      "installs": 593
+    },
+    {
+      "name": "canvas-design",
+      "source": "anthropics/skills",
+      "category": "Frontend & UI",
+      "installs": 592
+    },
+    {
+      "name": "obsidian-markdown",
+      "source": "kepano/obsidian-skills",
+      "category": "Documentation & Writing",
+      "installs": 570
+    },
+    {
+      "name": "mcp-builder",
+      "source": "anthropics/skills",
+      "category": "AI & ML",
+      "installs": 563
+    },
+    {
+      "name": "obsidian-cli",
+      "source": "kepano/obsidian-skills",
+      "category": "Documentation & Writing",
+      "installs": 563
+    },
+    {
+      "name": "playwright-cli",
+      "source": "microsoft/playwright-cli",
+      "category": "Browser & Automation",
+      "installs": 554
+    },
+    {
+      "name": "firestore-security-rules-auditor",
+      "source": "firebase/agent-skills",
+      "category": "Uncategorized",
+      "installs": 550
     },
     {
       "name": "better-auth-best-practices",
       "source": "better-auth/skills",
       "category": "Security & Auth",
-      "installs": 515
+      "installs": 532
     },
     {
-      "name": "obsidian-bases",
-      "source": "kepano/obsidian-skills",
-      "category": "Developer Workflow",
-      "installs": 507
-    },
-    {
-      "name": "next-cache-components",
-      "source": "vercel-labs/next-skills",
+      "name": "react:components",
+      "source": "google-labs-code/stitch-skills",
       "category": "Frontend & UI",
-      "installs": 502
+      "installs": 530
+    },
+    {
+      "name": "stitch-loop",
+      "source": "google-labs-code/stitch-skills",
+      "category": "Developer Workflow",
+      "installs": 524
+    },
+    {
+      "name": "design-md",
+      "source": "google-labs-code/stitch-skills",
+      "category": "Documentation & Writing",
+      "installs": 520
+    },
+    {
+      "name": "enhance-prompt",
+      "source": "google-labs-code/stitch-skills",
+      "category": "AI & ML",
+      "installs": 514
     },
     {
       "name": "firecrawl",
@@ -1249,352 +1255,430 @@
       "installs": 494
     },
     {
-      "name": "dogfood",
-      "source": "vercel-labs/agent-browser",
-      "category": "Browser & Automation",
-      "installs": 484
-    },
-    {
-      "name": "shadcn-ui",
-      "source": "google-labs-code/stitch-skills",
-      "category": "Frontend & UI",
-      "installs": 484
-    },
-    {
-      "name": "browser-use",
-      "source": "browser-use/browser-use",
-      "category": "Browser & Automation",
-      "installs": 472
-    },
-    {
-      "name": "brand-guidelines",
-      "source": "anthropics/skills",
-      "category": "Documentation & Writing",
-      "installs": 470
-    },
-    {
-      "name": "pexo-agent",
-      "source": "pexoai/pexo-skills",
-      "category": "AI & ML",
-      "installs": 465
-    },
-    {
-      "name": "firecrawl-scrape",
-      "source": "firecrawl/cli",
-      "category": "Browser & Automation",
-      "installs": 465
-    },
-    {
-      "name": "doc-coauthoring",
-      "source": "anthropics/skills",
-      "category": "Documentation & Writing",
-      "installs": 464
-    },
-    {
-      "name": "firecrawl-agent",
-      "source": "firecrawl/cli",
-      "category": "AI & ML",
-      "installs": 459
-    },
-    {
-      "name": "firecrawl-search",
-      "source": "firecrawl/cli",
-      "category": "Browser & Automation",
-      "installs": 458
-    },
-    {
-      "name": "tailwind-css-patterns",
-      "source": "giuseppe-trisciuoglio/developer-kit",
-      "category": "Frontend & UI",
-      "installs": 457
-    },
-    {
-      "name": "defuddle",
-      "source": "kepano/obsidian-skills",
-      "category": "Documentation & Writing",
-      "installs": 457
-    },
-    {
-      "name": "firecrawl-crawl",
-      "source": "firecrawl/cli",
-      "category": "Browser & Automation",
-      "installs": 452
-    },
-    {
-      "name": "theme-factory",
-      "source": "anthropics/skills",
-      "category": "AI & ML",
-      "installs": 451
-    },
-    {
-      "name": "firecrawl-map",
-      "source": "firecrawl/cli",
-      "category": "Browser & Automation",
-      "installs": 448
-    },
-    {
-      "name": "firecrawl-download",
-      "source": "firecrawl/cli",
-      "category": "Browser & Automation",
-      "installs": 447
-    },
-    {
-      "name": "firecrawl-instruct",
-      "source": "firecrawl/cli",
-      "category": "AI & ML",
-      "installs": 445
-    },
-    {
-      "name": "write-a-prd",
-      "source": "mattpocock/skills",
-      "category": "Documentation & Writing",
-      "installs": 432
-    },
-    {
-      "name": "json-canvas",
+      "name": "obsidian-bases",
       "source": "kepano/obsidian-skills",
       "category": "Developer Workflow",
-      "installs": 429
-    },
-    {
-      "name": "next-upgrade",
-      "source": "vercel-labs/next-skills",
-      "category": "Frontend & UI",
-      "installs": 420
+      "installs": 492
     },
     {
       "name": "web-artifacts-builder",
       "source": "anthropics/skills",
       "category": "Developer Workflow",
-      "installs": 409
-    },
-    {
-      "name": "algorithmic-art",
-      "source": "anthropics/skills",
-      "category": "AI & ML",
-      "installs": 409
+      "installs": 486
     },
     {
       "name": "gws-docs",
       "source": "googleworkspace/cli",
       "category": "Platform SDK",
-      "installs": 408
+      "installs": 476
     },
     {
-      "name": "remotion",
+      "name": "browser-use",
+      "source": "browser-use/browser-use",
+      "category": "Browser & Automation",
+      "installs": 473
+    },
+    {
+      "name": "theme-factory",
+      "source": "anthropics/skills",
+      "category": "AI & ML",
+      "installs": 471
+    },
+    {
+      "name": "dogfood",
+      "source": "vercel-labs/agent-browser",
+      "category": "Browser & Automation",
+      "installs": 462
+    },
+    {
+      "name": "stitch-design",
       "source": "google-labs-code/stitch-skills",
-      "category": "AI & ML",
-      "installs": 398
-    },
-    {
-      "name": "tong-jincheng-perspective",
-      "source": "hotcoffeeshake/tong-jincheng-skill",
-      "category": "AI & ML",
-      "installs": 397
-    },
-    {
-      "name": "claude-api",
-      "source": "anthropics/skills",
-      "category": "AI & ML",
-      "installs": 394
-    },
-    {
-      "name": "electron",
-      "source": "vercel-labs/agent-browser",
-      "category": "Browser & Automation",
-      "installs": 392
-    },
-    {
-      "name": "neon-postgres",
-      "source": "neondatabase/agent-skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 391
-    },
-    {
-      "name": "internal-comms",
-      "source": "anthropics/skills",
-      "category": "Documentation & Writing",
-      "installs": 387
-    },
-    {
-      "name": "vite",
-      "source": "antfu/skills",
-      "category": "Frontend & UI",
-      "installs": 385
-    },
-    {
-      "name": "vercel-sandbox",
-      "source": "vercel-labs/agent-browser",
-      "category": "Browser & Automation",
-      "installs": 382
-    },
-    {
-      "name": "playwright-cli",
-      "source": "microsoft/playwright-cli",
-      "category": "Browser & Automation",
-      "installs": 382
-    },
-    {
-      "name": "gws-gmail",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 380
-    },
-    {
-      "name": "gws-drive",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 380
-    },
-    {
-      "name": "gws-calendar",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 376
+      "category": "Developer Workflow",
+      "installs": 459
     },
     {
       "name": "gws-sheets",
       "source": "googleworkspace/cli",
       "category": "Platform SDK",
-      "installs": 371
+      "installs": 455
     },
     {
-      "name": "turborepo",
-      "source": "vercel/turborepo",
-      "category": "Developer Workflow",
-      "installs": 368
+      "name": "doc-coauthoring",
+      "source": "anthropics/skills",
+      "category": "Documentation & Writing",
+      "installs": 451
     },
     {
-      "name": "opencli-operate",
-      "source": "jackwener/opencli",
-      "category": "AI & ML",
-      "installs": 364
+      "name": "gws-drive",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 450
     },
     {
-      "name": "slack",
-      "source": "vercel-labs/agent-browser",
+      "name": "firecrawl-scrape",
+      "source": "firecrawl/cli",
       "category": "Browser & Automation",
-      "installs": 359
+      "installs": 449
     },
     {
-      "name": "tailwind-design-system",
-      "source": "wshobson/agents",
+      "name": "gws-gmail",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 447
+    },
+    {
+      "name": "firecrawl-agent",
+      "source": "firecrawl/cli",
+      "category": "AI & ML",
+      "installs": 446
+    },
+    {
+      "name": "brand-guidelines",
+      "source": "anthropics/skills",
+      "category": "Documentation & Writing",
+      "installs": 445
+    },
+    {
+      "name": "gws-calendar",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 444
+    },
+    {
+      "name": "nodejs-best-practices",
+      "source": "sickn33/antigravity-awesome-skills",
+      "category": "Developer Workflow",
+      "installs": 442
+    },
+    {
+      "name": "firecrawl-search",
+      "source": "firecrawl/cli",
+      "category": "Browser & Automation",
+      "installs": 442
+    },
+    {
+      "name": "firecrawl-crawl",
+      "source": "firecrawl/cli",
+      "category": "Browser & Automation",
+      "installs": 439
+    },
+    {
+      "name": "firecrawl-map",
+      "source": "firecrawl/cli",
+      "category": "Browser & Automation",
+      "installs": 437
+    },
+    {
+      "name": "firecrawl-download",
+      "source": "firecrawl/cli",
+      "category": "Browser & Automation",
+      "installs": 435
+    },
+    {
+      "name": "firecrawl-instruct",
+      "source": "firecrawl/cli",
+      "category": "AI & ML",
+      "installs": 434
+    },
+    {
+      "name": "shadcn-ui",
+      "source": "google-labs-code/stitch-skills",
       "category": "Frontend & UI",
-      "installs": 349
+      "installs": 432
     },
     {
-      "name": "opencli-explorer",
-      "source": "jackwener/opencli",
-      "category": "AI & ML",
-      "installs": 348
+      "name": "next-cache-components",
+      "source": "vercel-labs/next-skills",
+      "category": "Frontend & UI",
+      "installs": 425
     },
     {
-      "name": "opencli-usage",
-      "source": "jackwener/opencli",
-      "category": "AI & ML",
-      "installs": 344
+      "name": "gws-docs-write",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 414
     },
     {
-      "name": "azure-prepare",
-      "source": "microsoft/github-copilot-for-azure",
-      "category": "Cloud & Infrastructure",
-      "installs": 341
+      "name": "gws-sheets-read",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 409
     },
     {
       "name": "azure-deploy",
       "source": "microsoft/github-copilot-for-azure",
       "category": "DevOps & CI/CD",
-      "installs": 341
+      "installs": 408
     },
     {
-      "name": "stripe-best-practices",
-      "source": "docs.stripe.com",
-      "category": "Documentation & Writing",
-      "installs": 340
-    },
-    {
-      "name": "entra-app-registration",
-      "source": "microsoft/github-copilot-for-azure",
-      "category": "Security & Auth",
-      "installs": 340
-    },
-    {
-      "name": "azure-rbac",
-      "source": "microsoft/github-copilot-for-azure",
-      "category": "Security & Auth",
-      "installs": 339
+      "name": "tong-jincheng-perspective",
+      "source": "hotcoffeeshake/tong-jincheng-skill",
+      "category": "AI & ML",
+      "installs": 406
     },
     {
       "name": "azure-resource-lookup",
       "source": "microsoft/github-copilot-for-azure",
       "category": "Cloud & Infrastructure",
-      "installs": 339
+      "installs": 405
     },
     {
-      "name": "azure-resource-visualizer",
+      "name": "azure-prepare",
       "source": "microsoft/github-copilot-for-azure",
       "category": "Cloud & Infrastructure",
-      "installs": 339
+      "installs": 405
     },
     {
-      "name": "azure-compliance",
+      "name": "json-canvas",
+      "source": "kepano/obsidian-skills",
+      "category": "Developer Workflow",
+      "installs": 405
+    },
+    {
+      "name": "entra-app-registration",
       "source": "microsoft/github-copilot-for-azure",
-      "category": "Cloud & Infrastructure",
-      "installs": 339
-    },
-    {
-      "name": "azure-diagnostics",
-      "source": "microsoft/github-copilot-for-azure",
-      "category": "Cloud & Infrastructure",
-      "installs": 339
-    },
-    {
-      "name": "appinsights-instrumentation",
-      "source": "microsoft/github-copilot-for-azure",
-      "category": "Cloud & Infrastructure",
-      "installs": 339
-    },
-    {
-      "name": "opencli-oneshot",
-      "source": "jackwener/opencli",
-      "category": "AI & ML",
-      "installs": 339
+      "category": "Security & Auth",
+      "installs": 405
     },
     {
       "name": "azure-validate",
       "source": "microsoft/github-copilot-for-azure",
       "category": "Cloud & Infrastructure",
-      "installs": 339
+      "installs": 405
+    },
+    {
+      "name": "azure-rbac",
+      "source": "microsoft/github-copilot-for-azure",
+      "category": "Security & Auth",
+      "installs": 404
     },
     {
       "name": "azure-aigateway",
       "source": "microsoft/github-copilot-for-azure",
       "category": "Cloud & Infrastructure",
-      "installs": 338
+      "installs": 404
+    },
+    {
+      "name": "azure-resource-visualizer",
+      "source": "microsoft/github-copilot-for-azure",
+      "category": "Cloud & Infrastructure",
+      "installs": 404
+    },
+    {
+      "name": "azure-compliance",
+      "source": "microsoft/github-copilot-for-azure",
+      "category": "Cloud & Infrastructure",
+      "installs": 404
     },
     {
       "name": "azure-storage",
       "source": "microsoft/github-copilot-for-azure",
       "category": "Cloud & Infrastructure",
-      "installs": 338
+      "installs": 404
+    },
+    {
+      "name": "algorithmic-art",
+      "source": "anthropics/skills",
+      "category": "AI & ML",
+      "installs": 404
     },
     {
       "name": "azure-ai",
       "source": "microsoft/github-copilot-for-azure",
       "category": "AI & ML",
-      "installs": 338
+      "installs": 404
+    },
+    {
+      "name": "azure-diagnostics",
+      "source": "microsoft/github-copilot-for-azure",
+      "category": "Cloud & Infrastructure",
+      "installs": 404
     },
     {
       "name": "azure-kusto",
       "source": "microsoft/github-copilot-for-azure",
       "category": "Cloud & Infrastructure",
-      "installs": 338
+      "installs": 404
     },
     {
-      "name": "git-commit",
-      "source": "github/awesome-copilot",
+      "name": "appinsights-instrumentation",
+      "source": "microsoft/github-copilot-for-azure",
+      "category": "Cloud & Infrastructure",
+      "installs": 404
+    },
+    {
+      "name": "defuddle",
+      "source": "kepano/obsidian-skills",
+      "category": "Documentation & Writing",
+      "installs": 403
+    },
+    {
+      "name": "write-a-prd",
+      "source": "mattpocock/skills",
+      "category": "Documentation & Writing",
+      "installs": 403
+    },
+    {
+      "name": "claude-api",
+      "source": "anthropics/skills",
+      "category": "AI & ML",
+      "installs": 395
+    },
+    {
+      "name": "gws-sheets-append",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 384
+    },
+    {
+      "name": "gws-drive-upload",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 383
+    },
+    {
+      "name": "gws-calendar-agenda",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 382
+    },
+    {
+      "name": "internal-comms",
+      "source": "anthropics/skills",
+      "category": "Documentation & Writing",
+      "installs": 381
+    },
+    {
+      "name": "neon-postgres",
+      "source": "neondatabase/agent-skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 381
+    },
+    {
+      "name": "electron",
+      "source": "vercel-labs/agent-browser",
+      "category": "Browser & Automation",
+      "installs": 378
+    },
+    {
+      "name": "azure-messaging",
+      "source": "microsoft/github-copilot-for-azure",
+      "category": "Cloud & Infrastructure",
+      "installs": 374
+    },
+    {
+      "name": "slack-gif-creator",
+      "source": "anthropics/skills",
+      "category": "AI & ML",
+      "installs": 366
+    },
+    {
+      "name": "stripe-best-practices",
+      "source": "docs.stripe.com",
+      "category": "Documentation & Writing",
+      "installs": 363
+    },
+    {
+      "name": "gws-tasks",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 362
+    },
+    {
+      "name": "gws-gmail-triage",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 361
+    },
+    {
+      "name": "gws-calendar-insert",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 357
+    },
+    {
+      "name": "tailwind-design-system",
+      "source": "wshobson/agents",
+      "category": "Frontend & UI",
+      "installs": 356
+    },
+    {
+      "name": "stripe-projects",
+      "source": "docs.stripe.com",
+      "category": "Platform SDK",
+      "installs": 356
+    },
+    {
+      "name": "upgrade-stripe",
+      "source": "docs.stripe.com",
       "category": "Developer Workflow",
-      "installs": 337
+      "installs": 353
+    },
+    {
+      "name": "opencli-operate",
+      "source": "jackwener/opencli",
+      "category": "AI & ML",
+      "installs": 352
+    },
+    {
+      "name": "gws-shared",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 352
+    },
+    {
+      "name": "opencli-usage",
+      "source": "jackwener/opencli",
+      "category": "AI & ML",
+      "installs": 350
+    },
+    {
+      "name": "gws-gmail-send",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 347
+    },
+    {
+      "name": "gws-slides",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 345
+    },
+    {
+      "name": "tdd",
+      "source": "mattpocock/skills",
+      "category": "Testing & QA",
+      "installs": 345
+    },
+    {
+      "name": "template-skill",
+      "source": "anthropics/skills",
+      "category": "Developer Workflow",
+      "installs": 342
+    },
+    {
+      "name": "remotion",
+      "source": "google-labs-code/stitch-skills",
+      "category": "AI & ML",
+      "installs": 342
+    },
+    {
+      "name": "opencli-oneshot",
+      "source": "jackwener/opencli",
+      "category": "AI & ML",
+      "installs": 341
+    },
+    {
+      "name": "notion-api",
+      "source": "intellectronica/agent-skills",
+      "category": "Backend & API",
+      "installs": 339
+    },
+    {
+      "name": "opencli-explorer",
+      "source": "jackwener/opencli",
+      "category": "AI & ML",
+      "installs": 338
     },
     {
       "name": "building-native-ui",
@@ -1603,1701 +1687,1497 @@
       "installs": 337
     },
     {
-      "name": "slack-gif-creator",
-      "source": "anthropics/skills",
-      "category": "AI & ML",
-      "installs": 336
-    },
-    {
-      "name": "upgrade-stripe",
-      "source": "docs.stripe.com",
-      "category": "Developer Workflow",
-      "installs": 333
-    },
-    {
-      "name": "stripe-projects",
-      "source": "docs.stripe.com",
-      "category": "Platform SDK",
-      "installs": 333
-    },
-    {
-      "name": "opencli-repair",
-      "source": "jackwener/opencli",
-      "category": "AI & ML",
-      "installs": 331
-    },
-    {
       "name": "smart-search",
       "source": "jackwener/opencli",
       "category": "AI & ML",
-      "installs": 330
-    },
-    {
-      "name": "gws-docs-write",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 327
-    },
-    {
-      "name": "template-skill",
-      "source": "anthropics/skills",
-      "category": "Developer Workflow",
-      "installs": 324
-    },
-    {
-      "name": "gws-sheets-read",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 324
-    },
-    {
-      "name": "gws-calendar-agenda",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 321
-    },
-    {
-      "name": "gws-drive-upload",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 320
-    },
-    {
-      "name": "tavily-search",
-      "source": "tavily-ai/skills",
-      "category": "AI & ML",
-      "installs": 316
-    },
-    {
-      "name": "agentcore",
-      "source": "vercel-labs/agent-browser",
-      "category": "Browser & Automation",
-      "installs": 309
-    },
-    {
-      "name": "gws-shared",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 304
-    },
-    {
-      "name": "azure-messaging",
-      "source": "microsoft/github-copilot-for-azure",
-      "category": "Cloud & Infrastructure",
-      "installs": 303
-    },
-    {
-      "name": "gws-calendar-insert",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 300
-    },
-    {
-      "name": "planning-with-files",
-      "source": "othmanadi/planning-with-files",
-      "category": "Developer Workflow",
-      "installs": 300
-    },
-    {
-      "name": "gws-gmail-send",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 298
-    },
-    {
-      "name": "gws-tasks",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 296
-    },
-    {
-      "name": "tdd",
-      "source": "mattpocock/skills",
-      "category": "Testing & QA",
-      "installs": 295
-    },
-    {
-      "name": "gws-sheets-append",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 293
-    },
-    {
-      "name": "gws-slides",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 291
-    },
-    {
-      "name": "self-improving-agent",
-      "source": "charon-fan/agent-playbook",
-      "category": "AI & ML",
-      "installs": 288
-    },
-    {
-      "name": "gws-gmail-triage",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 285
-    },
-    {
-      "name": "taste-design",
-      "source": "google-labs-code/stitch-skills",
-      "category": "Developer Workflow",
-      "installs": 280
-    },
-    {
-      "name": "gws-gmail-read",
-      "source": "googleworkspace/cli",
-      "category": "Backend & API",
-      "installs": 279
-    },
-    {
-      "name": "vitest",
-      "source": "antfu/skills",
-      "category": "Testing & QA",
-      "installs": 277
-    },
-    {
-      "name": "improve-codebase-architecture",
-      "source": "mattpocock/skills",
-      "category": "Developer Workflow",
-      "installs": 271
-    },
-    {
-      "name": "health",
-      "source": "tw93/waza",
-      "category": "Developer Workflow",
-      "installs": 269
-    },
-    {
-      "name": "azure-hosted-copilot-sdk",
-      "source": "microsoft/github-copilot-for-azure",
-      "category": "Platform SDK",
-      "installs": 265
-    },
-    {
-      "name": "prd-to-issues",
-      "source": "mattpocock/skills",
-      "category": "Developer Workflow",
-      "installs": 263
-    },
-    {
-      "name": "ai-sdk",
-      "source": "vercel/ai",
-      "category": "AI & ML",
-      "installs": 262
-    },
-    {
-      "name": "notion-api",
-      "source": "intellectronica/agent-skills",
-      "category": "Backend & API",
-      "installs": 261
-    },
-    {
-      "name": "native-data-fetching",
-      "source": "expo/skills",
-      "category": "Mobile",
-      "installs": 258
+      "installs": 335
     },
     {
       "name": "gws-meet",
       "source": "googleworkspace/cli",
       "category": "Platform SDK",
-      "installs": 258
+      "installs": 334
     },
     {
-      "name": "write",
-      "source": "tw93/waza",
+      "name": "tailwind-css-patterns",
+      "source": "giuseppe-trisciuoglio/developer-kit",
+      "category": "Frontend & UI",
+      "installs": 333
+    },
+    {
+      "name": "git-commit",
+      "source": "github/awesome-copilot",
       "category": "Developer Workflow",
-      "installs": 255
+      "installs": 333
     },
     {
-      "name": "design",
-      "source": "tw93/waza",
-      "category": "Developer Workflow",
-      "installs": 254
-    },
-    {
-      "name": "hunt",
-      "source": "tw93/waza",
-      "category": "Developer Workflow",
-      "installs": 252
-    },
-    {
-      "name": "read",
-      "source": "tw93/waza",
-      "category": "Developer Workflow",
-      "installs": 251
-    },
-    {
-      "name": "think",
-      "source": "tw93/waza",
-      "category": "Developer Workflow",
-      "installs": 251
-    },
-    {
-      "name": "check",
-      "source": "tw93/waza",
-      "category": "Developer Workflow",
-      "installs": 251
-    },
-    {
-      "name": "gws-forms",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 248
-    },
-    {
-      "name": "email-and-password-best-practices",
-      "source": "better-auth/skills",
-      "category": "Security & Auth",
-      "installs": 247
-    },
-    {
-      "name": "anti-detect-browser",
-      "source": "antibrow/anti-detect-browser-skills",
+      "name": "vercel-sandbox",
+      "source": "vercel-labs/agent-browser",
       "category": "Browser & Automation",
-      "installs": 242
+      "installs": 332
     },
     {
-      "name": "gws-gmail-watch",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 240
+      "name": "slack",
+      "source": "vercel-labs/agent-browser",
+      "category": "Browser & Automation",
+      "installs": 331
     },
     {
-      "name": "upgrading-expo",
-      "source": "expo/skills",
-      "category": "Mobile",
-      "installs": 237
-    },
-    {
-      "name": "baseline-ui",
-      "source": "ibelick/ui-skills",
-      "category": "Frontend & UI",
-      "installs": 237
-    },
-    {
-      "name": "expo-deployment",
-      "source": "expo/skills",
-      "category": "DevOps & CI/CD",
-      "installs": 235
-    },
-    {
-      "name": "gws-keep",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 235
-    },
-    {
-      "name": "expo-tailwind-setup",
-      "source": "expo/skills",
-      "category": "Mobile",
-      "installs": 235
-    },
-    {
-      "name": "prd-to-plan",
-      "source": "mattpocock/skills",
+      "name": "turborepo",
+      "source": "vercel/turborepo",
       "category": "Developer Workflow",
-      "installs": 235
+      "installs": 329
     },
     {
-      "name": "expo-dev-client",
-      "source": "expo/skills",
-      "category": "Mobile",
-      "installs": 234
-    },
-    {
-      "name": "fixing-accessibility",
-      "source": "ibelick/ui-skills",
-      "category": "Frontend & UI",
-      "installs": 232
-    },
-    {
-      "name": "organization-best-practices",
-      "source": "better-auth/skills",
-      "category": "Developer Workflow",
-      "installs": 231
-    },
-    {
-      "name": "gws-gmail-reply",
+      "name": "gws-gmail-read",
       "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 230
-    },
-    {
-      "name": "fixing-motion-performance",
-      "source": "ibelick/ui-skills",
-      "category": "Frontend & UI",
-      "installs": 228
-    },
-    {
-      "name": "create-auth-skill",
-      "source": "better-auth/skills",
-      "category": "Security & Auth",
-      "installs": 225
-    },
-    {
-      "name": "gws-gmail-forward",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 224
-    },
-    {
-      "name": "fixing-metadata",
-      "source": "ibelick/ui-skills",
-      "category": "Frontend & UI",
-      "installs": 223
-    },
-    {
-      "name": "gws-gmail-reply-all",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 222
-    },
-    {
-      "name": "ckm:ui-styling",
-      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "category": "Frontend & UI",
-      "installs": 221
-    },
-    {
-      "name": "two-factor-authentication-best-practices",
-      "source": "better-auth/skills",
-      "category": "Security & Auth",
-      "installs": 220
-    },
-    {
-      "name": "summarize",
-      "source": "steipete/clawdis",
-      "category": "AI & ML",
-      "installs": 220
-    },
-    {
-      "name": "ckm:design",
-      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "category": "Frontend & UI",
-      "installs": 219
-    },
-    {
-      "name": "ckm:slides",
-      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "category": "Frontend & UI",
-      "installs": 218
-    },
-    {
-      "name": "ckm:design-system",
-      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "category": "Frontend & UI",
-      "installs": 218
-    },
-    {
-      "name": "ckm:brand",
-      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "category": "Frontend & UI",
-      "installs": 217
-    },
-    {
-      "name": "humanizer-zh",
-      "source": "op7418/humanizer-zh",
-      "category": "AI & ML",
-      "installs": 215
-    },
-    {
-      "name": "ckm:banner-design",
-      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
-      "category": "Frontend & UI",
-      "installs": 215
-    },
-    {
-      "name": "gws-workflow",
-      "source": "googleworkspace/cli",
-      "category": "Developer Workflow",
-      "installs": 215
-    },
-    {
-      "name": "gws-script",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 214
-    },
-    {
-      "name": "gws-chat",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 214
-    },
-    {
-      "name": "gws-script-push",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 212
-    },
-    {
-      "name": "vue",
-      "source": "antfu/skills",
-      "category": "Frontend & UI",
-      "installs": 212
-    },
-    {
-      "name": "gsap-core",
-      "source": "greensock/gsap-skills",
-      "category": "Frontend & UI",
-      "installs": 209
-    },
-    {
-      "name": "gws-workflow-email-to-task",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 208
+      "category": "Backend & API",
+      "installs": 327
     },
     {
       "name": "flutter-building-layouts",
       "source": "flutter/skills",
       "category": "Mobile",
-      "installs": 207
+      "installs": 326
     },
     {
-      "name": "expo-cicd-workflows",
-      "source": "expo/skills",
-      "category": "DevOps & CI/CD",
-      "installs": 207
+      "name": "azure-hosted-copilot-sdk",
+      "source": "microsoft/github-copilot-for-azure",
+      "category": "Platform SDK",
+      "installs": 317
     },
     {
-      "name": "expo-api-routes",
+      "name": "flutter-architecting-apps",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 315
+    },
+    {
+      "name": "vite",
+      "source": "antfu/skills",
+      "category": "Frontend & UI",
+      "installs": 312
+    },
+    {
+      "name": "gws-keep",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 309
+    },
+    {
+      "name": "ckm:design-system",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "Frontend & UI",
+      "installs": 308
+    },
+    {
+      "name": "gws-gmail-watch",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 306
+    },
+    {
+      "name": "ckm:ui-styling",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "Frontend & UI",
+      "installs": 306
+    },
+    {
+      "name": "ckm:design",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "Frontend & UI",
+      "installs": 305
+    },
+    {
+      "name": "next-upgrade",
+      "source": "vercel-labs/next-skills",
+      "category": "Frontend & UI",
+      "installs": 304
+    },
+    {
+      "name": "gws-forms",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 304
+    },
+    {
+      "name": "ckm:brand",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "Frontend & UI",
+      "installs": 303
+    },
+    {
+      "name": "flutter-managing-state",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 303
+    },
+    {
+      "name": "ckm:slides",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "Frontend & UI",
+      "installs": 302
+    },
+    {
+      "name": "opencli-autofix",
+      "source": "jackwener/opencli",
+      "category": "Uncategorized",
+      "installs": 302
+    },
+    {
+      "name": "ckm:banner-design",
+      "source": "nextlevelbuilder/ui-ux-pro-max-skill",
+      "category": "Frontend & UI",
+      "installs": 300
+    },
+    {
+      "name": "flutter-animating-apps",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 295
+    },
+    {
+      "name": "self-improving-agent",
+      "source": "charon-fan/agent-playbook",
+      "category": "AI & ML",
+      "installs": 293
+    },
+    {
+      "name": "flutter-implementing-navigation-and-routing",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 293
+    },
+    {
+      "name": "flutter-theming-apps",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 291
+    },
+    {
+      "name": "ai-sdk",
+      "source": "vercel/ai",
+      "category": "AI & ML",
+      "installs": 290
+    },
+    {
+      "name": "agentcore",
+      "source": "vercel-labs/agent-browser",
+      "category": "Browser & Automation",
+      "installs": 289
+    },
+    {
+      "name": "flutter-testing-apps",
+      "source": "flutter/skills",
+      "category": "Testing & QA",
+      "installs": 287
+    },
+    {
+      "name": "gws-gmail-reply",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 284
+    },
+    {
+      "name": "gws-workflow",
+      "source": "googleworkspace/cli",
+      "category": "Developer Workflow",
+      "installs": 280
+    },
+    {
+      "name": "improve-codebase-architecture",
+      "source": "mattpocock/skills",
+      "category": "Developer Workflow",
+      "installs": 277
+    },
+    {
+      "name": "flutter-caching-data",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 277
+    },
+    {
+      "name": "flutter-reducing-app-size",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 276
+    },
+    {
+      "name": "gws-gmail-forward",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 275
+    },
+    {
+      "name": "flutter-building-forms",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 274
+    },
+    {
+      "name": "gws-script",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 273
+    },
+    {
+      "name": "flutter-handling-concurrency",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 272
+    },
+    {
+      "name": "flutter-handling-http-and-json",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 272
+    },
+    {
+      "name": "gws-gmail-reply-all",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 272
+    },
+    {
+      "name": "gws-chat",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 270
+    },
+    {
+      "name": "flutter-building-plugins",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 269
+    },
+    {
+      "name": "gws-script-push",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 269
+    },
+    {
+      "name": "flutter-improving-accessibility",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 268
+    },
+    {
+      "name": "flutter-interoperating-with-native-apis",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 268
+    },
+    {
+      "name": "flutter-working-with-databases",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 267
+    },
+    {
+      "name": "flutter-localizing-apps",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 267
+    },
+    {
+      "name": "flutter-embedding-native-views",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 266
+    },
+    {
+      "name": "flutter-adding-home-screen-widgets",
+      "source": "flutter/skills",
+      "category": "Mobile",
+      "installs": 266
+    },
+    {
+      "name": "tavily-search",
+      "source": "tavily-ai/skills",
+      "category": "AI & ML",
+      "installs": 264
+    },
+    {
+      "name": "gws-chat-send",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 263
+    },
+    {
+      "name": "gws-people",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 263
+    },
+    {
+      "name": "gws-workflow-meeting-prep",
+      "source": "googleworkspace/cli",
+      "category": "Developer Workflow",
+      "installs": 261
+    },
+    {
+      "name": "gws-workflow-email-to-task",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 260
+    },
+    {
+      "name": "gws-workflow-standup-report",
+      "source": "googleworkspace/cli",
+      "category": "Developer Workflow",
+      "installs": 259
+    },
+    {
+      "name": "gws-workflow-weekly-digest",
+      "source": "googleworkspace/cli",
+      "category": "Developer Workflow",
+      "installs": 257
+    },
+    {
+      "name": "recipe-create-presentation",
+      "source": "googleworkspace/cli",
+      "category": "Developer Workflow",
+      "installs": 256
+    },
+    {
+      "name": "flutter-setting-up-on-windows",
+      "source": "flutter/skills",
+      "category": "Developer Workflow",
+      "installs": 253
+    },
+    {
+      "name": "persona-project-manager",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 252
+    },
+    {
+      "name": "flutter-setting-up-on-macos",
+      "source": "flutter/skills",
+      "category": "Developer Workflow",
+      "installs": 251
+    },
+    {
+      "name": "persona-researcher",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 250
+    },
+    {
+      "name": "zhangxuefeng-perspective",
+      "source": "alchaincyf/zhangxuefeng-skill",
+      "category": "Documentation & Writing",
+      "installs": 249
+    },
+    {
+      "name": "gws-workflow-file-announce",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 249
+    },
+    {
+      "name": "persona-team-lead",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 249
+    },
+    {
+      "name": "recipe-reschedule-meeting",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 248
+    },
+    {
+      "name": "recipe-create-gmail-filter",
+      "source": "googleworkspace/cli",
+      "category": "Developer Workflow",
+      "installs": 247
+    },
+    {
+      "name": "recipe-find-free-time",
+      "source": "googleworkspace/cli",
+      "category": "Developer Workflow",
+      "installs": 247
+    },
+    {
+      "name": "recipe-plan-weekly-schedule",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 247
+    },
+    {
+      "name": "flutter-setting-up-on-linux",
+      "source": "flutter/skills",
+      "category": "Developer Workflow",
+      "installs": 247
+    },
+    {
+      "name": "recipe-draft-email-from-doc",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 247
+    },
+    {
+      "name": "persona-content-creator",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 247
+    },
+    {
+      "name": "recipe-compare-sheet-tabs",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 246
+    },
+    {
+      "name": "persona-exec-assistant",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 246
+    },
+    {
+      "name": "gws-admin-reports",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 246
+    },
+    {
+      "name": "gws-events",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 246
+    },
+    {
+      "name": "recipe-create-doc-from-template",
+      "source": "googleworkspace/cli",
+      "category": "Developer Workflow",
+      "installs": 246
+    },
+    {
+      "name": "anti-detect-browser",
+      "source": "antibrow/anti-detect-browser-skills",
+      "category": "Browser & Automation",
+      "installs": 245
+    },
+    {
+      "name": "persona-event-coordinator",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 245
+    },
+    {
+      "name": "compress",
+      "source": "juliusbrussee/caveman",
+      "category": "Uncategorized",
+      "installs": 245
+    },
+    {
+      "name": "persona-sales-ops",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 245
+    },
+    {
+      "name": "recipe-email-drive-link",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 245
+    },
+    {
+      "name": "recipe-save-email-attachments",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 245
+    },
+    {
+      "name": "gws-events-subscribe",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 244
+    },
+    {
+      "name": "recipe-organize-drive-folder",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 244
+    },
+    {
+      "name": "gws-events-renew",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 244
+    },
+    {
+      "name": "persona-it-admin",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 244
+    },
+    {
+      "name": "recipe-schedule-recurring-event",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 243
+    },
+    {
+      "name": "recipe-backup-sheet-as-csv",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 243
+    },
+    {
+      "name": "recipe-label-and-archive-emails",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 243
+    },
+    {
+      "name": "recipe-post-mortem-setup",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 243
+    },
+    {
+      "name": "recipe-generate-report-from-sheet",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 243
+    },
+    {
+      "name": "recipe-watch-drive-changes",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 243
+    },
+    {
+      "name": "recipe-save-email-to-doc",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 243
+    },
+    {
+      "name": "recipe-bulk-download-folder",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 242
+    },
+    {
+      "name": "recipe-copy-sheet-for-new-month",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 242
+    },
+    {
+      "name": "recipe-create-meet-space",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 241
+    },
+    {
+      "name": "recipe-share-doc-and-notify",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 240
+    },
+    {
+      "name": "recipe-create-task-list",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 240
+    },
+    {
+      "name": "native-data-fetching",
       "source": "expo/skills",
       "category": "Mobile",
-      "installs": 205
+      "installs": 240
+    },
+    {
+      "name": "recipe-collect-form-responses",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 240
+    },
+    {
+      "name": "solana-dev",
+      "source": "solana-foundation/solana-dev-skill",
+      "category": "Platform SDK",
+      "installs": 240
+    },
+    {
+      "name": "recipe-review-meet-participants",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 240
+    },
+    {
+      "name": "recipe-find-large-files",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 240
+    },
+    {
+      "name": "recipe-review-overdue-tasks",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 240
+    },
+    {
+      "name": "recipe-create-events-from-sheet",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 239
+    },
+    {
+      "name": "recipe-create-shared-drive",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 239
+    },
+    {
+      "name": "persona-customer-support",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 239
+    },
+    {
+      "name": "recipe-batch-invite-to-event",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 239
+    },
+    {
+      "name": "gws-modelarmor-sanitize-prompt",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 238
+    },
+    {
+      "name": "recipe-forward-labeled-emails",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 238
+    },
+    {
+      "name": "recipe-block-focus-time",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 238
+    },
+    {
+      "name": "persona-hr-coordinator",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 237
+    },
+    {
+      "name": "gws-modelarmor-sanitize-response",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 237
+    },
+    {
+      "name": "recipe-create-expense-tracker",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 237
+    },
+    {
+      "name": "gws-modelarmor",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 237
+    },
+    {
+      "name": "recipe-share-folder-with-team",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 237
+    },
+    {
+      "name": "gws-modelarmor-create-template",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 237
+    },
+    {
+      "name": "audit-website",
+      "source": "squirrelscan/skills",
+      "category": "Testing & QA",
+      "installs": 237
+    },
+    {
+      "name": "recipe-sync-contacts-to-sheet",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 236
+    },
+    {
+      "name": "gws-classroom",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 236
+    },
+    {
+      "name": "recipe-create-feedback-form",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 236
+    },
+    {
+      "name": "recipe-create-vacation-responder",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 236
+    },
+    {
+      "name": "planning-with-files",
+      "source": "othmanadi/planning-with-files",
+      "category": "Developer Workflow",
+      "installs": 235
+    },
+    {
+      "name": "recipe-send-team-announcement",
+      "source": "googleworkspace/cli",
+      "category": "Platform SDK",
+      "installs": 234
+    },
+    {
+      "name": "recipe-log-deal-update",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 234
+    },
+    {
+      "name": "recipe-share-event-materials",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 233
+    },
+    {
+      "name": "expo-deployment",
+      "source": "expo/skills",
+      "category": "DevOps & CI/CD",
+      "installs": 233
+    },
+    {
+      "name": "recipe-create-classroom-course",
+      "source": "googleworkspace/cli",
+      "category": "AI & ML",
+      "installs": 232
+    },
+    {
+      "name": "create-auth-skill",
+      "source": "better-auth/skills",
+      "category": "Security & Auth",
+      "installs": 229
+    },
+    {
+      "name": "upgrading-expo",
+      "source": "expo/skills",
+      "category": "Mobile",
+      "installs": 229
+    },
+    {
+      "name": "prd-to-issues",
+      "source": "mattpocock/skills",
+      "category": "Developer Workflow",
+      "installs": 224
+    },
+    {
+      "name": "expo-dev-client",
+      "source": "expo/skills",
+      "category": "Mobile",
+      "installs": 223
+    },
+    {
+      "name": "expo-tailwind-setup",
+      "source": "expo/skills",
+      "category": "Mobile",
+      "installs": 222
+    },
+    {
+      "name": "azure-compute",
+      "source": "microsoft/github-copilot-for-azure",
+      "category": "Cloud & Infrastructure",
+      "installs": 219
+    },
+    {
+      "name": "humanizer-zh",
+      "source": "op7418/humanizer-zh",
+      "category": "AI & ML",
+      "installs": 218
     },
     {
       "name": "angular-developer",
       "source": "angular/skills",
       "category": "Frontend & UI",
+      "installs": 217
+    },
+    {
+      "name": "vitest",
+      "source": "antfu/skills",
+      "category": "Testing & QA",
+      "installs": 214
+    },
+    {
+      "name": "taste-design",
+      "source": "google-labs-code/stitch-skills",
+      "category": "Developer Workflow",
+      "installs": 211
+    },
+    {
+      "name": "expo-cicd-workflows",
+      "source": "expo/skills",
+      "category": "DevOps & CI/CD",
+      "installs": 208
+    },
+    {
+      "name": "email-and-password-best-practices",
+      "source": "better-auth/skills",
+      "category": "Security & Auth",
+      "installs": 206
+    },
+    {
+      "name": "prd-to-plan",
+      "source": "mattpocock/skills",
+      "category": "Developer Workflow",
       "installs": 205
     },
     {
       "name": "nestjs-best-practices",
       "source": "kadajett/agent-nestjs-skills",
       "category": "Backend & API",
-      "installs": 205
-    },
-    {
-      "name": "planning-with-files-zh",
-      "source": "othmanadi/planning-with-files",
-      "category": "Developer Workflow",
-      "installs": 203
-    },
-    {
-      "name": "gws-workflow-meeting-prep",
-      "source": "googleworkspace/cli",
-      "category": "Developer Workflow",
-      "installs": 203
-    },
-    {
-      "name": "recipe-create-presentation",
-      "source": "googleworkspace/cli",
-      "category": "Developer Workflow",
-      "installs": 203
-    },
-    {
-      "name": "audit-website",
-      "source": "squirrelscan/skills",
-      "category": "Testing & QA",
-      "installs": 203
-    },
-    {
-      "name": "gws-chat-send",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 201
-    },
-    {
-      "name": "flutter-architecting-apps",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 201
-    },
-    {
-      "name": "gws-workflow-weekly-digest",
-      "source": "googleworkspace/cli",
-      "category": "Developer Workflow",
-      "installs": 201
-    },
-    {
-      "name": "gws-people",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 201
-    },
-    {
-      "name": "steve-jobs-perspective",
-      "source": "alchaincyf/steve-jobs-skill",
-      "category": "AI & ML",
-      "installs": 200
-    },
-    {
-      "name": "cloudflare",
-      "source": "cloudflare/skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 199
-    },
-    {
-      "name": "gws-workflow-standup-report",
-      "source": "googleworkspace/cli",
-      "category": "Developer Workflow",
-      "installs": 198
-    },
-    {
-      "name": "gws-events",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 198
-    },
-    {
-      "name": "wecomcli-msg",
-      "source": "wecomteam/wecom-cli",
-      "category": "Platform SDK",
-      "installs": 198
-    },
-    {
-      "name": "wecomcli-doc",
-      "source": "wecomteam/wecom-cli",
-      "category": "Platform SDK",
-      "installs": 198
-    },
-    {
-      "name": "recipe-backup-sheet-as-csv",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 197
-    },
-    {
-      "name": "wecomcli-todo",
-      "source": "wecomteam/wecom-cli",
-      "category": "Platform SDK",
-      "installs": 197
-    },
-    {
-      "name": "wecomcli-meeting",
-      "source": "wecomteam/wecom-cli",
-      "category": "Platform SDK",
-      "installs": 197
-    },
-    {
-      "name": "wecomcli-schedule",
-      "source": "wecomteam/wecom-cli",
-      "category": "Platform SDK",
-      "installs": 197
-    },
-    {
-      "name": "wecomcli-contact",
-      "source": "wecomteam/wecom-cli",
-      "category": "Platform SDK",
-      "installs": 197
-    },
-    {
-      "name": "recipe-draft-email-from-doc",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 197
-    },
-    {
-      "name": "persona-researcher",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 197
-    },
-    {
-      "name": "recipe-compare-sheet-tabs",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 196
-    },
-    {
-      "name": "gws-events-subscribe",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 196
-    },
-    {
-      "name": "recipe-find-free-time",
-      "source": "googleworkspace/cli",
-      "category": "Developer Workflow",
-      "installs": 195
-    },
-    {
-      "name": "recipe-create-shared-drive",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 195
-    },
-    {
-      "name": "gws-events-renew",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 195
-    },
-    {
-      "name": "recipe-email-drive-link",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 195
-    },
-    {
-      "name": "baoyu-post-to-wechat",
-      "source": "jimliu/baoyu-skills",
-      "category": "Browser & Automation",
-      "installs": 195
-    },
-    {
-      "name": "persona-project-manager",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 195
-    },
-    {
-      "name": "gsap-scrolltrigger",
-      "source": "greensock/gsap-skills",
-      "category": "Frontend & UI",
-      "installs": 194
-    },
-    {
-      "name": "recipe-create-gmail-filter",
-      "source": "googleworkspace/cli",
-      "category": "Developer Workflow",
-      "installs": 194
-    },
-    {
-      "name": "recipe-plan-weekly-schedule",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 194
-    },
-    {
-      "name": "recipe-create-doc-from-template",
-      "source": "googleworkspace/cli",
-      "category": "Developer Workflow",
-      "installs": 194
-    },
-    {
-      "name": "gh-cli",
-      "source": "github/awesome-copilot",
-      "category": "Developer Workflow",
-      "installs": 193
-    },
-    {
-      "name": "recipe-organize-drive-folder",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 193
-    },
-    {
-      "name": "recipe-generate-report-from-sheet",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 193
-    },
-    {
-      "name": "tavily-research",
-      "source": "tavily-ai/skills",
-      "category": "AI & ML",
-      "installs": 193
-    },
-    {
-      "name": "persona-content-creator",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 193
-    },
-    {
-      "name": "recipe-bulk-download-folder",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 192
-    },
-    {
-      "name": "recipe-create-task-list",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 192
-    },
-    {
-      "name": "recipe-label-and-archive-emails",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 192
-    },
-    {
-      "name": "recipe-post-mortem-setup",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 192
-    },
-    {
-      "name": "persona-exec-assistant",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 192
-    },
-    {
-      "name": "gws-admin-reports",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 192
-    },
-    {
-      "name": "recipe-reschedule-meeting",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 192
-    },
-    {
-      "name": "recipe-save-email-to-doc",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 192
-    },
-    {
-      "name": "recipe-save-email-attachments",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 192
-    },
-    {
-      "name": "gws-workflow-file-announce",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 191
-    },
-    {
-      "name": "recipe-copy-sheet-for-new-month",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 191
-    },
-    {
-      "name": "recipe-batch-invite-to-event",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 191
-    },
-    {
-      "name": "persona-team-lead",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 191
-    },
-    {
-      "name": "recipe-block-focus-time",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 191
-    },
-    {
-      "name": "recipe-share-doc-and-notify",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 190
-    },
-    {
-      "name": "recipe-schedule-recurring-event",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 190
-    },
-    {
-      "name": "recipe-create-expense-tracker",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 190
-    },
-    {
-      "name": "recipe-forward-labeled-emails",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 190
-    },
-    {
-      "name": "persona-sales-ops",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 190
-    },
-    {
-      "name": "recipe-create-vacation-responder",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 190
-    },
-    {
-      "name": "recipe-create-events-from-sheet",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 189
-    },
-    {
-      "name": "solana-dev",
-      "source": "solana-foundation/solana-dev-skill",
-      "category": "Platform SDK",
-      "installs": 189
-    },
-    {
-      "name": "baoyu-xhs-images",
-      "source": "jimliu/baoyu-skills",
-      "category": "Browser & Automation",
-      "installs": 189
-    },
-    {
-      "name": "recipe-find-large-files",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 189
+      "installs": 204
     },
     {
       "name": "microsoft-foundry",
       "source": "microsoft/github-copilot-for-azure",
       "category": "Cloud & Infrastructure",
-      "installs": 189
+      "installs": 203
     },
     {
-      "name": "recipe-review-overdue-tasks",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 189
-    },
-    {
-      "name": "recipe-share-event-materials",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 188
-    },
-    {
-      "name": "recipe-collect-form-responses",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 188
-    },
-    {
-      "name": "recipe-create-meet-space",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 188
-    },
-    {
-      "name": "recipe-watch-drive-changes",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 188
-    },
-    {
-      "name": "recipe-sync-contacts-to-sheet",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 187
-    },
-    {
-      "name": "recipe-send-team-announcement",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 187
-    },
-    {
-      "name": "recipe-review-meet-participants",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 187
-    },
-    {
-      "name": "persona-customer-support",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 187
-    },
-    {
-      "name": "persona-it-admin",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 187
-    },
-    {
-      "name": "recipe-log-deal-update",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 187
-    },
-    {
-      "name": "persona-hr-coordinator",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 186
-    },
-    {
-      "name": "gsap-timeline",
-      "source": "greensock/gsap-skills",
-      "category": "Frontend & UI",
-      "installs": 186
-    },
-    {
-      "name": "persona-event-coordinator",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 185
-    },
-    {
-      "name": "recipe-create-feedback-form",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 185
-    },
-    {
-      "name": "gws-modelarmor",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 185
-    },
-    {
-      "name": "recipe-share-folder-with-team",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 185
-    },
-    {
-      "name": "recipe-create-classroom-course",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 184
+      "name": "expo-api-routes",
+      "source": "expo/skills",
+      "category": "Mobile",
+      "installs": 199
     },
     {
       "name": "agent development",
       "source": "anthropics/claude-code",
       "category": "AI & ML",
-      "installs": 184
+      "installs": 198
     },
     {
-      "name": "skill development",
-      "source": "anthropics/claude-code",
-      "category": "Platform SDK",
-      "installs": 184
-    },
-    {
-      "name": "gsap-plugins",
+      "name": "gsap-core",
       "source": "greensock/gsap-skills",
       "category": "Frontend & UI",
-      "installs": 184
+      "installs": 196
     },
     {
-      "name": "gsap-utils",
-      "source": "greensock/gsap-skills",
-      "category": "Frontend & UI",
-      "installs": 184
-    },
-    {
-      "name": "gws-modelarmor-create-template",
-      "source": "googleworkspace/cli",
+      "name": "summarize",
+      "source": "steipete/clawdis",
       "category": "AI & ML",
-      "installs": 184
-    },
-    {
-      "name": "gws-modelarmor-sanitize-response",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 183
-    },
-    {
-      "name": "prisma-client-api",
-      "source": "prisma/skills",
-      "category": "Backend & API",
-      "installs": 183
-    },
-    {
-      "name": "gsap-performance",
-      "source": "greensock/gsap-skills",
-      "category": "Frontend & UI",
-      "installs": 183
-    },
-    {
-      "name": "gws-modelarmor-sanitize-prompt",
-      "source": "googleworkspace/cli",
-      "category": "AI & ML",
-      "installs": 183
-    },
-    {
-      "name": "use-dom",
-      "source": "expo/skills",
-      "category": "Mobile",
-      "installs": 183
-    },
-    {
-      "name": "gws-classroom",
-      "source": "googleworkspace/cli",
-      "category": "Platform SDK",
-      "installs": 181
+      "installs": 196
     },
     {
       "name": "mastra",
       "source": "mastra-ai/skills",
       "category": "AI & ML",
-      "installs": 179
+      "installs": 196
     },
     {
-      "name": "nextjs-app-router-patterns",
-      "source": "wshobson/agents",
-      "category": "Frontend & UI",
-      "installs": 177
-    },
-    {
-      "name": "code-review-excellence",
-      "source": "wshobson/agents",
+      "name": "organization-best-practices",
+      "source": "better-auth/skills",
       "category": "Developer Workflow",
-      "installs": 177
+      "installs": 193
     },
     {
-      "name": "prisma-database-setup",
-      "source": "prisma/skills",
-      "category": "Backend & API",
-      "installs": 177
-    },
-    {
-      "name": "swiftui-pro",
-      "source": "twostraws/swiftui-agent-skill",
-      "category": "AI & ML",
-      "installs": 177
-    },
-    {
-      "name": "azure-devops-cli",
-      "source": "github/awesome-copilot",
-      "category": "DevOps & CI/CD",
-      "installs": 175
-    },
-    {
-      "name": "python-performance-optimization",
-      "source": "wshobson/agents",
-      "category": "Developer Workflow",
-      "installs": 173
+      "name": "cloudflare",
+      "source": "cloudflare/skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 192
     },
     {
       "name": "documentation-writer",
       "source": "github/awesome-copilot",
       "category": "Documentation & Writing",
-      "installs": 172
+      "installs": 192
     },
     {
-      "name": "flutter-animating-apps",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 172
-    },
-    {
-      "name": "tailwind-v4-shadcn",
-      "source": "secondsky/claude-skills",
-      "category": "Frontend & UI",
-      "installs": 172
-    },
-    {
-      "name": "azure-compute",
-      "source": "microsoft/github-copilot-for-azure",
-      "category": "Cloud & Infrastructure",
-      "installs": 167
-    },
-    {
-      "name": "gstack",
-      "source": "garrytan/gstack",
-      "category": "Developer Workflow",
-      "installs": 167
-    },
-    {
-      "name": "gsap-react",
-      "source": "greensock/gsap-skills",
-      "category": "Frontend & UI",
-      "installs": 165
-    },
-    {
-      "name": "write-a-skill",
-      "source": "mattpocock/skills",
-      "category": "Developer Workflow",
-      "installs": 164
-    },
-    {
-      "name": "baoyu-infographic",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
-      "installs": 164
-    },
-    {
-      "name": "swiftui-expert-skill",
-      "source": "avdlee/swiftui-agent-skill",
-      "category": "Mobile",
-      "installs": 164
-    },
-    {
-      "name": "vue-best-practices",
-      "source": "hyf0/vue-skills",
-      "category": "Frontend & UI",
-      "installs": 162
-    },
-    {
-      "name": "flutter-managing-state",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 162
-    },
-    {
-      "name": "baoyu-url-to-markdown",
-      "source": "jimliu/baoyu-skills",
-      "category": "Documentation & Writing",
-      "installs": 161
-    },
-    {
-      "name": "baoyu-cover-image",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
-      "installs": 160
-    },
-    {
-      "name": "gsap-frameworks",
-      "source": "greensock/gsap-skills",
-      "category": "Frontend & UI",
-      "installs": 160
-    },
-    {
-      "name": "flutter-theming-apps",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 159
-    },
-    {
-      "name": "baoyu-youtube-transcript",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
-      "installs": 158
-    },
-    {
-      "name": "excalidraw-diagram-generator",
-      "source": "github/awesome-copilot",
-      "category": "Documentation & Writing",
-      "installs": 158
-    },
-    {
-      "name": "code-review-and-quality",
-      "source": "addyosmani/agent-skills",
-      "category": "Developer Workflow",
-      "installs": 157
-    },
-    {
-      "name": "baoyu-article-illustrator",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
-      "installs": 157
-    },
-    {
-      "name": "refactor",
+      "name": "gh-cli",
       "source": "github/awesome-copilot",
       "category": "Developer Workflow",
-      "installs": 156
+      "installs": 190
     },
     {
-      "name": "prisma-cli",
-      "source": "prisma/skills",
-      "category": "Backend & API",
-      "installs": 155
-    },
-    {
-      "name": "flutter-testing-apps",
-      "source": "flutter/skills",
-      "category": "Testing & QA",
-      "installs": 154
-    },
-    {
-      "name": "baoyu-slide-deck",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
-      "installs": 154
-    },
-    {
-      "name": "claude-to-im",
-      "source": "op7418/claude-to-im-skill",
-      "category": "AI & ML",
-      "installs": 153
-    },
-    {
-      "name": "munger-perspective",
-      "source": "alchaincyf/munger-skill",
-      "category": "AI & ML",
-      "installs": 153
-    },
-    {
-      "name": "flutter-implementing-navigation-and-routing",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 153
-    },
-    {
-      "name": "elon-musk-perspective",
-      "source": "alchaincyf/elon-musk-skill",
-      "category": "AI & ML",
-      "installs": 152
-    },
-    {
-      "name": "seo-geo",
-      "source": "resciencelab/opc-skills",
-      "category": "AI & ML",
-      "installs": 150
-    },
-    {
-      "name": "replicas-agent",
-      "source": "replicas-group/skill",
-      "category": "AI & ML",
-      "installs": 150
-    },
-    {
-      "name": "baoyu-markdown-to-html",
-      "source": "jimliu/baoyu-skills",
-      "category": "Documentation & Writing",
-      "installs": 149
-    },
-    {
-      "name": "spec-driven-development",
-      "source": "addyosmani/agent-skills",
-      "category": "Developer Workflow",
-      "installs": 149
-    },
-    {
-      "name": "flutter-reducing-app-size",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 148
-    },
-    {
-      "name": "skill-vetter",
-      "source": "useai-pro/openclaw-skills-security",
+      "name": "two-factor-authentication-best-practices",
+      "source": "better-auth/skills",
       "category": "Security & Auth",
-      "installs": 148
-    },
-    {
-      "name": "python-testing-patterns",
-      "source": "wshobson/agents",
-      "category": "Testing & QA",
-      "installs": 148
-    },
-    {
-      "name": "planning-and-task-breakdown",
-      "source": "addyosmani/agent-skills",
-      "category": "Developer Workflow",
-      "installs": 147
-    },
-    {
-      "name": "vue-best-practices",
-      "source": "antfu/skills",
-      "category": "Frontend & UI",
-      "installs": 147
-    },
-    {
-      "name": "baoyu-translate",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
-      "installs": 147
-    },
-    {
-      "name": "baoyu-comic",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
-      "installs": 146
-    },
-    {
-      "name": "baoyu-format-markdown",
-      "source": "jimliu/baoyu-skills",
-      "category": "Documentation & Writing",
-      "installs": 146
-    },
-    {
-      "name": "using-agent-skills",
-      "source": "addyosmani/agent-skills",
-      "category": "AI & ML",
-      "installs": 145
-    },
-    {
-      "name": "context-engineering",
-      "source": "addyosmani/agent-skills",
-      "category": "AI & ML",
-      "installs": 144
-    },
-    {
-      "name": "baoyu-imagine",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
-      "installs": 144
-    },
-    {
-      "name": "expo-module",
-      "source": "expo/skills",
-      "category": "Mobile",
-      "installs": 144
+      "installs": 188
     },
     {
       "name": "azure-cloud-migrate",
       "source": "microsoft/github-copilot-for-azure",
       "category": "Cloud & Infrastructure",
-      "installs": 144
+      "installs": 184
     },
     {
-      "name": "flutter-improving-accessibility",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 144
-    },
-    {
-      "name": "frontend-ui-engineering",
-      "source": "addyosmani/agent-skills",
-      "category": "Frontend & UI",
-      "installs": 144
-    },
-    {
-      "name": "idea-refine",
-      "source": "addyosmani/agent-skills",
+      "name": "code-review-excellence",
+      "source": "wshobson/agents",
       "category": "Developer Workflow",
-      "installs": 143
+      "installs": 184
     },
     {
-      "name": "flutter-building-forms",
-      "source": "flutter/skills",
+      "name": "vue",
+      "source": "antfu/skills",
+      "category": "Frontend & UI",
+      "installs": 181
+    },
+    {
+      "name": "seo-geo",
+      "source": "resciencelab/opc-skills",
+      "category": "AI & ML",
+      "installs": 180
+    },
+    {
+      "name": "excalidraw-diagram-generator",
+      "source": "github/awesome-copilot",
+      "category": "Documentation & Writing",
+      "installs": 177
+    },
+    {
+      "name": "baoyu-post-to-wechat",
+      "source": "jimliu/baoyu-skills",
+      "category": "Browser & Automation",
+      "installs": 176
+    },
+    {
+      "name": "swiftui-expert-skill",
+      "source": "avdlee/swiftui-agent-skill",
       "category": "Mobile",
-      "installs": 143
+      "installs": 175
     },
     {
-      "name": "flutter-handling-http-and-json",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 143
-    },
-    {
-      "name": "hook development",
+      "name": "skill development",
       "source": "anthropics/claude-code",
       "category": "Platform SDK",
-      "installs": 143
+      "installs": 175
     },
     {
-      "name": "flutter-localizing-apps",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 142
+      "name": "wecomcli-doc",
+      "source": "wecomteam/wecom-cli",
+      "category": "Platform SDK",
+      "installs": 173
     },
     {
-      "name": "baoyu-compress-image",
-      "source": "jimliu/baoyu-skills",
-      "category": "Developer Workflow",
-      "installs": 142
+      "name": "wecomcli-todo",
+      "source": "wecomteam/wecom-cli",
+      "category": "Platform SDK",
+      "installs": 172
     },
     {
-      "name": "flutter-working-with-databases",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 141
+      "name": "wecomcli-meeting",
+      "source": "wecomteam/wecom-cli",
+      "category": "Platform SDK",
+      "installs": 172
     },
     {
-      "name": "flutter-caching-data",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 141
+      "name": "wecomcli-schedule",
+      "source": "wecomteam/wecom-cli",
+      "category": "Platform SDK",
+      "installs": 172
     },
     {
-      "name": "test-driven-development",
-      "source": "addyosmani/agent-skills",
-      "category": "Testing & QA",
-      "installs": 141
+      "name": "wecomcli-msg",
+      "source": "wecomteam/wecom-cli",
+      "category": "Platform SDK",
+      "installs": 172
+    },
+    {
+      "name": "vue-best-practices",
+      "source": "hyf0/vue-skills",
+      "category": "Frontend & UI",
+      "installs": 171
+    },
+    {
+      "name": "wecomcli-contact",
+      "source": "wecomteam/wecom-cli",
+      "category": "Platform SDK",
+      "installs": 171
+    },
+    {
+      "name": "tavily-research",
+      "source": "tavily-ai/skills",
+      "category": "AI & ML",
+      "installs": 171
     },
     {
       "name": "better-auth-security-best-practices",
       "source": "better-auth/skills",
       "category": "Security & Auth",
-      "installs": 141
+      "installs": 170
     },
     {
-      "name": "incremental-implementation",
-      "source": "addyosmani/agent-skills",
+      "name": "planning-with-files-zh",
+      "source": "othmanadi/planning-with-files",
       "category": "Developer Workflow",
-      "installs": 140
+      "installs": 169
     },
     {
-      "name": "baoyu-post-to-x",
+      "name": "baoyu-xhs-images",
       "source": "jimliu/baoyu-skills",
       "category": "Browser & Automation",
-      "installs": 139
+      "installs": 169
     },
     {
-      "name": "flutter-handling-concurrency",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 139
+      "name": "swiftui-pro",
+      "source": "twostraws/swiftui-agent-skill",
+      "category": "AI & ML",
+      "installs": 168
     },
     {
-      "name": "api-and-interface-design",
-      "source": "addyosmani/agent-skills",
-      "category": "Backend & API",
-      "installs": 139
-    },
-    {
-      "name": "flutter-adding-home-screen-widgets",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 139
-    },
-    {
-      "name": "mcp integration",
-      "source": "anthropics/claude-code",
-      "category": "Platform SDK",
-      "installs": 138
-    },
-    {
-      "name": "code-simplification",
-      "source": "addyosmani/agent-skills",
-      "category": "Developer Workflow",
-      "installs": 138
-    },
-    {
-      "name": "documentation-and-adrs",
-      "source": "addyosmani/agent-skills",
-      "category": "Documentation & Writing",
-      "installs": 137
-    },
-    {
-      "name": "debugging-and-error-recovery",
-      "source": "addyosmani/agent-skills",
-      "category": "Developer Workflow",
-      "installs": 136
-    },
-    {
-      "name": "baoyu-danger-x-to-markdown",
-      "source": "jimliu/baoyu-skills",
-      "category": "Documentation & Writing",
-      "installs": 136
-    },
-    {
-      "name": "prd",
+      "name": "azure-devops-cli",
       "source": "github/awesome-copilot",
-      "category": "Documentation & Writing",
-      "installs": 136
+      "category": "DevOps & CI/CD",
+      "installs": 167
     },
     {
-      "name": "performance-optimization",
-      "source": "addyosmani/agent-skills",
-      "category": "Backend & API",
-      "installs": 136
-    },
-    {
-      "name": "deep-agents-memory",
-      "source": "langchain-ai/langchain-skills",
-      "category": "AI & ML",
-      "installs": 136
-    },
-    {
-      "name": "nuxt",
-      "source": "antfu/skills",
+      "name": "gsap-scrolltrigger",
+      "source": "greensock/gsap-skills",
       "category": "Frontend & UI",
-      "installs": 135
+      "installs": 166
     },
     {
-      "name": "baoyu-danger-gemini-web",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
-      "installs": 135
-    },
-    {
-      "name": "tavily-extract",
-      "source": "tavily-ai/skills",
-      "category": "AI & ML",
-      "installs": 135
-    },
-    {
-      "name": "flutter-interoperating-with-native-apis",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 135
-    },
-    {
-      "name": "command development",
-      "source": "anthropics/claude-code",
-      "category": "Platform SDK",
-      "installs": 135
-    },
-    {
-      "name": "prisma-postgres",
-      "source": "prisma/skills",
-      "category": "Backend & API",
-      "installs": 134
-    },
-    {
-      "name": "api-design-principles",
-      "source": "wshobson/agents",
-      "category": "Backend & API",
-      "installs": 134
+      "name": "make-interfaces-feel-better",
+      "source": "jakubkrehel/make-interfaces-feel-better",
+      "category": "Frontend & UI",
+      "installs": 166
     },
     {
       "name": "wrangler",
       "source": "cloudflare/skills",
       "category": "Cloud & Infrastructure",
+      "installs": 164
+    },
+    {
+      "name": "python-performance-optimization",
+      "source": "wshobson/agents",
+      "category": "Developer Workflow",
+      "installs": 162
+    },
+    {
+      "name": "gsap-performance",
+      "source": "greensock/gsap-skills",
+      "category": "Frontend & UI",
+      "installs": 160
+    },
+    {
+      "name": "use-dom",
+      "source": "expo/skills",
+      "category": "Mobile",
+      "installs": 160
+    },
+    {
+      "name": "baseline-ui",
+      "source": "ibelick/ui-skills",
+      "category": "Frontend & UI",
+      "installs": 160
+    },
+    {
+      "name": "prisma-database-setup",
+      "source": "prisma/skills",
+      "category": "Backend & API",
+      "installs": 159
+    },
+    {
+      "name": "fixing-motion-performance",
+      "source": "ibelick/ui-skills",
+      "category": "Frontend & UI",
+      "installs": 158
+    },
+    {
+      "name": "gemini-api-dev",
+      "source": "google-gemini/gemini-skills",
+      "category": "Platform SDK",
+      "installs": 158
+    },
+    {
+      "name": "caveman-cn",
+      "source": "juliusbrussee/caveman",
+      "category": "Uncategorized",
+      "installs": 158
+    },
+    {
+      "name": "gstack",
+      "source": "garrytan/gstack",
+      "category": "Developer Workflow",
+      "installs": 157
+    },
+    {
+      "name": "fixing-accessibility",
+      "source": "ibelick/ui-skills",
+      "category": "Frontend & UI",
+      "installs": 156
+    },
+    {
+      "name": "replicas-agent",
+      "source": "replicas-group/skill",
+      "category": "AI & ML",
+      "installs": 156
+    },
+    {
+      "name": "expo-module",
+      "source": "expo/skills",
+      "category": "Mobile",
+      "installs": 155
+    },
+    {
+      "name": "gsap-timeline",
+      "source": "greensock/gsap-skills",
+      "category": "Frontend & UI",
+      "installs": 155
+    },
+    {
+      "name": "gsap-utils",
+      "source": "greensock/gsap-skills",
+      "category": "Frontend & UI",
+      "installs": 153
+    },
+    {
+      "name": "clerk-nextjs-patterns",
+      "source": "clerk/skills",
+      "category": "Platform SDK",
+      "installs": 153
+    },
+    {
+      "name": "steve-jobs-perspective",
+      "source": "alchaincyf/steve-jobs-skill",
+      "category": "AI & ML",
+      "installs": 152
+    },
+    {
+      "name": "learn",
+      "source": "tw93/waza",
+      "category": "Developer Workflow",
+      "installs": 152
+    },
+    {
+      "name": "api-design-principles",
+      "source": "wshobson/agents",
+      "category": "Backend & API",
+      "installs": 152
+    },
+    {
+      "name": "baoyu-infographic",
+      "source": "jimliu/baoyu-skills",
+      "category": "AI & ML",
+      "installs": 151
+    },
+    {
+      "name": "nextjs-app-router-patterns",
+      "source": "wshobson/agents",
+      "category": "Frontend & UI",
+      "installs": 151
+    },
+    {
+      "name": "gsap-plugins",
+      "source": "greensock/gsap-skills",
+      "category": "Frontend & UI",
+      "installs": 151
+    },
+    {
+      "name": "think",
+      "source": "tw93/waza",
+      "category": "Developer Workflow",
+      "installs": 150
+    },
+    {
+      "name": "hunt",
+      "source": "tw93/waza",
+      "category": "Developer Workflow",
+      "installs": 150
+    },
+    {
+      "name": "design",
+      "source": "tw93/waza",
+      "category": "Developer Workflow",
+      "installs": 150
+    },
+    {
+      "name": "read",
+      "source": "tw93/waza",
+      "category": "Developer Workflow",
+      "installs": 149
+    },
+    {
+      "name": "health",
+      "source": "tw93/waza",
+      "category": "Developer Workflow",
+      "installs": 149
+    },
+    {
+      "name": "check",
+      "source": "tw93/waza",
+      "category": "Developer Workflow",
+      "installs": 149
+    },
+    {
+      "name": "write",
+      "source": "tw93/waza",
+      "category": "Developer Workflow",
+      "installs": 149
+    },
+    {
+      "name": "python-testing-patterns",
+      "source": "wshobson/agents",
+      "category": "Testing & QA",
+      "installs": 149
+    },
+    {
+      "name": "refactor",
+      "source": "github/awesome-copilot",
+      "category": "Developer Workflow",
+      "installs": 148
+    },
+    {
+      "name": "baoyu-url-to-markdown",
+      "source": "jimliu/baoyu-skills",
+      "category": "Documentation & Writing",
+      "installs": 147
+    },
+    {
+      "name": "caveman-es",
+      "source": "juliusbrussee/caveman",
+      "category": "Uncategorized",
+      "installs": 147
+    },
+    {
+      "name": "skill-vetter",
+      "source": "useai-pro/openclaw-skills-security",
+      "category": "Security & Auth",
+      "installs": 146
+    },
+    {
+      "name": "elon-musk-perspective",
+      "source": "alchaincyf/elon-musk-skill",
+      "category": "AI & ML",
+      "installs": 146
+    },
+    {
+      "name": "baoyu-cover-image",
+      "source": "jimliu/baoyu-skills",
+      "category": "AI & ML",
+      "installs": 145
+    },
+    {
+      "name": "fixing-metadata",
+      "source": "ibelick/ui-skills",
+      "category": "Frontend & UI",
+      "installs": 145
+    },
+    {
+      "name": "baoyu-markdown-to-html",
+      "source": "jimliu/baoyu-skills",
+      "category": "Documentation & Writing",
+      "installs": 144
+    },
+    {
+      "name": "baoyu-youtube-transcript",
+      "source": "jimliu/baoyu-skills",
+      "category": "AI & ML",
+      "installs": 142
+    },
+    {
+      "name": "tailwind-v4-shadcn",
+      "source": "secondsky/claude-skills",
+      "category": "Frontend & UI",
+      "installs": 142
+    },
+    {
+      "name": "baoyu-slide-deck",
+      "source": "jimliu/baoyu-skills",
+      "category": "AI & ML",
+      "installs": 141
+    },
+    {
+      "name": "prisma-client-api",
+      "source": "prisma/skills",
+      "category": "Backend & API",
+      "installs": 141
+    },
+    {
+      "name": "baoyu-article-illustrator",
+      "source": "jimliu/baoyu-skills",
+      "category": "AI & ML",
+      "installs": 141
+    },
+    {
+      "name": "mcp integration",
+      "source": "anthropics/claude-code",
+      "category": "Platform SDK",
+      "installs": 141
+    },
+    {
+      "name": "baoyu-comic",
+      "source": "jimliu/baoyu-skills",
+      "category": "AI & ML",
+      "installs": 140
+    },
+    {
+      "name": "gsap-frameworks",
+      "source": "greensock/gsap-skills",
+      "category": "Frontend & UI",
+      "installs": 140
+    },
+    {
+      "name": "hook development",
+      "source": "anthropics/claude-code",
+      "category": "Platform SDK",
+      "installs": 140
+    },
+    {
+      "name": "gsap-react",
+      "source": "greensock/gsap-skills",
+      "category": "Frontend & UI",
+      "installs": 140
+    },
+    {
+      "name": "workers-best-practices",
+      "source": "cloudflare/skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 137
+    },
+    {
+      "name": "baoyu-translate",
+      "source": "jimliu/baoyu-skills",
+      "category": "AI & ML",
+      "installs": 136
+    },
+    {
+      "name": "claude-to-im",
+      "source": "op7418/claude-to-im-skill",
+      "category": "AI & ML",
       "installs": 134
     },
     {
-      "name": "tavily-crawl",
-      "source": "tavily-ai/skills",
-      "category": "Browser & Automation",
-      "installs": 133
+      "name": "command development",
+      "source": "anthropics/claude-code",
+      "category": "Platform SDK",
+      "installs": 134
     },
     {
-      "name": "flutter-embedding-native-views",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 133
-    },
-    {
-      "name": "baoyu-post-to-weibo",
-      "source": "jimliu/baoyu-skills",
-      "category": "AI & ML",
+      "name": "figma-implement-design",
+      "source": "figma/mcp-server-guide",
+      "category": "Frontend & UI",
       "installs": 133
     },
     {
       "name": "simplify",
       "source": "brianlovin/claude-config",
       "category": "Developer Workflow",
-      "installs": 133
+      "installs": 130
     },
     {
-      "name": "gemini-api-dev",
-      "source": "google-gemini/gemini-skills",
-      "category": "Platform SDK",
-      "installs": 133
-    },
-    {
-      "name": "git-workflow-and-versioning",
-      "source": "addyosmani/agent-skills",
-      "category": "Developer Workflow",
-      "installs": 133
-    },
-    {
-      "name": "security-and-hardening",
-      "source": "addyosmani/agent-skills",
-      "category": "Security & Auth",
-      "installs": 132
-    },
-    {
-      "name": "tavily-best-practices",
-      "source": "tavily-ai/skills",
-      "category": "AI & ML",
-      "installs": 132
-    },
-    {
-      "name": "browser-testing-with-devtools",
-      "source": "addyosmani/agent-skills",
+      "name": "baoyu-post-to-x",
+      "source": "jimliu/baoyu-skills",
       "category": "Browser & Automation",
-      "installs": 132
-    },
-    {
-      "name": "flutter-building-plugins",
-      "source": "flutter/skills",
-      "category": "Mobile",
-      "installs": 132
-    },
-    {
-      "name": "stripe-best-practices",
-      "source": "stripe/ai",
-      "category": "Platform SDK",
-      "installs": 132
-    },
-    {
-      "name": "tavily-cli",
-      "source": "tavily-ai/skills",
-      "category": "AI & ML",
-      "installs": 131
-    },
-    {
-      "name": "java-springboot",
-      "source": "github/awesome-copilot",
-      "category": "Backend & API",
       "installs": 129
     },
     {
-      "name": "tavily-map",
-      "source": "tavily-ai/skills",
+      "name": "baoyu-imagine",
+      "source": "jimliu/baoyu-skills",
       "category": "AI & ML",
-      "installs": 128
-    },
-    {
-      "name": "shipping-and-launch",
-      "source": "addyosmani/agent-skills",
-      "category": "DevOps & CI/CD",
-      "installs": 127
-    },
-    {
-      "name": "error-handling-patterns",
-      "source": "wshobson/agents",
-      "category": "Developer Workflow",
-      "installs": 127
-    },
-    {
-      "name": "learn",
-      "source": "tw93/waza",
-      "category": "Developer Workflow",
-      "installs": 127
-    },
-    {
-      "name": "ci-cd-and-automation",
-      "source": "addyosmani/agent-skills",
-      "category": "DevOps & CI/CD",
-      "installs": 126
-    },
-    {
-      "name": "deprecation-and-migration",
-      "source": "addyosmani/agent-skills",
-      "category": "Developer Workflow",
-      "installs": 126
-    },
-    {
-      "name": "flutter-setting-up-on-macos",
-      "source": "flutter/skills",
-      "category": "Developer Workflow",
-      "installs": 126
+      "installs": 129
     },
     {
       "name": "langgraph-fundamentals",
       "source": "langchain-ai/langchain-skills",
       "category": "AI & ML",
-      "installs": 125
+      "installs": 129
     },
     {
-      "name": "multi-stage-dockerfile",
+      "name": "prd",
       "source": "github/awesome-copilot",
-      "category": "DevOps & CI/CD",
-      "installs": 125
+      "category": "Documentation & Writing",
+      "installs": 129
+    },
+    {
+      "name": "write-a-skill",
+      "source": "mattpocock/skills",
+      "category": "Developer Workflow",
+      "installs": 128
+    },
+    {
+      "name": "baoyu-danger-gemini-web",
+      "source": "jimliu/baoyu-skills",
+      "category": "AI & ML",
+      "installs": 128
+    },
+    {
+      "name": "baoyu-compress-image",
+      "source": "jimliu/baoyu-skills",
+      "category": "Developer Workflow",
+      "installs": 127
+    },
+    {
+      "name": "security-review",
+      "source": "affaan-m/everything-claude-code",
+      "category": "Security & Auth",
+      "installs": 127
+    },
+    {
+      "name": "baoyu-format-markdown",
+      "source": "jimliu/baoyu-skills",
+      "category": "Documentation & Writing",
+      "installs": 127
+    },
+    {
+      "name": "deep-agents-memory",
+      "source": "langchain-ai/langchain-skills",
+      "category": "AI & ML",
+      "installs": 126
+    },
+    {
+      "name": "backlink-analyzer",
+      "source": "aaron-he-zhu/seo-geo-claude-skills",
+      "category": "AI & ML",
+      "installs": 126
     },
     {
       "name": "baoyu-image-gen",
       "source": "jimliu/baoyu-skills",
       "category": "AI & ML",
+      "installs": 126
+    },
+    {
+      "name": "prisma-cli",
+      "source": "prisma/skills",
+      "category": "Backend & API",
       "installs": 125
     },
     {
-      "name": "langchain-fundamentals",
-      "source": "langchain-ai/langchain-skills",
+      "name": "munger-perspective",
+      "source": "alchaincyf/munger-skill",
       "category": "AI & ML",
+      "installs": 124
+    },
+    {
+      "name": "java-springboot",
+      "source": "github/awesome-copilot",
+      "category": "Backend & API",
       "installs": 123
     },
     {
-      "name": "workers-best-practices",
-      "source": "cloudflare/skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 123
-    },
-    {
-      "name": "plugin structure",
-      "source": "anthropics/claude-code",
-      "category": "Platform SDK",
-      "installs": 123
-    },
-    {
-      "name": "langchain-rag",
-      "source": "langchain-ai/langchain-skills",
+      "name": "tavily-extract",
+      "source": "tavily-ai/skills",
       "category": "AI & ML",
+      "installs": 122
+    },
+    {
+      "name": "baoyu-danger-x-to-markdown",
+      "source": "jimliu/baoyu-skills",
+      "category": "Documentation & Writing",
       "installs": 122
     },
     {
@@ -3307,316 +3187,436 @@
       "installs": 122
     },
     {
-      "name": "design-an-interface",
-      "source": "mattpocock/skills",
-      "category": "Frontend & UI",
-      "installs": 121
-    },
-    {
-      "name": "flutter-setting-up-on-windows",
-      "source": "flutter/skills",
-      "category": "Developer Workflow",
-      "installs": 121
-    },
-    {
-      "name": "naval-perspective",
-      "source": "alchaincyf/naval-skill",
-      "category": "AI & ML",
-      "installs": 121
-    },
-    {
-      "name": "architecture-patterns",
-      "source": "wshobson/agents",
-      "category": "Developer Workflow",
-      "installs": 120
-    },
-    {
-      "name": "request-refactor-plan",
-      "source": "mattpocock/skills",
-      "category": "Developer Workflow",
-      "installs": 119
-    },
-    {
-      "name": "x-mastery-mentor",
-      "source": "alchaincyf/x-mentor-skill",
-      "category": "Documentation & Writing",
-      "installs": 118
-    },
-    {
-      "name": "flutter-setting-up-on-linux",
-      "source": "flutter/skills",
-      "category": "Developer Workflow",
-      "installs": 117
-    },
-    {
-      "name": "pnpm",
-      "source": "antfu/skills",
-      "category": "Developer Workflow",
-      "installs": 117
-    },
-    {
-      "name": "zhangxuefeng-perspective",
-      "source": "alchaincyf/zhangxuefeng-skill",
-      "category": "Documentation & Writing",
-      "installs": 116
-    },
-    {
-      "name": "langgraph-persistence",
-      "source": "langchain-ai/langchain-skills",
-      "category": "AI & ML",
-      "installs": 115
-    },
-    {
-      "name": "writing hookify rules",
-      "source": "anthropics/claude-code",
-      "category": "Platform SDK",
-      "installs": 115
-    },
-    {
-      "name": "next-browser",
-      "source": "vercel-labs/next-browser",
-      "category": "Browser & Automation",
-      "installs": 114
-    },
-    {
-      "name": "deep-agents-orchestration",
-      "source": "langchain-ai/langchain-skills",
-      "category": "AI & ML",
-      "installs": 114
-    },
-    {
-      "name": "create-readme",
-      "source": "github/awesome-copilot",
-      "category": "Documentation & Writing",
-      "installs": 113
-    },
-    {
-      "name": "langgraph-human-in-the-loop",
-      "source": "langchain-ai/langchain-skills",
-      "category": "AI & ML",
-      "installs": 113
-    },
-    {
-      "name": "backlink-analyzer",
-      "source": "aaron-he-zhu/seo-geo-claude-skills",
-      "category": "AI & ML",
-      "installs": 112
-    },
-    {
-      "name": "feynman-perspective",
-      "source": "alchaincyf/feynman-skill",
-      "category": "AI & ML",
-      "installs": 110
-    },
-    {
-      "name": "deep-agents-core",
-      "source": "langchain-ai/langchain-skills",
-      "category": "AI & ML",
-      "installs": 109
-    },
-    {
-      "name": "langchain-middleware",
-      "source": "langchain-ai/langchain-skills",
-      "category": "AI & ML",
-      "installs": 109
-    },
-    {
-      "name": "china-stock-analysis",
-      "source": "sugarforever/01coder-agent-skills",
-      "category": "AI & ML",
-      "installs": 109
-    },
-    {
-      "name": "git-advanced-workflows",
-      "source": "wshobson/agents",
-      "category": "Developer Workflow",
-      "installs": 109
-    },
-    {
-      "name": "clerk",
-      "source": "clerk/skills",
-      "category": "Platform SDK",
-      "installs": 108
-    },
-    {
-      "name": "vue-router-best-practices",
-      "source": "antfu/skills",
-      "category": "Frontend & UI",
-      "installs": 108
-    },
-    {
-      "name": "vueuse-functions",
-      "source": "antfu/skills",
-      "category": "Frontend & UI",
-      "installs": 108
-    },
-    {
-      "name": "triage-issue",
-      "source": "mattpocock/skills",
-      "category": "Developer Workflow",
-      "installs": 107
-    },
-    {
-      "name": "pinia",
-      "source": "antfu/skills",
-      "category": "Frontend & UI",
-      "installs": 107
-    },
-    {
-      "name": "langchain-dependencies",
-      "source": "langchain-ai/langchain-skills",
-      "category": "Developer Workflow",
-      "installs": 106
-    },
-    {
-      "name": "interface-design",
-      "source": "dammyjay93/interface-design",
-      "category": "Frontend & UI",
-      "installs": 106
-    },
-    {
-      "name": "framework-selection",
-      "source": "langchain-ai/langchain-skills",
-      "category": "Developer Workflow",
-      "installs": 105
-    },
-    {
-      "name": "laravel-specialist",
+      "name": "golang-pro",
       "source": "jeffallan/claude-skills",
       "category": "Backend & API",
-      "installs": 105
+      "installs": 121
     },
     {
-      "name": "security-review",
-      "source": "affaan-m/everything-claude-code",
-      "category": "Security & Auth",
-      "installs": 105
-    },
-    {
-      "name": "vue-pinia-best-practices",
-      "source": "vuejs-ai/skills",
-      "category": "Frontend & UI",
-      "installs": 105
-    },
-    {
-      "name": "clerk-nextjs-patterns",
-      "source": "clerk/skills",
+      "name": "plugin structure",
+      "source": "anthropics/claude-code",
       "category": "Platform SDK",
-      "installs": 105
-    },
-    {
-      "name": "postgresql-table-design",
-      "source": "wshobson/agents",
-      "category": "Backend & API",
-      "installs": 104
-    },
-    {
-      "name": "tsdown",
-      "source": "antfu/skills",
-      "category": "Documentation & Writing",
-      "installs": 104
-    },
-    {
-      "name": "excalidraw-diagram",
-      "source": "coleam00/excalidraw-diagram-skill",
-      "category": "AI & ML",
-      "installs": 103
-    },
-    {
-      "name": "drizzle-orm",
-      "source": "bobmatnyc/claude-mpm-skills",
-      "category": "Backend & API",
-      "installs": 102
-    },
-    {
-      "name": "release-skills",
-      "source": "jimliu/baoyu-skills",
-      "category": "DevOps & CI/CD",
-      "installs": 102
-    },
-    {
-      "name": "prompt-engineering-patterns",
-      "source": "wshobson/agents",
-      "category": "AI & ML",
-      "installs": 101
-    },
-    {
-      "name": "antfu",
-      "source": "antfu/skills",
-      "category": "Developer Workflow",
-      "installs": 101
-    },
-    {
-      "name": "slidev",
-      "source": "antfu/skills",
-      "category": "Documentation & Writing",
-      "installs": 101
-    },
-    {
-      "name": "taleb-perspective",
-      "source": "alchaincyf/taleb-skill",
-      "category": "Documentation & Writing",
-      "installs": 100
-    },
-    {
-      "name": "mobile-android-design",
-      "source": "wshobson/agents",
-      "category": "Mobile",
-      "installs": 100
-    },
-    {
-      "name": "turborepo",
-      "source": "antfu/skills",
-      "category": "AI & ML",
-      "installs": 99
-    },
-    {
-      "name": "proactive-agent",
-      "source": "halthelobster/proactive-agent",
-      "category": "AI & ML",
-      "installs": 99
-    },
-    {
-      "name": "mobile-ios-design",
-      "source": "wshobson/agents",
-      "category": "Mobile",
-      "installs": 99
-    },
-    {
-      "name": "web-perf",
-      "source": "cloudflare/skills",
-      "category": "Cloud & Infrastructure",
-      "installs": 98
-    },
-    {
-      "name": "ai-elements",
-      "source": "vercel/ai-elements",
-      "category": "Frontend & UI",
-      "installs": 98
-    },
-    {
-      "name": "web-access",
-      "source": "eze-is/web-access",
-      "category": "Browser & Automation",
-      "installs": 98
-    },
-    {
-      "name": "uncodixfy",
-      "source": "cyxzdev/uncodixfy",
-      "category": "Frontend & UI",
-      "installs": 98
+      "installs": 121
     },
     {
       "name": "fastapi-templates",
       "source": "wshobson/agents",
       "category": "Backend & API",
+      "installs": 120
+    },
+    {
+      "name": "tavily-crawl",
+      "source": "tavily-ai/skills",
+      "category": "Browser & Automation",
+      "installs": 120
+    },
+    {
+      "name": "nuxt",
+      "source": "antfu/skills",
+      "category": "Frontend & UI",
+      "installs": 119
+    },
+    {
+      "name": "web-perf",
+      "source": "cloudflare/skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 119
+    },
+    {
+      "name": "pua",
+      "source": "tanweai/pua",
+      "category": "AI & ML",
+      "installs": 119
+    },
+    {
+      "name": "langchain-rag",
+      "source": "langchain-ai/langchain-skills",
+      "category": "AI & ML",
+      "installs": 118
+    },
+    {
+      "name": "langgraph-persistence",
+      "source": "langchain-ai/langchain-skills",
+      "category": "AI & ML",
+      "installs": 117
+    },
+    {
+      "name": "baoyu-post-to-weibo",
+      "source": "jimliu/baoyu-skills",
+      "category": "AI & ML",
+      "installs": 117
+    },
+    {
+      "name": "error-handling-patterns",
+      "source": "wshobson/agents",
+      "category": "Developer Workflow",
+      "installs": 117
+    },
+    {
+      "name": "writing hookify rules",
+      "source": "anthropics/claude-code",
+      "category": "Platform SDK",
+      "installs": 117
+    },
+    {
+      "name": "trump-perspective",
+      "source": "alchaincyf/trump-skill",
+      "category": "Uncategorized",
+      "installs": 116
+    },
+    {
+      "name": "langchain-fundamentals",
+      "source": "langchain-ai/langchain-skills",
+      "category": "AI & ML",
+      "installs": 116
+    },
+    {
+      "name": "deep-agents-orchestration",
+      "source": "langchain-ai/langchain-skills",
+      "category": "AI & ML",
+      "installs": 116
+    },
+    {
+      "name": "tavily-cli",
+      "source": "tavily-ai/skills",
+      "category": "AI & ML",
+      "installs": 116
+    },
+    {
+      "name": "tavily-best-practices",
+      "source": "tavily-ai/skills",
+      "category": "AI & ML",
+      "installs": 115
+    },
+    {
+      "name": "tavily-map",
+      "source": "tavily-ai/skills",
+      "category": "AI & ML",
+      "installs": 115
+    },
+    {
+      "name": "frontend-patterns",
+      "source": "affaan-m/everything-claude-code",
+      "category": "Frontend & UI",
+      "installs": 114
+    },
+    {
+      "name": "durable-objects",
+      "source": "cloudflare/skills",
+      "category": "Cloud & Infrastructure",
+      "installs": 114
+    },
+    {
+      "name": "multi-stage-dockerfile",
+      "source": "github/awesome-copilot",
+      "category": "DevOps & CI/CD",
+      "installs": 114
+    },
+    {
+      "name": "langgraph-human-in-the-loop",
+      "source": "langchain-ai/langchain-skills",
+      "category": "AI & ML",
+      "installs": 114
+    },
+    {
+      "name": "vue-best-practices",
+      "source": "antfu/skills",
+      "category": "Frontend & UI",
+      "installs": 113
+    },
+    {
+      "name": "clerk",
+      "source": "clerk/skills",
+      "category": "Platform SDK",
+      "installs": 113
+    },
+    {
+      "name": "architecture-patterns",
+      "source": "wshobson/agents",
+      "category": "Developer Workflow",
+      "installs": 113
+    },
+    {
+      "name": "deep-agents-core",
+      "source": "langchain-ai/langchain-skills",
+      "category": "AI & ML",
+      "installs": 111
+    },
+    {
+      "name": "langchain-middleware",
+      "source": "langchain-ai/langchain-skills",
+      "category": "AI & ML",
+      "installs": 111
+    },
+    {
+      "name": "frontend-slides",
+      "source": "affaan-m/everything-claude-code",
+      "category": "AI & ML",
+      "installs": 111
+    },
+    {
+      "name": "x-mastery-mentor",
+      "source": "alchaincyf/x-mentor-skill",
+      "category": "Documentation & Writing",
+      "installs": 110
+    },
+    {
+      "name": "langchain-dependencies",
+      "source": "langchain-ai/langchain-skills",
+      "category": "Developer Workflow",
+      "installs": 109
+    },
+    {
+      "name": "framework-selection",
+      "source": "langchain-ai/langchain-skills",
+      "category": "Developer Workflow",
+      "installs": 108
+    },
+    {
+      "name": "docker-expert",
+      "source": "sickn33/antigravity-awesome-skills",
+      "category": "Uncategorized",
+      "installs": 107
+    },
+    {
+      "name": "deep-research",
+      "source": "199-biotechnologies/claude-deep-research-skill",
+      "category": "AI & ML",
+      "installs": 106
+    },
+    {
+      "name": "excel-automation",
+      "source": "claude-office-skills/skills",
+      "category": "Browser & Automation",
+      "installs": 105
+    },
+    {
+      "name": "claude-opus-4-5-migration",
+      "source": "anthropics/claude-code",
+      "category": "AI & ML",
+      "installs": 104
+    },
+    {
+      "name": "backend-patterns",
+      "source": "affaan-m/everything-claude-code",
+      "category": "Backend & API",
+      "installs": 104
+    },
+    {
+      "name": "prisma-postgres",
+      "source": "prisma/skills",
+      "category": "Backend & API",
+      "installs": 103
+    },
+    {
+      "name": "postgresql-table-design",
+      "source": "wshobson/agents",
+      "category": "Backend & API",
+      "installs": 103
+    },
+    {
+      "name": "excalidraw-diagram",
+      "source": "coleam00/excalidraw-diagram-skill",
+      "category": "AI & ML",
+      "installs": 102
+    },
+    {
+      "name": "vueuse-functions",
+      "source": "antfu/skills",
+      "category": "Frontend & UI",
+      "installs": 102
+    },
+    {
+      "name": "request-refactor-plan",
+      "source": "mattpocock/skills",
+      "category": "Developer Workflow",
+      "installs": 101
+    },
+    {
+      "name": "design-an-interface",
+      "source": "mattpocock/skills",
+      "category": "Frontend & UI",
+      "installs": 100
+    },
+    {
+      "name": "nuxt-ui",
+      "source": "nuxt/ui",
+      "category": "Frontend & UI",
+      "installs": 100
+    },
+    {
+      "name": "clerk-setup",
+      "source": "clerk/skills",
+      "category": "Security & Auth",
+      "installs": 100
+    },
+    {
+      "name": "marimo-pair",
+      "source": "marimo-team/marimo-pair",
+      "category": "Uncategorized",
+      "installs": 99
+    },
+    {
+      "name": "laravel-specialist",
+      "source": "jeffallan/claude-skills",
+      "category": "Backend & API",
+      "installs": 99
+    },
+    {
+      "name": "git-advanced-workflows",
+      "source": "wshobson/agents",
+      "category": "Developer Workflow",
+      "installs": 99
+    },
+    {
+      "name": "create-readme",
+      "source": "github/awesome-copilot",
+      "category": "Documentation & Writing",
+      "installs": 98
+    },
+    {
+      "name": "code-review-and-quality",
+      "source": "addyosmani/agent-skills",
+      "category": "Developer Workflow",
+      "installs": 98
+    },
+    {
+      "name": "java-coding-standards",
+      "source": "affaan-m/everything-claude-code",
+      "category": "AI & ML",
+      "installs": 98
+    },
+    {
+      "name": "code-reviewer",
+      "source": "google-gemini/gemini-cli",
+      "category": "Uncategorized",
+      "installs": 98
+    },
+    {
+      "name": "stripe-best-practices",
+      "source": "stripe/ai",
+      "category": "Platform SDK",
       "installs": 97
     },
     {
-      "name": "ppt-visual",
-      "source": "claude-office-skills/skills",
-      "category": "Browser & Automation",
-      "installs": 97
+      "name": "frontend-design",
+      "source": "affaan-m/everything-claude-code",
+      "category": "Uncategorized",
+      "installs": 96
+    },
+    {
+      "name": "china-stock-analysis",
+      "source": "sugarforever/01coder-agent-skills",
+      "category": "AI & ML",
+      "installs": 96
+    },
+    {
+      "name": "oklch-skill",
+      "source": "jakubkrehel/oklch-skill",
+      "category": "Uncategorized",
+      "installs": 96
+    },
+    {
+      "name": "release-skills",
+      "source": "jimliu/baoyu-skills",
+      "category": "DevOps & CI/CD",
+      "installs": 95
+    },
+    {
+      "name": "figma-use",
+      "source": "figma/mcp-server-guide",
+      "category": "Frontend & UI",
+      "installs": 94
+    },
+    {
+      "name": "second-brain",
+      "source": "nicholasspisak/second-brain",
+      "category": "Uncategorized",
+      "installs": 94
+    },
+    {
+      "name": "slidev",
+      "source": "slidevjs/slidev",
+      "category": "Uncategorized",
+      "installs": 94
+    },
+    {
+      "name": "proactive-agent",
+      "source": "halthelobster/proactive-agent",
+      "category": "AI & ML",
+      "installs": 93
+    },
+    {
+      "name": "api-design",
+      "source": "affaan-m/everything-claude-code",
+      "category": "Backend & API",
+      "installs": 92
+    },
+    {
+      "name": "interface-design",
+      "source": "dammyjay93/interface-design",
+      "category": "Frontend & UI",
+      "installs": 92
+    },
+    {
+      "name": "security-review",
+      "source": "getsentry/skills",
+      "category": "Security & Auth",
+      "installs": 92
+    },
+    {
+      "name": "conventional-commit",
+      "source": "github/awesome-copilot",
+      "category": "Developer Workflow",
+      "installs": 91
+    },
+    {
+      "name": "astro",
+      "source": "astrolicious/agent-skills",
+      "category": "AI & ML",
+      "installs": 91
+    },
+    {
+      "name": "vue-router-best-practices",
+      "source": "antfu/skills",
+      "category": "Frontend & UI",
+      "installs": 91
+    },
+    {
+      "name": "coding-standards",
+      "source": "affaan-m/everything-claude-code",
+      "category": "Developer Workflow",
+      "installs": 91
+    },
+    {
+      "name": "golang-patterns",
+      "source": "affaan-m/everything-claude-code",
+      "category": "Developer Workflow",
+      "installs": 91
+    },
+    {
+      "name": "debugging-and-error-recovery",
+      "source": "addyosmani/agent-skills",
+      "category": "Developer Workflow",
+      "installs": 90
+    },
+    {
+      "name": "continuous-learning-v2",
+      "source": "affaan-m/everything-claude-code",
+      "category": "AI & ML",
+      "installs": 90
+    },
+    {
+      "name": "n8n-workflow-patterns",
+      "source": "czlonkowski/n8n-skills",
+      "category": "Developer Workflow",
+      "installs": 89
+    },
+    {
+      "name": "sql-optimization",
+      "source": "github/awesome-copilot",
+      "category": "Backend & API",
+      "installs": 89
     }
   ]
 }
