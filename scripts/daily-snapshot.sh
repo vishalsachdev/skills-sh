@@ -18,9 +18,14 @@ git pull --ff-only || { echo "Pull failed — manual intervention needed"; exit 
 
 TODAY=$(date +%Y-%m-%d)
 
-# Skip if today's snapshot already exists
+mark_success() {
+    mkdir -p "$HOME/.cron-sentinels" && touch "$HOME/.cron-sentinels/skills-snapshot"
+}
+
+# Skip capture if today's snapshot already exists (still mark success for heartbeat)
 if [ -f "snapshots/${TODAY}.json" ]; then
     echo "Snapshot for $TODAY already exists, skipping."
+    mark_success
     exit 0
 fi
 
@@ -61,3 +66,4 @@ fi
 git checkout main
 
 echo "Done: $TODAY"
+mark_success
