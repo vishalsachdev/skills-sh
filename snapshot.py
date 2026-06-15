@@ -16,11 +16,12 @@ from pathlib import Path
 
 
 def fetch_trending_page() -> str:
-    """Fetch skills.sh/trending HTML via curl."""
+    """Fetch skills.sh/trending HTML via curl (follows www redirect)."""
     result = subprocess.run(
-        ["curl", "-s", "https://skills.sh/trending"],
+        ["curl", "-sL", "https://skills.sh/trending"],
         capture_output=True,
         text=True,
+        check=True,
     )
     return result.stdout
 
