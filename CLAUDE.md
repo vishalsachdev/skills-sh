@@ -8,7 +8,7 @@ Longitudinal analysis of the skills.sh ecosystem to generate practical install g
 3. Diffusion: Which skill/repo traits are associated with faster adoption?
 4. Longevity: Which skills sustain usage versus spike and decay?
 
-## Manual Deploy (while Actions is disabled)
+## Daily snapshot and deploy (launchd)
 
 Automated via launchd (`com.vishal.skills-snapshot`) — runs daily at 8am local.
 Script: `scripts/daily-snapshot.sh`. Logs: `/tmp/skills-snapshot.log`.
@@ -39,7 +39,7 @@ Disable: `launchctl unload ~/Library/LaunchAgents/com.vishal.skills-snapshot.pli
 ### Phase 2: Baseline Analytics (Weeks 2-3) — In Progress
 - [x] Build time-series dashboard (trends.html) — install growth chart, top movers table with period toggle, skill trend lookup with sparklines
 - [x] Pre-aggregation pipeline (generate_timeseries.py) — runs in CI, produces compact timeseries.json
-- [ ] Produce creation/adoption/longevity baseline charts (needs 7+ snapshots)
+- [ ] Produce creation/adoption/longevity baseline charts
 
 ### Phase 3: Diffusion Modeling (Weeks 4-5)
 - [ ] Engineer trait features
